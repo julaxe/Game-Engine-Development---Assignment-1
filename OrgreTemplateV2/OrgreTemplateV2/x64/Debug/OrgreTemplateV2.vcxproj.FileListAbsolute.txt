@@ -2,3 +2,5 @@ C:\Hooman\GBC\GAME3121\Week1\Week1\OrgreTemplateV2\x64\Debug\OrgreTemplateV2.exe
 C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\OrgreTemplateV2\OrgreTemplateV2\x64\Debug\OrgreTemplateV2.exe
 C:\Users\Julaxe\Documents\dev\GBC\GameEngineDevelopment\Content\GameEngineDevelopment\OrgreTemplateV2\OrgreTemplateV2\x64\Debug\OrgreTemplateV2.exe
 C:\Users\Julaxe\Documents\dev\GBC\GameEngineDevelopment\Content\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\x64\Debug\OrgreTemplateV2.exe
+C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\x64\Debug\OrgreTemplateV2.exe
+C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\x64\Debug\OrgreTemplateV2.pdb
