@@ -18,26 +18,46 @@ a render surface. In our case, the 3D library is Direct X or OpenGL
 using namespace Ogre;
 using namespace OgreBites;
 
-class BasicTutorial1
+class Paddle
+{
+public:
+    Paddle(Ogre::SceneManager* sceneManager)
+    {
+        _node = sceneManager->createSceneNode("Paddle");
+        _entity = sceneManager->createEntity("cube.mesh");
+        _node->attachObject(_entity);
+        _node->setPosition(Ogre::Vector3(0.0f, 0.0f, 0.0f));
+        _node->setScale(0.1f, 0.1f, 0.1f);
+    }
+    SceneNode* getNode() { return _node; }
+    
+
+    
+private:
+    SceneNode* _node;
+    Entity* _entity;
+};
+
+class BrickGameLucasAndJulian
     : public ApplicationContext
     , public InputListener
 {
 public:
-    BasicTutorial1();
-    virtual ~BasicTutorial1() {}
+    BrickGameLucasAndJulian();
+    virtual ~BrickGameLucasAndJulian() {}
 
     void setup();
     bool keyPressed(const KeyboardEvent& evt);
 };
 
 
-BasicTutorial1::BasicTutorial1()
+BrickGameLucasAndJulian::BrickGameLucasAndJulian()
     : ApplicationContext("simpleSample")
 {
 }
 
 
-void BasicTutorial1::setup()
+void BrickGameLucasAndJulian::setup()
 {
     // do not forget to call the base first
     ApplicationContext::setup();
@@ -116,7 +136,7 @@ void BasicTutorial1::setup()
 }
 
 
-bool BasicTutorial1::keyPressed(const KeyboardEvent& evt)
+bool BrickGameLucasAndJulian::keyPressed(const KeyboardEvent& evt)
 {
     if (evt.keysym.sym == SDLK_ESCAPE)
     {
@@ -130,7 +150,7 @@ int main(int argc, char** argv)
 {
     try
     {
-        BasicTutorial1 app;
+        BrickGameLucasAndJulian app;
         app.initApp();
         app.getRoot()->startRendering();
         app.closeApp();
