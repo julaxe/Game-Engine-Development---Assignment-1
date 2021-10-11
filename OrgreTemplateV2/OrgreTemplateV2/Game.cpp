@@ -32,10 +32,10 @@ bool Game::keyPressed(const KeyboardEvent& evt)
 		getRoot()->queueEndRendering();
 		break;
 	case 'a':
-		_paddle->translate = Ogre::Vector3(-1, 0, 0);
+		_paddle->SetMoveDirection(Ogre::Vector3(-1, 0, 0));
 		break;
 	case 'd':
-		_paddle->translate = Ogre::Vector3(1, 0, 0);
+		_paddle->SetMoveDirection(Ogre::Vector3(1, 0, 0));
 		break;
 	default:
 		break;
@@ -48,7 +48,7 @@ void Game::createScene()
 	Ogre::SceneNode* node = scnMgr->createSceneNode("Node1");
 	scnMgr->getRootSceneNode()->addChild(node);
 
-	scnMgr->setShadowTechnique(ShadowTechnique::SHADOWTYPE_STENCIL_ADDITIVE);
+	//scnMgr->setShadowTechnique(ShadowTechnique::SHADOWTYPE_STENCIL_ADDITIVE);
 
 	//! [turnlights]
 	scnMgr->setAmbientLight(ColourValue(1, 1, 1));
@@ -72,6 +72,7 @@ void Game::createCamera()
 	getRenderWindow()->addViewport(cam);
 
 	//! [camera]
+	
 }
 
 void Game::createMeshWithFrameListener()
@@ -80,4 +81,10 @@ void Game::createMeshWithFrameListener()
 	_paddle = new Paddle(scnMgr);
 	scnMgr->getRootSceneNode()->addChild(_paddle->GetNode());
 	mRoot->addFrameListener(_paddle);
+
+	scnMgr->addRenderQueueListener(mOverlaySystem);
+	_sceneLabels = new UILabels(getRenderWindow());
+	addInputListener(_sceneLabels->GetTrayManager());
+	mRoot->addFrameListener(_sceneLabels);
+
 }
