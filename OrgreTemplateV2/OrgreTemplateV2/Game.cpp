@@ -13,7 +13,7 @@ void Game::setup()
 	// get a pointer to the already created root
 	root = getRoot();
 	scnMgr = root->createSceneManager();
-
+	//scnMgr->showBoundingBoxes(true);
 
 	// register our scene with the RTSS
 	RTShader::ShaderGenerator* shadergen = RTShader::ShaderGenerator::getSingletonPtr();
@@ -34,11 +34,12 @@ bool Game::keyPressed(const KeyboardEvent& evt)
 		break;
 	case 'a':
 		_paddle->SetMoveDirection(Ogre::Vector3(-1, 0, 0));
-		std::cout << "MOVE" << std::endl;
 		break;
 	case 'd':
 		_paddle->SetMoveDirection(Ogre::Vector3(1, 0, 0));
-		std::cout << "MOVE" << std::endl;
+		break;
+	case 'f':
+		_paddle->SetLives(_paddle->GetLives() - 1);
 		break;
 	default:
 		break;
@@ -87,6 +88,11 @@ void Game::createMeshWithFrameListener()
 	_paddle = new Paddle(scnMgr);
 	scnMgr->getRootSceneNode()->addChild(_paddle->GetNode());
 	mRoot->addFrameListener(_paddle);
+
+	//Create Ball
+	_ball = new Ball(scnMgr, _paddle);
+	scnMgr->getRootSceneNode()->addChild(_ball->GetNode());
+	mRoot->addFrameListener(_ball);
 
 	scnMgr->addRenderQueueListener(mOverlaySystem);
 	_sceneLabels = new UILabels(getRenderWindow(), _paddle);

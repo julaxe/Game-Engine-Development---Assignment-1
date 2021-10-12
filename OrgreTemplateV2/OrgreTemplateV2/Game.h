@@ -12,6 +12,7 @@ class Game : public ApplicationContext, public InputListener, public FrameListen
 {
 private:
 	Paddle* _paddle;
+	Ball* _ball;
 	UILabels* _sceneLabels;
 	SceneManager* scnMgr;
 	Root* root;
