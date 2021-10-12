@@ -68,10 +68,13 @@ UILabels::UILabels(Ogre::RenderWindow* rendererWindow)
 	//set up of UI preferences
 	_mTrayManager->showFrameStats(OgreBites::TL_BOTTOMRIGHT);
 	_mTrayManager->toggleAdvancedFrameStats();
-	_mTrayManager->hideCursor();
+	//_mTrayManager->hideCursor();
 
 	
-	_title = _mTrayManager->createLabel(OgreBites::TL_TOP, "title1", "POTATO GAME", 400);
+	timer = Ogre::Timer();
+	counter = 0;
+	_timerText = _mTrayManager->createLabel(OgreBites::TL_TOP, "timerText", "TIMER", 100);
+	_time = _mTrayManager->createLabel(OgreBites::TL_TOP, "time", " ", 100);
 
 
 	//Populating array of strings to display
@@ -85,13 +88,24 @@ UILabels::UILabels(Ogre::RenderWindow* rendererWindow)
 bool UILabels::frameStarted(const Ogre::FrameEvent& evt)
 {
 
-	// dont know how to pass the player to this func 
-	_panel->setParamValue(0, "0000");
-	_panel->setParamValue(1, "5");
+	if ((counter % 60) == 0)
+	{
+		_time->setCaption(Ogre::StringConverter().toString(timer.getMilliseconds()/1000));
+		counter = 0;
+	}
+
+	counter++;
+
 	return true;
 }
 
 OgreBites::TrayManager* UILabels::GetTrayManager()
 {
 	return _mTrayManager;
+}
+
+void UILabels::RefreshUI(int lives, int score)
+{
+	_panel->setParamValue(0, Ogre::StringConverter::toString(score));
+	_panel->setParamValue(1, Ogre::StringConverter::toString(lives));
 }

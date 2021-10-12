@@ -50,13 +50,20 @@ public:
 
 	OgreBites::TrayManager* GetTrayManager();
 
+	void RefreshUI(int lives, int score);
+
 private:
 
 	OgreBites::TrayManager* _mTrayManager;
 
 	StringVector _paramNames;
 
-	OgreBites::Label* _title;
+
+	//this works but I`m not a fan of the counter
+	OgreBites::Label* _timerText;
+	OgreBites::Label* _time;
+	Timer timer;
+	int counter;
 
 	OgreBites::ParamsPanel* _panel;
 };

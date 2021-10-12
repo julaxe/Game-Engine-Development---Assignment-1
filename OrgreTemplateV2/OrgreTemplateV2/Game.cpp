@@ -19,6 +19,7 @@ void Game::setup()
 	RTShader::ShaderGenerator* shadergen = RTShader::ShaderGenerator::getSingletonPtr();
 	shadergen->addSceneManager(scnMgr);
 
+
 	createScene();
 	createCamera();
 	createMeshWithFrameListener();
@@ -33,9 +34,11 @@ bool Game::keyPressed(const KeyboardEvent& evt)
 		break;
 	case 'a':
 		_paddle->SetMoveDirection(Ogre::Vector3(-1, 0, 0));
+		std::cout << "MOVE" << std::endl;
 		break;
 	case 'd':
 		_paddle->SetMoveDirection(Ogre::Vector3(1, 0, 0));
+		std::cout << "MOVE" << std::endl;
 		break;
 	default:
 		break;
@@ -77,6 +80,9 @@ void Game::createCamera()
 
 void Game::createMeshWithFrameListener()
 {
+
+	//mRoot->addFrameListener(this);
+
 	//Create Paddle
 	_paddle = new Paddle(scnMgr);
 	scnMgr->getRootSceneNode()->addChild(_paddle->GetNode());
@@ -88,3 +94,12 @@ void Game::createMeshWithFrameListener()
 	mRoot->addFrameListener(_sceneLabels);
 
 }
+
+//bool Game::frameStarted(const Ogre::FrameEvent& evt)
+//{
+//	if(_paddle != nullptr)
+//		_sceneLabels->RefreshUI(_paddle->GetLives(), _paddle->GetScore());
+//	
+//
+//	return true;
+//}

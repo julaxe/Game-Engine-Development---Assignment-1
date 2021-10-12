@@ -3,11 +3,12 @@
 #include "OgreInput.h"
 #include "OgreRTShaderSystem.h"
 #include "UpdatableObjs.h"
+#include <iostream>
 
 using namespace Ogre;
 using namespace OgreBites;
 
-class Game : public ApplicationContext, public InputListener
+class Game : public ApplicationContext, public InputListener, public FrameListener
 {
 private:
 	Paddle* _paddle;
@@ -23,6 +24,7 @@ public:
 	void createScene();
 	void createCamera();
 	void createMeshWithFrameListener();
+	//bool frameStarted(const Ogre::FrameEvent& evt) override;
 };
 
 
