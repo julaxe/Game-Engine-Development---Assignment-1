@@ -89,7 +89,7 @@ void Game::createMeshWithFrameListener()
 	mRoot->addFrameListener(_paddle);
 
 	scnMgr->addRenderQueueListener(mOverlaySystem);
-	_sceneLabels = new UILabels(getRenderWindow());
+	_sceneLabels = new UILabels(getRenderWindow(), _paddle);
 	addInputListener(_sceneLabels->GetTrayManager());
 	mRoot->addFrameListener(_sceneLabels);
 

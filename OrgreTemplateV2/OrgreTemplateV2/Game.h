@@ -24,7 +24,7 @@ public:
 	void createScene();
 	void createCamera();
 	void createMeshWithFrameListener();
-	//bool frameStarted(const Ogre::FrameEvent& evt) override;
+	//bool frameStarted(const Ogre::FrameEvent& evt);
 };
 
 

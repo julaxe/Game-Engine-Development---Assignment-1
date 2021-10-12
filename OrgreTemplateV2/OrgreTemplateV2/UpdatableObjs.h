@@ -14,6 +14,7 @@ public:
 	
 	bool frameStarted(const Ogre::FrameEvent& evt);
 	
+
 	SceneNode* GetNode();
 
 	void SetMoveDirection(Ogre::Vector3 direction);
@@ -44,7 +45,9 @@ class UILabels : public Ogre::FrameListener
 {
 public:
 
-	UILabels(Ogre::RenderWindow* rendererWindow);
+	UILabels(Ogre::RenderWindow* rendererWindow, Paddle* paddle);
+
+	Paddle* paddleTest;
 
 	bool frameStarted(const Ogre::FrameEvent& evt);
 

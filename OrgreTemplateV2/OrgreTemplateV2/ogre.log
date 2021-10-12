@@ -1,450 +1,450 @@
-20:44:45: Creating resource group General
-20:44:45: Creating resource group OgreInternal
-20:44:45: Creating resource group OgreAutodetect
-20:44:45: SceneManagerFactory for type 'DefaultSceneManager' registered.
-20:44:45: Registering ResourceManager for type Material
-20:44:45: Registering ResourceManager for type Mesh
-20:44:45: Registering ResourceManager for type Skeleton
-20:44:45: MovableObjectFactory for type 'ParticleSystem' registered.
-20:44:45: ArchiveFactory for archive type FileSystem registered.
-20:44:45: ArchiveFactory for archive type Zip registered.
-20:44:45: ArchiveFactory for archive type EmbeddedZip registered.
-20:44:45: DDS codec registering
-20:44:45: ETC codec registering
-20:44:45: Registering ResourceManager for type HighLevelGpuProgram
-20:44:45: Registering ResourceManager for type Compositor
-20:44:45: MovableObjectFactory for type 'Entity' registered.
-20:44:45: MovableObjectFactory for type 'Light' registered.
-20:44:45: MovableObjectFactory for type 'BillboardSet' registered.
-20:44:45: MovableObjectFactory for type 'ManualObject' registered.
-20:44:45: MovableObjectFactory for type 'BillboardChain' registered.
-20:44:45: MovableObjectFactory for type 'RibbonTrail' registered.
-20:44:45: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_Direct3D11_d.dll
-20:44:45: Installing plugin: D3D11 RenderSystem
-20:44:45: D3D11: Direct3D11 Rendering Subsystem created.
-20:44:45: D3D11: Driver Detection Starts
-20:44:45: D3D11: "Intel(R) UHD Graphics 630"
-20:44:45: D3D11: "NVIDIA GeForce GTX 1650"
-20:44:45: D3D11: "Microsoft Basic Render Driver (software)"
-20:44:45: D3D11: Driver Detection Ends
-20:44:45: Plugin successfully installed
-20:44:45: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_GL_d.dll
-20:44:45: Installing plugin: GL RenderSystem
-20:44:45: OpenGL Rendering Subsystem created.
-20:44:45: Plugin successfully installed
-20:44:45: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_GL3Plus_d.dll
-20:44:45: Installing plugin: GL 3+ RenderSystem
-20:44:45: OpenGL 3+ Rendering Subsystem created.
-20:44:45: Plugin successfully installed
-20:44:45: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_ParticleFX_d.dll
-20:44:45: Installing plugin: ParticleFX
-20:44:45: Particle Emitter Type 'Point' registered
-20:44:45: Particle Emitter Type 'Box' registered
-20:44:45: Particle Emitter Type 'Ellipsoid' registered
-20:44:45: Particle Emitter Type 'Cylinder' registered
-20:44:45: Particle Emitter Type 'Ring' registered
-20:44:45: Particle Emitter Type 'HollowEllipsoid' registered
-20:44:45: Particle Affector Type 'LinearForce' registered
-20:44:45: Particle Affector Type 'ColourFader' registered
-20:44:45: Particle Affector Type 'ColourFader2' registered
-20:44:45: Particle Affector Type 'ColourImage' registered
-20:44:45: Particle Affector Type 'ColourInterpolator' registered
-20:44:45: Particle Affector Type 'Scaler' registered
-20:44:45: Particle Affector Type 'Rotator' registered
-20:44:45: Particle Affector Type 'DirectionRandomiser' registered
-20:44:45: Particle Affector Type 'DeflectorPlane' registered
-20:44:45: Plugin successfully installed
-20:44:45: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_BSPSceneManager_d.dll
-20:44:45: Installing plugin: BSP Scene Manager
-20:44:45: Plugin successfully installed
-20:44:45: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_CgProgramManager_d.dll
-20:44:45: Installing plugin: Cg Program Manager
-20:44:45: Plugin successfully installed
-20:44:45: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Codec_STBI_d.dll
-20:44:45: stb_image - v2.19 - public domain JPEG/PNG reader
-20:44:45: Supported formats: jpeg,jpg,png,bmp,psd,tga,gif,pic,ppm,pgm,hdr
-20:44:45: *-*-* OGRE Initialising
-20:44:45: *-*-* Version 1.12.1 (Rhagorthua)
-20:44:45: OverlayElementFactory for type Panel registered.
-20:44:45: OverlayElementFactory for type BorderPanel registered.
-20:44:45: OverlayElementFactory for type TextArea registered.
-20:44:45: Registering ResourceManager for type Font
-20:44:45: D3D11: RenderSystem Option: Allow NVPerfHUD = No
-20:44:45: D3D11: RenderSystem Option: Backbuffer Count = Auto
-20:44:45: D3D11: RenderSystem Option: Driver type = Hardware
-20:44:45: D3D11: RenderSystem Option: FSAA = 1
-20:44:45: D3D11: RenderSystem Option: Floating-point mode = Fastest
-20:44:45: D3D11: RenderSystem Option: Full Screen = No
-20:44:45: D3D11: RenderSystem Option: Information Queue Exceptions Bottom Level = Info (exception on any message)
-20:44:45: D3D11: RenderSystem Option: Max Requested Feature Levels = 11.0
-20:44:45: D3D11: RenderSystem Option: Min Requested Feature Levels = 9.1
-20:44:45: D3D11: RenderSystem Option: Rendering Device = (default)
-20:44:45: D3D11: RenderSystem Option: VSync = Yes
-20:44:45: D3D11: RenderSystem Option: VSync Interval = 1
-20:44:45: D3D11: RenderSystem Option: Video Mode = 800 x 600 @ 32-bit colour
-20:44:45: D3D11: RenderSystem Option: sRGB Gamma Conversion = No
-20:44:45: CPU Identifier & Features
-20:44:45: -------------------------
-20:44:45:  *   CPU ID: GenuineIntel: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
-20:44:45:  *          SSE: yes
-20:44:45:  *         SSE2: yes
-20:44:45:  *         SSE3: yes
-20:44:45:  *        SSE41: yes
-20:44:45:  *        SSE42: yes
-20:44:45:  *          MMX: yes
-20:44:45:  *       MMXEXT: yes
-20:44:45:  *        3DNOW: no
-20:44:45:  *     3DNOWEXT: no
-20:44:45:  *         CMOV: yes
-20:44:45:  *          TSC: yes
-20:44:45:  *INVARIANT TSC: yes
-20:44:45:  *          FPU: yes
-20:44:45:  *          PRO: yes
-20:44:45:  *           HT: no
-20:44:45: -------------------------
-20:44:45: D3D11: Subsystem Initialising
-20:44:45: D3D11: Driver Detection Starts
-20:44:45: D3D11: "Intel(R) UHD Graphics 630"
-20:44:45: D3D11: "NVIDIA GeForce GTX 1650"
-20:44:45: D3D11: "Microsoft Basic Render Driver (software)"
-20:44:45: D3D11: Driver Detection Ends
-20:44:45: D3D11: Requested "(default)", selected "Intel(R) UHD Graphics 630"
-20:44:46: ***************************************
-20:44:46: *** D3D11: Subsystem Initialized OK ***
-20:44:46: ***************************************
-20:44:46: D3D11RenderSystem::_createRenderWindow "Assigment 01 - Julian Escobar / Lucas Krespi", 800x600 windowed  miscParams: FSAA=1 colourDepth=32 externalWindowHandle=1772216 gamma=No vsync=Yes vsyncInterval=1 
-20:44:46: D3D11: Created D3D11 Rendering Window 'Assigment 01 - Julian Escobar / Lucas Krespi' : 800x600, 32bpp
-20:44:46: Registering ResourceManager for type Texture
-20:44:46: Registering ResourceManager for type GpuProgram
-20:44:46: RenderSystem capabilities
-20:44:46: -------------------------
-20:44:46: RenderSystem Name: Direct3D11 Rendering Subsystem
-20:44:46: GPU Vendor: intel
-20:44:46: Device Name: Intel(R) UHD Graphics 630
-20:44:46: Driver Version: 26.20.100.6911
-20:44:46:  * Fixed function pipeline: no
-20:44:46:  * Anisotropic texture filtering: yes
-20:44:46:  * Hardware stencil buffer: yes
-20:44:46:    - Stencil depth: 8
-20:44:46:    - Two sided stencil support: yes
-20:44:46:    - Wrap stencil values: yes
-20:44:46:  * 32-bit index buffers: yes
-20:44:46:  * Vertex programs: yes
-20:44:46:  * Number of floating-point constants for vertex programs: 512
-20:44:46:  * Number of integer constants for vertex programs: 16
-20:44:46:  * Number of boolean constants for vertex programs: 16
-20:44:46:  * Fragment programs: yes
-20:44:46:  * Number of floating-point constants for fragment programs: 512
-20:44:46:  * Number of integer constants for fragment programs: 16
-20:44:46:  * Number of boolean constants for fragment programs: 16
-20:44:46:  * Geometry programs: yes
-20:44:46:  * Number of floating-point constants for geometry programs: 512
-20:44:46:  * Number of integer constants for geometry programs: 16
-20:44:46:  * Number of boolean constants for geometry programs: 16
-20:44:46:  * Tessellation Hull programs: yes
-20:44:46:  * Number of floating-point constants for tessellation hull programs: 512
-20:44:46:  * Number of integer constants for tessellation hull programs: 16
-20:44:46:  * Number of boolean constants for tessellation hull programs: 16
-20:44:46:  * Tessellation Domain programs: yes
-20:44:46:  * Number of floating-point constants for tessellation domain programs: 512
-20:44:46:  * Number of integer constants for tessellation domain programs: 16
-20:44:46:  * Number of boolean constants for tessellation domain programs: 16
-20:44:46:  * Compute programs: yes
-20:44:46:  * Number of floating-point constants for compute programs: 512
-20:44:46:  * Number of integer constants for compute programs: 16
-20:44:46:  * Number of boolean constants for compute programs: 16
-20:44:46:  * Supported Shader Profiles: cs_4_0 cs_4_1 cs_5_0 ds_5_0 gs_4_0 gs_4_1 gs_5_0 hlsl hs_5_0 ps_2_0 ps_2_a ps_2_b ps_2_x ps_3_0 ps_3_x ps_4_0 ps_4_0_level_9_1 ps_4_0_level_9_3 ps_4_1 ps_5_0 vs_2_0 vs_2_a vs_2_x vs_3_0 vs_4_0 vs_4_0_level_9_1 vs_4_0_level_9_3 vs_4_1 vs_5_0
-20:44:46:  * Texture Compression: yes
-20:44:46:    - DXT: yes
-20:44:46:    - VTC: no
-20:44:46:    - PVRTC: no
-20:44:46:    - ATC: no
-20:44:46:    - ETC1: no
-20:44:46:    - ETC2: no
-20:44:46:    - BC4/BC5: no
-20:44:46:    - BC6H/BC7: yes
-20:44:46:    - ASTC: no
-20:44:46:    - Mipmaps for compressed formats: no
-20:44:46:  * Hardware Occlusion Query: yes
-20:44:46:  * User clip planes: yes
-20:44:46:  * VET_UBYTE4 vertex element type: yes
-20:44:46:  * Infinite far plane projection: yes
-20:44:46:  * Hardware render-to-texture: yes
-20:44:46:  * Floating point textures: yes
-20:44:46:  * Non-power-of-two textures: yes
-20:44:46:  * 1d textures: yes
-20:44:46:  * Volume textures: yes
-20:44:46:  * Multiple Render Targets: 8
-20:44:46:    - With different bit depths: yes
-20:44:46:  * Point Sprites: yes
-20:44:46:  * Wide Lines: no
-20:44:46:  * Hardware Gamma: no
-20:44:46:  * Extended point parameters: yes
-20:44:46:  * Max Point Size: 256
-20:44:46:  * Vertex texture fetch: yes
-20:44:46:  * Number of texture units: 16
-20:44:46:  * Number of vertex attributes: 32
-20:44:46:  * Stencil buffer depth: 8
-20:44:46:  * Number of vertex blend matrices: 0
-20:44:46:    - Max vertex textures: 4
-20:44:46:    - Vertex textures shared: yes
-20:44:46:  * Render to Vertex Buffer : yes
-20:44:46:  * Hardware Atomic Counters: no
-20:44:46: DefaultWorkQueue('Root') initialising on thread 22884.
-20:44:46: Particle Renderer Type 'billboard' registered
-20:44:46: DefaultWorkQueue('Root')::WorkerFunc - thread 13892 starting.
-20:44:46: SceneManagerFactory for type 'BspSceneManager' registered.
-20:44:46: DefaultWorkQueue('Root')::WorkerFunc - thread 21576 starting.
-20:44:46: Registering SceneLoader Q3BSP
-20:44:46: Creating resource group Essential
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/thumbnails' of type 'FileSystem' to resource group 'Essential'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/packs/SdkTrays.zip' of type 'Zip' to resource group 'Essential'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/packs/profiler.zip' of type 'Zip' to resource group 'Essential'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/fonts' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/programs' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/scripts' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/textures' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/textures/nvidia' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/models' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/particle' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/DeferredShadingMedia' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/DeferredShadingMedia/DeferredShading/post' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/PCZAppMedia' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/scripts/SSAO' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/textures/SSAO' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/volumeTerrain' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/PBR' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/textures/glTF2_IBL' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/HLMS' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/cubemap.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/cubemapsJS.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/dragon.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/fresneldemo.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/ogretestmap.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/ogredance.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/Sinbad.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/skybox.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/volumeTerrain/volumeTerrainBig.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/DamagedHelmet.zip' of type 'Zip' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/ShadowVolume' of type 'FileSystem' to resource group 'OgreInternal'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/RTShaderLib/materials' of type 'FileSystem' to resource group 'OgreInternal'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/RTShaderLib/GLSL' of type 'FileSystem' to resource group 'OgreInternal'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/RTShaderLib/HLSL_Cg' of type 'FileSystem' to resource group 'OgreInternal'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/Terrain/' of type 'FileSystem' to resource group 'OgreInternal'
-20:44:46: Creating resource group Tests
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Tests/Media' of type 'FileSystem' to resource group 'Tests'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/programs/HLSL' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/programs/Cg' of type 'FileSystem' to resource group 'General'
-20:44:46: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/programs/HLSL_Cg' of type 'FileSystem' to resource group 'General'
-20:44:46: Parsing scripts for resource group Essential
-20:44:46: Parsing script SdkTrays.material
-20:44:46: Parsing script OgreProfiler.material
-20:44:46: Parsing script SdkTrays.fontdef
-20:44:46: Parsing script SdkTrays.overlay
-20:44:46: Texture 'sdk_cursor.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
-20:44:46: Texture 'sdk_tray.png': Loading 1 faces(PF_A8B8G8R8,64x64x1) with 6 generated mipmaps from Image. Internal format is PF_A8B8G8R8,64x64x1.
-20:44:46: Texture 'sdk_button_up.png': Loading 1 faces(PF_A8B8G8R8,128x32x1) with 7 generated mipmaps from Image. Internal format is PF_A8B8G8R8,128x32x1.
-20:44:46: Texture 'sdk_text_box.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
-20:44:46: Texture 'sdk_mini_tray.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
-20:44:46: Texture 'sdk_track.png': Loading 1 faces(PF_A8B8G8R8,16x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,16x32x1.
-20:44:46: Texture 'sdk_handle.png': Loading 1 faces(PF_A8B8G8R8,16x16x1) with 4 generated mipmaps from Image. Internal format is PF_A8B8G8R8,16x16x1.
-20:44:46: Texture 'sdk_mini_text_box.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
-20:44:46: Texture 'sdk_label.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
-20:44:46: Texture 'sdk_separator.png': Loading 1 faces(PF_A8B8G8R8,64x16x1) with 6 generated mipmaps from Image. Internal format is PF_A8B8G8R8,64x16x1.
-20:44:46: Texture 'sdk_logo.png': Loading 1 faces(PF_A8B8G8R8,128x64x1) with 7 generated mipmaps from Image. Internal format is PF_A8B8G8R8,128x64x1.
-20:44:46: Texture 'sdk_shade.png': Loading 1 faces(PF_A8B8G8R8,64x48x1) with 6 generated mipmaps from Image. Internal format is PF_A8B8G8R8,64x48x1.
-20:44:46: Texture 'sdk_frame.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
-20:44:46: Texture 'sdk_mini_text_box_over.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
-20:44:46: Texture 'sdk_pulse.png': Loading 1 faces(PF_B8G8R8,8x1x1) with 3 generated mipmaps from Image. Internal format is PF_A8B8G8R8,8x1x1.
-20:44:46: Finished parsing scripts for resource group Essential
-20:44:46: Creating resources for group Essential
-20:44:46: All done
-20:44:46: Parsing scripts for resource group General
-20:44:46: Parsing script DualQuaternion.program
-20:44:46: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsHLSL Errors:
+21:09:52: Creating resource group General
+21:09:52: Creating resource group OgreInternal
+21:09:52: Creating resource group OgreAutodetect
+21:09:52: SceneManagerFactory for type 'DefaultSceneManager' registered.
+21:09:52: Registering ResourceManager for type Material
+21:09:52: Registering ResourceManager for type Mesh
+21:09:52: Registering ResourceManager for type Skeleton
+21:09:52: MovableObjectFactory for type 'ParticleSystem' registered.
+21:09:52: ArchiveFactory for archive type FileSystem registered.
+21:09:52: ArchiveFactory for archive type Zip registered.
+21:09:52: ArchiveFactory for archive type EmbeddedZip registered.
+21:09:52: DDS codec registering
+21:09:52: ETC codec registering
+21:09:52: Registering ResourceManager for type HighLevelGpuProgram
+21:09:52: Registering ResourceManager for type Compositor
+21:09:52: MovableObjectFactory for type 'Entity' registered.
+21:09:52: MovableObjectFactory for type 'Light' registered.
+21:09:52: MovableObjectFactory for type 'BillboardSet' registered.
+21:09:52: MovableObjectFactory for type 'ManualObject' registered.
+21:09:52: MovableObjectFactory for type 'BillboardChain' registered.
+21:09:52: MovableObjectFactory for type 'RibbonTrail' registered.
+21:09:52: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_Direct3D11_d.dll
+21:09:52: Installing plugin: D3D11 RenderSystem
+21:09:52: D3D11: Direct3D11 Rendering Subsystem created.
+21:09:53: D3D11: Driver Detection Starts
+21:09:53: D3D11: "Intel(R) UHD Graphics 630"
+21:09:53: D3D11: "NVIDIA GeForce GTX 1650"
+21:09:53: D3D11: "Microsoft Basic Render Driver (software)"
+21:09:53: D3D11: Driver Detection Ends
+21:09:53: Plugin successfully installed
+21:09:53: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_GL_d.dll
+21:09:53: Installing plugin: GL RenderSystem
+21:09:53: OpenGL Rendering Subsystem created.
+21:09:53: Plugin successfully installed
+21:09:53: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_GL3Plus_d.dll
+21:09:53: Installing plugin: GL 3+ RenderSystem
+21:09:53: OpenGL 3+ Rendering Subsystem created.
+21:09:53: Plugin successfully installed
+21:09:53: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_ParticleFX_d.dll
+21:09:53: Installing plugin: ParticleFX
+21:09:53: Particle Emitter Type 'Point' registered
+21:09:53: Particle Emitter Type 'Box' registered
+21:09:53: Particle Emitter Type 'Ellipsoid' registered
+21:09:53: Particle Emitter Type 'Cylinder' registered
+21:09:53: Particle Emitter Type 'Ring' registered
+21:09:53: Particle Emitter Type 'HollowEllipsoid' registered
+21:09:53: Particle Affector Type 'LinearForce' registered
+21:09:53: Particle Affector Type 'ColourFader' registered
+21:09:53: Particle Affector Type 'ColourFader2' registered
+21:09:53: Particle Affector Type 'ColourImage' registered
+21:09:53: Particle Affector Type 'ColourInterpolator' registered
+21:09:53: Particle Affector Type 'Scaler' registered
+21:09:53: Particle Affector Type 'Rotator' registered
+21:09:53: Particle Affector Type 'DirectionRandomiser' registered
+21:09:53: Particle Affector Type 'DeflectorPlane' registered
+21:09:53: Plugin successfully installed
+21:09:53: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_BSPSceneManager_d.dll
+21:09:53: Installing plugin: BSP Scene Manager
+21:09:53: Plugin successfully installed
+21:09:53: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_CgProgramManager_d.dll
+21:09:53: Installing plugin: Cg Program Manager
+21:09:53: Plugin successfully installed
+21:09:53: Loading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Codec_STBI_d.dll
+21:09:53: stb_image - v2.19 - public domain JPEG/PNG reader
+21:09:53: Supported formats: jpeg,jpg,png,bmp,psd,tga,gif,pic,ppm,pgm,hdr
+21:09:53: *-*-* OGRE Initialising
+21:09:53: *-*-* Version 1.12.1 (Rhagorthua)
+21:09:53: OverlayElementFactory for type Panel registered.
+21:09:53: OverlayElementFactory for type BorderPanel registered.
+21:09:53: OverlayElementFactory for type TextArea registered.
+21:09:53: Registering ResourceManager for type Font
+21:09:53: D3D11: RenderSystem Option: Allow NVPerfHUD = No
+21:09:53: D3D11: RenderSystem Option: Backbuffer Count = Auto
+21:09:53: D3D11: RenderSystem Option: Driver type = Hardware
+21:09:53: D3D11: RenderSystem Option: FSAA = 1
+21:09:53: D3D11: RenderSystem Option: Floating-point mode = Fastest
+21:09:53: D3D11: RenderSystem Option: Full Screen = No
+21:09:53: D3D11: RenderSystem Option: Information Queue Exceptions Bottom Level = Info (exception on any message)
+21:09:53: D3D11: RenderSystem Option: Max Requested Feature Levels = 11.0
+21:09:53: D3D11: RenderSystem Option: Min Requested Feature Levels = 9.1
+21:09:53: D3D11: RenderSystem Option: Rendering Device = (default)
+21:09:53: D3D11: RenderSystem Option: VSync = Yes
+21:09:53: D3D11: RenderSystem Option: VSync Interval = 1
+21:09:53: D3D11: RenderSystem Option: Video Mode = 800 x 600 @ 32-bit colour
+21:09:53: D3D11: RenderSystem Option: sRGB Gamma Conversion = No
+21:09:53: CPU Identifier & Features
+21:09:53: -------------------------
+21:09:53:  *   CPU ID: GenuineIntel: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+21:09:53:  *          SSE: yes
+21:09:53:  *         SSE2: yes
+21:09:53:  *         SSE3: yes
+21:09:53:  *        SSE41: yes
+21:09:53:  *        SSE42: yes
+21:09:53:  *          MMX: yes
+21:09:53:  *       MMXEXT: yes
+21:09:53:  *        3DNOW: no
+21:09:53:  *     3DNOWEXT: no
+21:09:53:  *         CMOV: yes
+21:09:53:  *          TSC: yes
+21:09:53:  *INVARIANT TSC: yes
+21:09:53:  *          FPU: yes
+21:09:53:  *          PRO: yes
+21:09:53:  *           HT: no
+21:09:53: -------------------------
+21:09:53: D3D11: Subsystem Initialising
+21:09:53: D3D11: Driver Detection Starts
+21:09:53: D3D11: "Intel(R) UHD Graphics 630"
+21:09:53: D3D11: "NVIDIA GeForce GTX 1650"
+21:09:53: D3D11: "Microsoft Basic Render Driver (software)"
+21:09:53: D3D11: Driver Detection Ends
+21:09:53: D3D11: Requested "(default)", selected "Intel(R) UHD Graphics 630"
+21:09:53: ***************************************
+21:09:53: *** D3D11: Subsystem Initialized OK ***
+21:09:53: ***************************************
+21:09:54: D3D11RenderSystem::_createRenderWindow "Assigment 01 - Julian Escobar / Lucas Krespi", 800x600 windowed  miscParams: FSAA=1 colourDepth=32 externalWindowHandle=1966800 gamma=No vsync=Yes vsyncInterval=1 
+21:09:54: D3D11: Created D3D11 Rendering Window 'Assigment 01 - Julian Escobar / Lucas Krespi' : 800x600, 32bpp
+21:09:54: Registering ResourceManager for type Texture
+21:09:54: Registering ResourceManager for type GpuProgram
+21:09:54: RenderSystem capabilities
+21:09:54: -------------------------
+21:09:54: RenderSystem Name: Direct3D11 Rendering Subsystem
+21:09:54: GPU Vendor: intel
+21:09:54: Device Name: Intel(R) UHD Graphics 630
+21:09:54: Driver Version: 26.20.100.6911
+21:09:54:  * Fixed function pipeline: no
+21:09:54:  * Anisotropic texture filtering: yes
+21:09:54:  * Hardware stencil buffer: yes
+21:09:54:    - Stencil depth: 8
+21:09:54:    - Two sided stencil support: yes
+21:09:54:    - Wrap stencil values: yes
+21:09:54:  * 32-bit index buffers: yes
+21:09:54:  * Vertex programs: yes
+21:09:54:  * Number of floating-point constants for vertex programs: 512
+21:09:54:  * Number of integer constants for vertex programs: 16
+21:09:54:  * Number of boolean constants for vertex programs: 16
+21:09:54:  * Fragment programs: yes
+21:09:54:  * Number of floating-point constants for fragment programs: 512
+21:09:54:  * Number of integer constants for fragment programs: 16
+21:09:54:  * Number of boolean constants for fragment programs: 16
+21:09:54:  * Geometry programs: yes
+21:09:54:  * Number of floating-point constants for geometry programs: 512
+21:09:54:  * Number of integer constants for geometry programs: 16
+21:09:54:  * Number of boolean constants for geometry programs: 16
+21:09:54:  * Tessellation Hull programs: yes
+21:09:54:  * Number of floating-point constants for tessellation hull programs: 512
+21:09:54:  * Number of integer constants for tessellation hull programs: 16
+21:09:54:  * Number of boolean constants for tessellation hull programs: 16
+21:09:54:  * Tessellation Domain programs: yes
+21:09:54:  * Number of floating-point constants for tessellation domain programs: 512
+21:09:54:  * Number of integer constants for tessellation domain programs: 16
+21:09:54:  * Number of boolean constants for tessellation domain programs: 16
+21:09:54:  * Compute programs: yes
+21:09:54:  * Number of floating-point constants for compute programs: 512
+21:09:54:  * Number of integer constants for compute programs: 16
+21:09:54:  * Number of boolean constants for compute programs: 16
+21:09:54:  * Supported Shader Profiles: cs_4_0 cs_4_1 cs_5_0 ds_5_0 gs_4_0 gs_4_1 gs_5_0 hlsl hs_5_0 ps_2_0 ps_2_a ps_2_b ps_2_x ps_3_0 ps_3_x ps_4_0 ps_4_0_level_9_1 ps_4_0_level_9_3 ps_4_1 ps_5_0 vs_2_0 vs_2_a vs_2_x vs_3_0 vs_4_0 vs_4_0_level_9_1 vs_4_0_level_9_3 vs_4_1 vs_5_0
+21:09:54:  * Texture Compression: yes
+21:09:54:    - DXT: yes
+21:09:54:    - VTC: no
+21:09:54:    - PVRTC: no
+21:09:54:    - ATC: no
+21:09:54:    - ETC1: no
+21:09:54:    - ETC2: no
+21:09:54:    - BC4/BC5: no
+21:09:54:    - BC6H/BC7: yes
+21:09:54:    - ASTC: no
+21:09:54:    - Mipmaps for compressed formats: no
+21:09:54:  * Hardware Occlusion Query: yes
+21:09:54:  * User clip planes: yes
+21:09:54:  * VET_UBYTE4 vertex element type: yes
+21:09:54:  * Infinite far plane projection: yes
+21:09:54:  * Hardware render-to-texture: yes
+21:09:54:  * Floating point textures: yes
+21:09:54:  * Non-power-of-two textures: yes
+21:09:54:  * 1d textures: yes
+21:09:54:  * Volume textures: yes
+21:09:54:  * Multiple Render Targets: 8
+21:09:54:    - With different bit depths: yes
+21:09:54:  * Point Sprites: yes
+21:09:54:  * Wide Lines: no
+21:09:54:  * Hardware Gamma: no
+21:09:54:  * Extended point parameters: yes
+21:09:54:  * Max Point Size: 256
+21:09:54:  * Vertex texture fetch: yes
+21:09:54:  * Number of texture units: 16
+21:09:54:  * Number of vertex attributes: 32
+21:09:54:  * Stencil buffer depth: 8
+21:09:54:  * Number of vertex blend matrices: 0
+21:09:54:    - Max vertex textures: 4
+21:09:54:    - Vertex textures shared: yes
+21:09:54:  * Render to Vertex Buffer : yes
+21:09:54:  * Hardware Atomic Counters: no
+21:09:54: DefaultWorkQueue('Root') initialising on thread 23744.
+21:09:54: DefaultWorkQueue('Root')::WorkerFunc - thread 22300 starting.
+21:09:54: DefaultWorkQueue('Root')::WorkerFunc - thread 1924 starting.
+21:09:54: Particle Renderer Type 'billboard' registered
+21:09:54: SceneManagerFactory for type 'BspSceneManager' registered.
+21:09:54: Registering SceneLoader Q3BSP
+21:09:54: Creating resource group Essential
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/thumbnails' of type 'FileSystem' to resource group 'Essential'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/packs/SdkTrays.zip' of type 'Zip' to resource group 'Essential'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/packs/profiler.zip' of type 'Zip' to resource group 'Essential'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/fonts' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/programs' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/scripts' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/textures' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/textures/nvidia' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/models' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/particle' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/DeferredShadingMedia' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/DeferredShadingMedia/DeferredShading/post' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/PCZAppMedia' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/scripts/SSAO' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/textures/SSAO' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/volumeTerrain' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/PBR' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/textures/glTF2_IBL' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/HLMS' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/cubemap.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/cubemapsJS.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/dragon.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/fresneldemo.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/ogretestmap.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/ogredance.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/Sinbad.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/skybox.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/volumeTerrain/volumeTerrainBig.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/packs/DamagedHelmet.zip' of type 'Zip' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/ShadowVolume' of type 'FileSystem' to resource group 'OgreInternal'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/RTShaderLib/materials' of type 'FileSystem' to resource group 'OgreInternal'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/RTShaderLib/GLSL' of type 'FileSystem' to resource group 'OgreInternal'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/RTShaderLib/HLSL_Cg' of type 'FileSystem' to resource group 'OgreInternal'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Media/Terrain/' of type 'FileSystem' to resource group 'OgreInternal'
+21:09:54: Creating resource group Tests
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Tests/Media' of type 'FileSystem' to resource group 'Tests'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/programs/HLSL' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/programs/Cg' of type 'FileSystem' to resource group 'General'
+21:09:54: Added resource location 'C:/Users/lucas/GameEngineDevelopment/ogre-sdk-v2.1/Samples/Media/materials/programs/HLSL_Cg' of type 'FileSystem' to resource group 'General'
+21:09:54: Parsing scripts for resource group Essential
+21:09:54: Parsing script SdkTrays.material
+21:09:54: Parsing script OgreProfiler.material
+21:09:54: Parsing script SdkTrays.fontdef
+21:09:54: Parsing script SdkTrays.overlay
+21:09:54: Texture 'sdk_cursor.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
+21:09:54: Texture 'sdk_tray.png': Loading 1 faces(PF_A8B8G8R8,64x64x1) with 6 generated mipmaps from Image. Internal format is PF_A8B8G8R8,64x64x1.
+21:09:54: Texture 'sdk_button_up.png': Loading 1 faces(PF_A8B8G8R8,128x32x1) with 7 generated mipmaps from Image. Internal format is PF_A8B8G8R8,128x32x1.
+21:09:54: Texture 'sdk_text_box.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
+21:09:54: Texture 'sdk_mini_tray.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
+21:09:54: Texture 'sdk_track.png': Loading 1 faces(PF_A8B8G8R8,16x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,16x32x1.
+21:09:54: Texture 'sdk_handle.png': Loading 1 faces(PF_A8B8G8R8,16x16x1) with 4 generated mipmaps from Image. Internal format is PF_A8B8G8R8,16x16x1.
+21:09:54: Texture 'sdk_mini_text_box.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
+21:09:54: Texture 'sdk_label.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
+21:09:54: Texture 'sdk_separator.png': Loading 1 faces(PF_A8B8G8R8,64x16x1) with 6 generated mipmaps from Image. Internal format is PF_A8B8G8R8,64x16x1.
+21:09:54: Texture 'sdk_logo.png': Loading 1 faces(PF_A8B8G8R8,128x64x1) with 7 generated mipmaps from Image. Internal format is PF_A8B8G8R8,128x64x1.
+21:09:54: Texture 'sdk_shade.png': Loading 1 faces(PF_A8B8G8R8,64x48x1) with 6 generated mipmaps from Image. Internal format is PF_A8B8G8R8,64x48x1.
+21:09:54: Texture 'sdk_frame.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
+21:09:54: Texture 'sdk_mini_text_box_over.png': Loading 1 faces(PF_A8B8G8R8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8B8G8R8,32x32x1.
+21:09:54: Texture 'sdk_pulse.png': Loading 1 faces(PF_B8G8R8,8x1x1) with 3 generated mipmaps from Image. Internal format is PF_A8B8G8R8,8x1x1.
+21:09:54: Finished parsing scripts for resource group Essential
+21:09:54: Creating resources for group Essential
+21:09:54: All done
+21:09:54: Parsing scripts for resource group General
+21:09:54: Parsing script DualQuaternion.program
+21:09:54: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\DualQuaternion.hlsl(35,25-75): error X3017: 'calculateBlendPosition': cannot implicitly convert from 'float3' to 'float4'
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:46: High-level program 'Ogre/DualQuaternionHardwareSkinningTwoWeightsHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsHLSL Errors:
+21:09:54: High-level program 'Ogre/DualQuaternionHardwareSkinningTwoWeightsHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\DualQuaternion.hlsl(35,25-75): error X3017: 'calculateBlendPosition': cannot implicitly convert from 'float3' to 'float4'
 
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(64): setting of constant failed
-20:44:46: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseHLSL Errors:
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(64): setting of constant failed
+21:09:54: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\DualQuaternion.hlsl(35,25-75): error X3017: 'calculateBlendPosition': cannot implicitly convert from 'float3' to 'float4'
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:46: High-level program 'Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseHLSL Errors:
+21:09:54: High-level program 'Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\DualQuaternion.hlsl(35,25-75): error X3017: 'calculateBlendPosition': cannot implicitly convert from 'float3' to 'float4'
 
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(78): setting of constant failed
-20:44:46: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsShadowCasterHLSL Errors:
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(78): setting of constant failed
+21:09:54: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsShadowCasterHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\DualQuaternion.hlsl(35,25-75): error X3017: 'calculateBlendPosition': cannot implicitly convert from 'float3' to 'float4'
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:46: High-level program 'Ogre/DualQuaternionHardwareSkinningTwoWeightsShadowCasterHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsShadowCasterHLSL Errors:
+21:09:54: High-level program 'Ogre/DualQuaternionHardwareSkinningTwoWeightsShadowCasterHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsShadowCasterHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\DualQuaternion.hlsl(35,25-75): error X3017: 'calculateBlendPosition': cannot implicitly convert from 'float3' to 'float4'
 
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(177): setting of constant failed
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(178): setting of constant failed
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(179): setting of constant failed
-20:44:46: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseShadowCasterHLSL Errors:
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(177): setting of constant failed
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(178): setting of constant failed
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(179): setting of constant failed
+21:09:54: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseShadowCasterHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\DualQuaternion.hlsl(35,25-75): error X3017: 'calculateBlendPosition': cannot implicitly convert from 'float3' to 'float4'
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:46: High-level program 'Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseShadowCasterHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseShadowCasterHLSL Errors:
+21:09:54: High-level program 'Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseShadowCasterHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/DualQuaternionHardwareSkinningTwoWeightsTwoPhaseShadowCasterHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\DualQuaternion.hlsl(35,25-75): error X3017: 'calculateBlendPosition': cannot implicitly convert from 'float3' to 'float4'
 
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(210): setting of constant failed
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(211): setting of constant failed
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(212): setting of constant failed
-20:44:46: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:46: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(213): setting of constant failed
-20:44:46: Parsing script Examples.program
-20:44:47: Parsing script Instancing.program
-20:44:47: Parsing script StdQuad_vp.program
-20:44:47: Parsing script deferred_post.program
-20:44:47: Parsing script ShadowCaster.program
-20:44:47: Parsing script GBuffer.program
-20:44:47: Parsing script pbr.program
-20:44:47: Parsing script AdaptivePNTrianglesTessellation.material
-20:44:47: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptive_tessellation_hs Errors:
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(210): setting of constant failed
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(211): setting of constant failed
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(212): setting of constant failed
+21:09:54: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:54: Error: ScriptCompiler - invalid parameters in DualQuaternion.program(213): setting of constant failed
+21:09:54: Parsing script Examples.program
+21:09:55: Parsing script Instancing.program
+21:09:55: Parsing script StdQuad_vp.program
+21:09:55: Parsing script deferred_post.program
+21:09:55: Parsing script ShadowCaster.program
+21:09:55: Parsing script GBuffer.program
+21:09:55: Parsing script pbr.program
+21:09:55: Parsing script AdaptivePNTrianglesTessellation.material
+21:09:55: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptive_tessellation_hs Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptive_tessellation.hlsl(148,67-71): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:47: High-level program 'Ogre/PNTrianglesTessellation/adaptive_tessellation_hs' is not supported: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptive_tessellation_hs Errors:
+21:09:55: High-level program 'Ogre/PNTrianglesTessellation/adaptive_tessellation_hs' is not supported: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptive_tessellation_hs Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptive_tessellation.hlsl(148,67-71): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(208): Named constants have not been initialised, perhaps a compile error.
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(209): setting of constant failed
-20:44:47: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_vs Errors:
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(208): Named constants have not been initialised, perhaps a compile error.
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(209): setting of constant failed
+21:09:55: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_vs Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptivePNTriangles_tessellation.hlsl(92,35-58): error X4577: Not all elements of SV_Position were written
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptivePNTriangles_tessellation.hlsl(92,35-58): error X4576: Output signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:47: High-level program 'Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_vs' is not supported: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_vs Errors:
+21:09:55: High-level program 'Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_vs' is not supported: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_vs Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptivePNTriangles_tessellation.hlsl(92,35-58): error X4577: Not all elements of SV_Position were written
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptivePNTriangles_tessellation.hlsl(92,35-58): error X4576: Output signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(258): setting of constant failed
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(259): setting of constant failed
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(260): setting of constant failed
-20:44:47: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_hs Errors:
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(258): setting of constant failed
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(259): setting of constant failed
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(260): setting of constant failed
+21:09:55: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_hs Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptivePNTriangles_tessellation.hlsl(127,76-85): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:47: High-level program 'Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_hs' is not supported: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_hs Errors:
+21:09:55: High-level program 'Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_hs' is not supported: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_hs Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptivePNTriangles_tessellation.hlsl(127,76-85): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(274): Named constants have not been initialised, perhaps a compile error.
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(275): setting of constant failed
-20:44:47: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_ds Errors:
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(274): Named constants have not been initialised, perhaps a compile error.
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(275): setting of constant failed
+21:09:55: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_ds Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptivePNTriangles_tessellation.hlsl(213,152-156): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:47: High-level program 'Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_ds' is not supported: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_ds Errors:
+21:09:55: High-level program 'Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_ds' is not supported: Cannot compile D3D11 high-level shader Ogre/PNTrianglesTessellation/adaptivePNTriangles_tessellation_ds Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\adaptivePNTriangles_tessellation.hlsl(213,152-156): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(287): setting of constant failed
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(288): setting of constant failed
-20:44:47: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:47: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(289): setting of constant failed
-20:44:47: Parsing script ASCII.material
-20:44:47: Parsing script AtomicCounters.material
-20:44:47: Parsing script Background.material
-20:44:47: Parsing script BlackAndWhite.material
-20:44:47: Parsing script Bloom2.material
-20:44:47: Parsing script CompositorDemo.material
-20:44:47: Parsing script Compute.material
-20:44:47: Parsing script DamagedHelmet.material
-20:44:47: Parsing script DepthShadowmap.material
-20:44:48: Parsing script Dither.material
-20:44:48: Parsing script DOF.material
-20:44:48: Parsing script Doodle.material
-20:44:48: Error: ScriptCompiler - unexpected token in Doodle.material(14): token "diffuse" is not recognized
-20:44:48: Error: ScriptCompiler - unexpected token in Doodle.material(33): token "diffuse" is not recognized
-20:44:48: Error: ScriptCompiler - unexpected token in Doodle.material(52): token "diffuse" is not recognized
-20:44:48: Parsing script DoodlePlayer.material
-20:44:48: Parsing script DSMyMaterials.material
-20:44:48: Parsing script DualQuaternion.material
-20:44:48: Parsing script Embossed.material
-20:44:48: Parsing script Examples-Advanced.material
-20:44:48: Parsing script Examples-DynTex.material
-20:44:48: Parsing script Examples-Water.material
-20:44:48: Parsing script Examples.material
-20:44:48: Parsing script facial.material
-20:44:48: Parsing script FlatVertexColour.material
-20:44:48: Parsing script FluidSim.material
-20:44:48: Parsing script Glass.material
-20:44:48: Parsing script Hair.material
-20:44:48: Parsing script Halftone.material
-20:44:48: Parsing script hdr.material
-20:44:48: Parsing script HeatVision.material
-20:44:49: Parsing script HGExamples.material
-20:44:49: Parsing script Hurt.material
-20:44:49: Parsing script HWInstancing.material
-20:44:49: Parsing script HW_VTFInstancing.material
-20:44:49: Parsing script HW_VTF_LUTInstancing.material
-20:44:49: Parsing script Invert.material
-20:44:49: Parsing script Island.material
-20:44:49: Error: ScriptCompiler - number expected in Island.material(246): extra parameters required by constant definition light_position
-20:44:49: Warnings while compiling D3D11 high-level shader Ogre/Island/WaterPatchDS:
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(287): setting of constant failed
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(288): setting of constant failed
+21:09:55: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:55: Error: ScriptCompiler - invalid parameters in AdaptivePNTrianglesTessellation.material(289): setting of constant failed
+21:09:55: Parsing script ASCII.material
+21:09:55: Parsing script AtomicCounters.material
+21:09:55: Parsing script Background.material
+21:09:55: Parsing script BlackAndWhite.material
+21:09:55: Parsing script Bloom2.material
+21:09:55: Parsing script CompositorDemo.material
+21:09:55: Parsing script Compute.material
+21:09:55: Parsing script DamagedHelmet.material
+21:09:55: Parsing script DepthShadowmap.material
+21:09:55: Parsing script Dither.material
+21:09:55: Parsing script DOF.material
+21:09:55: Parsing script Doodle.material
+21:09:55: Error: ScriptCompiler - unexpected token in Doodle.material(14): token "diffuse" is not recognized
+21:09:55: Error: ScriptCompiler - unexpected token in Doodle.material(33): token "diffuse" is not recognized
+21:09:55: Error: ScriptCompiler - unexpected token in Doodle.material(52): token "diffuse" is not recognized
+21:09:55: Parsing script DoodlePlayer.material
+21:09:55: Parsing script DSMyMaterials.material
+21:09:55: Parsing script DualQuaternion.material
+21:09:55: Parsing script Embossed.material
+21:09:56: Parsing script Examples-Advanced.material
+21:09:56: Parsing script Examples-DynTex.material
+21:09:56: Parsing script Examples-Water.material
+21:09:56: Parsing script Examples.material
+21:09:56: Parsing script facial.material
+21:09:56: Parsing script FlatVertexColour.material
+21:09:56: Parsing script FluidSim.material
+21:09:56: Parsing script Glass.material
+21:09:56: Parsing script Hair.material
+21:09:56: Parsing script Halftone.material
+21:09:56: Parsing script hdr.material
+21:09:56: Parsing script HeatVision.material
+21:09:57: Parsing script HGExamples.material
+21:09:57: Parsing script Hurt.material
+21:09:57: Parsing script HWInstancing.material
+21:09:57: Parsing script HW_VTFInstancing.material
+21:09:57: Parsing script HW_VTF_LUTInstancing.material
+21:09:57: Parsing script Invert.material
+21:09:57: Parsing script Island.material
+21:09:57: Error: ScriptCompiler - number expected in Island.material(246): extra parameters required by constant definition light_position
+21:09:57: Warnings while compiling D3D11 high-level shader Ogre/Island/WaterPatchDS:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Island.hlsl(504,25): warning X3578: Output value 'WaterPatchDS' is not completely initialized
 
-20:44:49: Error: ScriptCompiler - number expected in Island.material(329): extra parameters required by constant definition light_position
-20:44:49: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/Island/WaterPatchPS Errors:
+21:09:57: Error: ScriptCompiler - number expected in Island.material(329): extra parameters required by constant definition light_position
+21:09:57: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/Island/WaterPatchPS Errors:
 error X3501: 'WaterPatchPS': entrypoint not found
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:49: High-level program 'Ogre/Island/WaterPatchPS' is not supported: Cannot compile D3D11 high-level shader Ogre/Island/WaterPatchPS Errors:
+21:09:57: High-level program 'Ogre/Island/WaterPatchPS' is not supported: Cannot compile D3D11 high-level shader Ogre/Island/WaterPatchPS Errors:
 error X3501: 'WaterPatchPS': entrypoint not found
 
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(342): setting of constant failed
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(343): setting of constant failed
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(344): setting of constant failed
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(345): setting of constant failed
-20:44:49: Error: ScriptCompiler - number expected in Island.material(346): extra parameters required by constant definition light_position
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(347): Named constants have not been initialised, perhaps a compile error.
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(348): Named constants have not been initialised, perhaps a compile error.
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(349): Named constants have not been initialised, perhaps a compile error.
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(350): Named constants have not been initialised, perhaps a compile error.
-20:44:49: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:49: Error: ScriptCompiler - invalid parameters in Island.material(351): Named constants have not been initialised, perhaps a compile error.
-20:44:49: Parsing script IsoSurf.material
-20:44:49: Parsing script JRMyMaterials.material
-20:44:49: Parsing script Laplace.material
-20:44:49: Parsing script MKExamples.material
-20:44:49: Parsing script MotionBlur.material
-20:44:49: Parsing script MRTtest.material
-20:44:49: Parsing script MyCompositors.material
-20:44:49: Parsing script MyMaterials.material
-20:44:49: Parsing script NBExamples.material
-20:44:49: Parsing script NightVision.material
-20:44:49: Parsing script Ocean.material
-20:44:50: Parsing script OffsetMapping.material
-20:44:50: Warnings while compiling D3D11 high-level shader Examples/OffsetMappingIntegratedShadowsVPhlsl:
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(342): setting of constant failed
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(343): setting of constant failed
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(344): setting of constant failed
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(345): setting of constant failed
+21:09:57: Error: ScriptCompiler - number expected in Island.material(346): extra parameters required by constant definition light_position
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(347): Named constants have not been initialised, perhaps a compile error.
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(348): Named constants have not been initialised, perhaps a compile error.
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(349): Named constants have not been initialised, perhaps a compile error.
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(350): Named constants have not been initialised, perhaps a compile error.
+21:09:57: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:57: Error: ScriptCompiler - invalid parameters in Island.material(351): Named constants have not been initialised, perhaps a compile error.
+21:09:57: Parsing script IsoSurf.material
+21:09:57: Parsing script JRMyMaterials.material
+21:09:57: Parsing script Laplace.material
+21:09:57: Parsing script MKExamples.material
+21:09:57: Parsing script MotionBlur.material
+21:09:57: Parsing script MRTtest.material
+21:09:57: Parsing script MyCompositors.material
+21:09:57: Parsing script MyMaterials.material
+21:09:57: Parsing script NBExamples.material
+21:09:57: Parsing script NightVision.material
+21:09:57: Parsing script Ocean.material
+21:09:58: Parsing script OffsetMapping.material
+21:09:58: Warnings while compiling D3D11 high-level shader Examples/OffsetMappingIntegratedShadowsVPhlsl:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(41,32-80): warning X3206: implicit truncation of vector type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(42,33-83): warning X3206: implicit truncation of vector type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(129,9-47): warning X3206: implicit truncation of vector type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(130,9-47): warning X3206: implicit truncation of vector type
 
-20:44:50: Warnings while compiling D3D11 high-level shader Examples/OffsetMappingIntegratedShadowsFPhlsl:
+21:09:58: Warnings while compiling D3D11 high-level shader Examples/OffsetMappingIntegratedShadowsFPhlsl:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(41,32-80): warning X3206: implicit truncation of vector type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(42,33-83): warning X3206: implicit truncation of vector type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(129,9-47): warning X3206: implicit truncation of vector type
@@ -454,279 +454,279 @@ C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Devel
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(117,21): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\OffsetMapping.hlsl(124,15): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
 
-20:44:50: Parsing script Ogre.material
-20:44:50: Parsing script OldMovie.material
-20:44:50: Parsing script OldTV.material
-20:44:50: Parsing script ParticleGS.material
-20:44:50: Parsing script Penguin.material
-20:44:50: Parsing script Platform.material
-20:44:50: Parsing script Platformer.material
-20:44:50: Parsing script Posterize.material
-20:44:50: Parsing script pssm.material
-20:44:50: Parsing script RadialBlur.material
-20:44:50: Parsing script RasterizationOrder.material
-20:44:50: Parsing script RBDoodle.material
-20:44:50: Parsing script RZR-002.material
-20:44:50: Parsing script ShaderInstancing.material
-20:44:50: Parsing script ShaderSystem.material
-20:44:50: Parsing script SharpenEdges.material
-20:44:50: Parsing script sibenik.material
-20:44:50: Parsing script skMyMaterials.material
-20:44:50: Parsing script smoke.material
-20:44:50: Parsing script Swizzle.material
-20:44:50: Parsing script TerrainTessellation.material
-20:44:50: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/HwTessellationPassThruVS Errors:
+21:09:58: Parsing script Ogre.material
+21:09:58: Parsing script OldMovie.material
+21:09:58: Parsing script OldTV.material
+21:09:58: Parsing script ParticleGS.material
+21:09:58: Parsing script Penguin.material
+21:09:58: Parsing script Platform.material
+21:09:58: Parsing script Platformer.material
+21:09:58: Parsing script Posterize.material
+21:09:58: Parsing script pssm.material
+21:09:58: Parsing script RadialBlur.material
+21:09:58: Parsing script RasterizationOrder.material
+21:09:58: Parsing script RBDoodle.material
+21:09:58: Parsing script RZR-002.material
+21:09:58: Parsing script ShaderInstancing.material
+21:09:58: Parsing script ShaderSystem.material
+21:09:58: Parsing script SharpenEdges.material
+21:09:58: Parsing script sibenik.material
+21:09:58: Parsing script skMyMaterials.material
+21:09:58: Parsing script smoke.material
+21:09:58: Parsing script Swizzle.material
+21:09:58: Parsing script TerrainTessellation.material
+21:09:58: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/HwTessellationPassThruVS Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(239,48-79): warning X3576: semantics in type overridden by variable/function or enclosing type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(239,48-79): error X4577: Not all elements of SV_Position were written
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(239,48-79): error X4576: Output signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:50: High-level program 'Ogre/TerrainTessellation/HwTessellationPassThruVS' is not supported: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/HwTessellationPassThruVS Errors:
+21:09:58: High-level program 'Ogre/TerrainTessellation/HwTessellationPassThruVS' is not supported: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/HwTessellationPassThruVS Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(239,48-79): warning X3576: semantics in type overridden by variable/function or enclosing type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(239,48-79): error X4577: Not all elements of SV_Position were written
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(239,48-79): error X4576: Output signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(97): Named constants have not been initialised, perhaps a compile error.
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(98): Named constants have not been initialised, perhaps a compile error.
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(99): Named constants have not been initialised, perhaps a compile error.
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(100): Named constants have not been initialised, perhaps a compile error.
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(101): Named constants have not been initialised, perhaps a compile error.
-20:44:50: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/TerrainScreenspaceLODHS Errors:
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(97): Named constants have not been initialised, perhaps a compile error.
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(98): Named constants have not been initialised, perhaps a compile error.
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(99): Named constants have not been initialised, perhaps a compile error.
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(100): Named constants have not been initialised, perhaps a compile error.
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(101): Named constants have not been initialised, perhaps a compile error.
+21:09:58: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/TerrainScreenspaceLODHS Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(518,74): warning X3576: semantics in type overridden by variable/function or enclosing type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(414,97-98): warning X3576: semantics in type overridden by variable/function or enclosing type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(400,6-17): warning X3556: integer modulus may be much slower, try using uints if possible.
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(335,2): warning X4000: use of potentially uninitialized variable (inFrustum)
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(518,74): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:50: High-level program 'Ogre/TerrainTessellation/TerrainScreenspaceLODHS' is not supported: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/TerrainScreenspaceLODHS Errors:
+21:09:58: High-level program 'Ogre/TerrainTessellation/TerrainScreenspaceLODHS' is not supported: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/TerrainScreenspaceLODHS Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(518,74): warning X3576: semantics in type overridden by variable/function or enclosing type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(414,97-98): warning X3576: semantics in type overridden by variable/function or enclosing type
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(400,6-17): warning X3556: integer modulus may be much slower, try using uints if possible.
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(335,2): warning X4000: use of potentially uninitialized variable (inFrustum)
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(518,74): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(131): setting of constant failed
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(132): setting of constant failed
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(133): setting of constant failed
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(134): setting of constant failed
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(135): setting of constant failed
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(136): setting of constant failed
-20:44:50: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/TerrainDisplaceDS Errors:
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(131): setting of constant failed
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(132): setting of constant failed
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(133): setting of constant failed
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(134): setting of constant failed
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(135): setting of constant failed
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(136): setting of constant failed
+21:09:58: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/TerrainDisplaceDS Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(599,53-63): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:50: High-level program 'Ogre/TerrainTessellation/TerrainDisplaceDS' is not supported: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/TerrainDisplaceDS Errors:
+21:09:58: High-level program 'Ogre/TerrainTessellation/TerrainDisplaceDS' is not supported: Cannot compile D3D11 high-level shader Ogre/TerrainTessellation/TerrainDisplaceDS Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\TerrainTessellation.hlsl(599,53-63): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(148): setting of constant failed
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(149): Named constants have not been initialised, perhaps a compile error.
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(150): Named constants have not been initialised, perhaps a compile error.
-20:44:50: Parsing script Tessellation.material
-20:44:50: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/Tessellation/TessellationHullProgramHLSL Errors:
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(148): setting of constant failed
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(149): Named constants have not been initialised, perhaps a compile error.
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in TerrainTessellation.material(150): Named constants have not been initialised, perhaps a compile error.
+21:09:58: Parsing script Tessellation.material
+21:09:58: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/Tessellation/TessellationHullProgramHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Tessellation.hlsl(78,54): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:50: High-level program 'Ogre/Tessellation/TessellationHullProgramHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/Tessellation/TessellationHullProgramHLSL Errors:
+21:09:58: High-level program 'Ogre/Tessellation/TessellationHullProgramHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/Tessellation/TessellationHullProgramHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Tessellation.hlsl(78,54): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in Tessellation.material(28): Named constants have not been initialised, perhaps a compile error.
-20:44:50: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/Tessellation/TessellationDomainProgramHLSL Errors:
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in Tessellation.material(28): Named constants have not been initialised, perhaps a compile error.
+21:09:58: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/Tessellation/TessellationDomainProgramHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Tessellation.hlsl(97,53-56): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:50: High-level program 'Ogre/Tessellation/TessellationDomainProgramHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/Tessellation/TessellationDomainProgramHLSL Errors:
+21:09:58: High-level program 'Ogre/Tessellation/TessellationDomainProgramHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/Tessellation/TessellationDomainProgramHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Tessellation.hlsl(97,53-56): error X4576: Input signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:50: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:50: Error: ScriptCompiler - invalid parameters in Tessellation.material(57): setting of constant failed
-20:44:50: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/Tessellation/VertexProgramHLSL Errors:
+21:09:58: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:58: Error: ScriptCompiler - invalid parameters in Tessellation.material(57): setting of constant failed
+21:09:58: Ogre::RenderingAPIException::RenderingAPIException: Cannot compile D3D11 high-level shader Ogre/Tessellation/VertexProgramHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Tessellation.hlsl(35,26-58): error X4577: Not all elements of SV_Position were written
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Tessellation.hlsl(35,26-58): error X4576: Output signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
  in D3D11HLSLProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp (line 495)
-20:44:50: High-level program 'Ogre/Tessellation/VertexProgramHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/Tessellation/VertexProgramHLSL Errors:
+21:09:58: High-level program 'Ogre/Tessellation/VertexProgramHLSL' is not supported: Cannot compile D3D11 high-level shader Ogre/Tessellation/VertexProgramHLSL Errors:
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Tessellation.hlsl(35,26-58): error X4577: Not all elements of SV_Position were written
 C:\Users\lucas\Desktop\GBC College\Semester 05\Game Engine DEV\Game-Engine-Development---Assignment-1\OrgreTemplateV2\OrgreTemplateV2\Tessellation.hlsl(35,26-58): error X4576: Output signature parameter SV_Position (1-based Entry 0) type must be float32 and mask must be xyzw. 
 
-20:44:50: Parsing script Tiling.material
-20:44:50: Parsing script VarianceShadowmap.material
-20:44:50: Parsing script VTFInstancing.material
-20:44:50: Parsing script deferreddemo.material
-20:44:50: Parsing script deferred_post.material
-20:44:50: Parsing script deferred_post_minilight.material
-20:44:50: Parsing script ShadowCaster.material
-20:44:50: Parsing script ssao.material
-20:44:51: Parsing script ROOM.material
-20:44:51: Parsing script CreaseShading.material
-20:44:51: Parsing script Crytek.material
-20:44:51: Parsing script GBuffer.material
-20:44:51: Parsing script HemisphereMC.material
-20:44:51: Parsing script HorizonBased.material
-20:44:51: Parsing script Modulate.material
-20:44:51: Parsing script ShowDepth.material
-20:44:51: Parsing script ShowNormals.material
-20:44:51: Parsing script ShowViewPos.material
-20:44:51: Parsing script SSAOPost.material
-20:44:51: Ogre::InternalErrorException::InternalErrorException: Unable to compile Cg program SSAO/Post/BoxFilter_fp_cg: The compile returned an error.
+21:09:58: Parsing script Tiling.material
+21:09:58: Parsing script VarianceShadowmap.material
+21:09:58: Parsing script VTFInstancing.material
+21:09:58: Parsing script deferreddemo.material
+21:09:58: Parsing script deferred_post.material
+21:09:58: Parsing script deferred_post_minilight.material
+21:09:58: Parsing script ShadowCaster.material
+21:09:58: Parsing script ssao.material
+21:09:59: Parsing script ROOM.material
+21:09:59: Parsing script CreaseShading.material
+21:09:59: Parsing script Crytek.material
+21:09:59: Parsing script GBuffer.material
+21:09:59: Parsing script HemisphereMC.material
+21:09:59: Parsing script HorizonBased.material
+21:09:59: Parsing script Modulate.material
+21:09:59: Parsing script ShowDepth.material
+21:09:59: Parsing script ShowNormals.material
+21:09:59: Parsing script ShowViewPos.material
+21:09:59: Parsing script SSAOPost.material
+21:09:59: Ogre::InternalErrorException::InternalErrorException: Unable to compile Cg program SSAO/Post/BoxFilter_fp_cg: The compile returned an error.
 (0) : error C7002: Loop counter intial value -2 out of profile's supported range [0,255]
  in CgProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\PlugIns\CgProgramManager\src\OgreCgProgramManagerDll.cpp (line 70)
-20:44:51: High-level program 'SSAO/Post/BoxFilter_fp_cg' is not supported: Unable to compile Cg program SSAO/Post/BoxFilter_fp_cg: The compile returned an error.
+21:09:59: High-level program 'SSAO/Post/BoxFilter_fp_cg' is not supported: Unable to compile Cg program SSAO/Post/BoxFilter_fp_cg: The compile returned an error.
 (0) : error C7002: Loop counter intial value -2 out of profile's supported range [0,255]
 
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in SSAOPost.material(160): setting of constant failed
-20:44:51: Ogre::InternalErrorException::InternalErrorException: Unable to compile Cg program SSAO/Post/SmartBoxFilter_fp_cg: The compile returned an error.
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in SSAOPost.material(160): setting of constant failed
+21:09:59: Ogre::InternalErrorException::InternalErrorException: Unable to compile Cg program SSAO/Post/SmartBoxFilter_fp_cg: The compile returned an error.
 (0) : error C7002: Loop counter intial value -2 out of profile's supported range [0,255]
 (0) : error C7002: Loop counter intial value -2 out of profile's supported range [0,255]
  in CgProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\PlugIns\CgProgramManager\src\OgreCgProgramManagerDll.cpp (line 70)
-20:44:51: High-level program 'SSAO/Post/SmartBoxFilter_fp_cg' is not supported: Unable to compile Cg program SSAO/Post/SmartBoxFilter_fp_cg: The compile returned an error.
+21:09:59: High-level program 'SSAO/Post/SmartBoxFilter_fp_cg' is not supported: Unable to compile Cg program SSAO/Post/SmartBoxFilter_fp_cg: The compile returned an error.
 (0) : error C7002: Loop counter intial value -2 out of profile's supported range [0,255]
 (0) : error C7002: Loop counter intial value -2 out of profile's supported range [0,255]
 
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in SSAOPost.material(184): setting of constant failed
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in SSAOPost.material(185): setting of constant failed
-20:44:51: Parsing script UnsharpMask.material
-20:44:51: Ogre::InternalErrorException::InternalErrorException: Unable to compile Cg program SSAO/UnsharpMask/GaussianBlurX_fp_cg: The compile returned an error.
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in SSAOPost.material(184): setting of constant failed
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in SSAOPost.material(185): setting of constant failed
+21:09:59: Parsing script UnsharpMask.material
+21:09:59: Ogre::InternalErrorException::InternalErrorException: Unable to compile Cg program SSAO/UnsharpMask/GaussianBlurX_fp_cg: The compile returned an error.
 (0) : error C6001: Temporary register limit of 12 exceeded; 18 registers needed to compile program
  in CgProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\PlugIns\CgProgramManager\src\OgreCgProgramManagerDll.cpp (line 70)
-20:44:51: High-level program 'SSAO/UnsharpMask/GaussianBlurX_fp_cg' is not supported: Unable to compile Cg program SSAO/UnsharpMask/GaussianBlurX_fp_cg: The compile returned an error.
+21:09:59: High-level program 'SSAO/UnsharpMask/GaussianBlurX_fp_cg' is not supported: Unable to compile Cg program SSAO/UnsharpMask/GaussianBlurX_fp_cg: The compile returned an error.
 (0) : error C6001: Temporary register limit of 12 exceeded; 18 registers needed to compile program
 
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in UnsharpMask.material(106): setting of constant failed
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in UnsharpMask.material(107): Named constants have not been initialised, perhaps a compile error.
-20:44:51: Ogre::InternalErrorException::InternalErrorException: Unable to compile Cg program SSAO/UnsharpMask/GaussianBlurY_fp_cg: The compile returned an error.
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in UnsharpMask.material(106): setting of constant failed
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in UnsharpMask.material(107): Named constants have not been initialised, perhaps a compile error.
+21:09:59: Ogre::InternalErrorException::InternalErrorException: Unable to compile Cg program SSAO/UnsharpMask/GaussianBlurY_fp_cg: The compile returned an error.
 (0) : error C6001: Temporary register limit of 12 exceeded; 18 registers needed to compile program
  in CgProgram::compileMicrocode at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\PlugIns\CgProgramManager\src\OgreCgProgramManagerDll.cpp (line 70)
-20:44:51: High-level program 'SSAO/UnsharpMask/GaussianBlurY_fp_cg' is not supported: Unable to compile Cg program SSAO/UnsharpMask/GaussianBlurY_fp_cg: The compile returned an error.
+21:09:59: High-level program 'SSAO/UnsharpMask/GaussianBlurY_fp_cg' is not supported: Unable to compile Cg program SSAO/UnsharpMask/GaussianBlurY_fp_cg: The compile returned an error.
 (0) : error C6001: Temporary register limit of 12 exceeded; 18 registers needed to compile program
 
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in UnsharpMask.material(131): setting of constant failed
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in UnsharpMask.material(132): Named constants have not been initialised, perhaps a compile error.
-20:44:51: Parsing script Volumetric.material
-20:44:51: Parsing script triplanarReference.material
-20:44:51: Parsing script glTF2_PBR.material
-20:44:51: Parsing script RomanBath.material
-20:44:51: Parsing script Sinbad.material
-20:44:51: Parsing script emitted_emitter.particle
-20:44:51: Texture 'flare.png': Loading 1 faces(PF_B8G8R8,256x256x1) with 8 generated mipmaps from Image. Internal format is PF_A8B8G8R8,256x256x1.
-20:44:51: Parsing script Examples-Water.particle
-20:44:51: Texture 'basic_droplet.png': Loading 1 faces(PF_B8G8R8,64x64x1) with 6 generated mipmaps from Image. Internal format is PF_A8B8G8R8,64x64x1.
-20:44:51: Parsing script Examples.particle
-20:44:51: Texture 'flaretrail.png': Loading 1 faces(PF_B8G8R8,128x128x1) with 7 generated mipmaps from Image. Internal format is PF_A8B8G8R8,128x128x1.
-20:44:51: Texture 'aureola.png': Loading 1 faces(PF_BYTE_LA,256x256x1) with 8 generated mipmaps from Image. Internal format is PF_A8B8G8R8,256x256x1.
-20:44:51: Parsing script smoke.particle
-20:44:51: Texture 'smoke.png': Loading 1 faces(PF_A8B8G8R8,256x256x1) with 8 generated mipmaps from Image. Internal format is PF_A8B8G8R8,256x256x1.
-20:44:51: Parsing script Examples.compositor
-20:44:51: Parsing script deferred.compositor
-20:44:51: Parsing script ssao.compositor
-20:44:51: Parsing script SSAO.compositor
-20:44:51: Parsing script SSAOPost.compositor
-20:44:51: Finished parsing scripts for resource group General
-20:44:51: Creating resources for group General
-20:44:51: All done
-20:44:51: Parsing scripts for resource group OgreAutodetect
-20:44:51: Finished parsing scripts for resource group OgreAutodetect
-20:44:51: Creating resources for group OgreAutodetect
-20:44:51: All done
-20:44:51: Parsing scripts for resource group OgreInternal
-20:44:51: Parsing script ShadowVolumeExtude.program
-20:44:51: Parsing script DualQuaternionSkinning_Shadow.material
-20:44:51: Ogre::FileNotFoundException::FileNotFoundException: Cannot locate resource DualQuaternionSkinning_Shadow.hlsl in resource group OgreInternal. in ResourceGroupManager::openResource at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreResourceGroupManager.cpp (line 705)
-20:44:51: High-level program 'Ogre/RTShader/shadow_caster_dq_ps_hlsl' is not supported: Cannot locate resource DualQuaternionSkinning_Shadow.hlsl in resource group OgreInternal.
-20:44:51: Ogre::FileNotFoundException::FileNotFoundException: Cannot locate resource DualQuaternionSkinning_Shadow.hlsl in resource group OgreInternal. in ResourceGroupManager::openResource at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreResourceGroupManager.cpp (line 705)
-20:44:51: High-level program 'Ogre/RTShader/shadow_caster_dq_skinning_2weight_twophase_vs_hlsl' is not supported: Cannot locate resource DualQuaternionSkinning_Shadow.hlsl in resource group OgreInternal.
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in DualQuaternionSkinning_Shadow.material(262): setting of constant failed
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in DualQuaternionSkinning_Shadow.material(263): setting of constant failed
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in DualQuaternionSkinning_Shadow.material(264): setting of constant failed
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in DualQuaternionSkinning_Shadow.material(265): setting of constant failed
-20:44:51: Parsing script HardwareSkinningShadow.material
-20:44:51: Ogre::FileNotFoundException::FileNotFoundException: Cannot locate resource HardwareSkinningShadow.hlsl in resource group OgreInternal. in ResourceGroupManager::openResource at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreResourceGroupManager.cpp (line 705)
-20:44:51: High-level program 'Ogre/RTShader/shadow_caster_ps_hlsl' is not supported: Cannot locate resource HardwareSkinningShadow.hlsl in resource group OgreInternal.
-20:44:51: Ogre::FileNotFoundException::FileNotFoundException: Cannot locate resource HardwareSkinningShadow.hlsl in resource group OgreInternal. in ResourceGroupManager::openResource at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreResourceGroupManager.cpp (line 705)
-20:44:51: High-level program 'Ogre/RTShader/shadow_caster_skinning_2weight_vs_hlsl' is not supported: Cannot locate resource HardwareSkinningShadow.hlsl in resource group OgreInternal.
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in HardwareSkinningShadow.material(106): setting of constant failed
-20:44:51: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
-20:44:51: Error: ScriptCompiler - invalid parameters in HardwareSkinningShadow.material(107): setting of constant failed
-20:44:51: Parsing script RTShaderSystem.material
-20:44:51: Parsing script TriplanarTexturing.material
-20:44:51: Finished parsing scripts for resource group OgreInternal
-20:44:51: Creating resources for group OgreInternal
-20:44:51: All done
-20:44:51: Parsing scripts for resource group Tests
-20:44:51: Parsing script glow.material
-20:44:51: Finished parsing scripts for resource group Tests
-20:44:51: Creating resources for group Tests
-20:44:51: All done
-20:44:51: Mesh: Loading cube.mesh.
-20:44:51: Warnings while compiling D3D11 high-level shader 9e889995b2c18fbbeec7838b98491000_VS:
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in UnsharpMask.material(131): setting of constant failed
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in UnsharpMask.material(132): Named constants have not been initialised, perhaps a compile error.
+21:09:59: Parsing script Volumetric.material
+21:09:59: Parsing script triplanarReference.material
+21:09:59: Parsing script glTF2_PBR.material
+21:09:59: Parsing script RomanBath.material
+21:09:59: Parsing script Sinbad.material
+21:09:59: Parsing script emitted_emitter.particle
+21:09:59: Texture 'flare.png': Loading 1 faces(PF_B8G8R8,256x256x1) with 8 generated mipmaps from Image. Internal format is PF_A8B8G8R8,256x256x1.
+21:09:59: Parsing script Examples-Water.particle
+21:09:59: Texture 'basic_droplet.png': Loading 1 faces(PF_B8G8R8,64x64x1) with 6 generated mipmaps from Image. Internal format is PF_A8B8G8R8,64x64x1.
+21:09:59: Parsing script Examples.particle
+21:09:59: Texture 'flaretrail.png': Loading 1 faces(PF_B8G8R8,128x128x1) with 7 generated mipmaps from Image. Internal format is PF_A8B8G8R8,128x128x1.
+21:09:59: Texture 'aureola.png': Loading 1 faces(PF_BYTE_LA,256x256x1) with 8 generated mipmaps from Image. Internal format is PF_A8B8G8R8,256x256x1.
+21:09:59: Parsing script smoke.particle
+21:09:59: Texture 'smoke.png': Loading 1 faces(PF_A8B8G8R8,256x256x1) with 8 generated mipmaps from Image. Internal format is PF_A8B8G8R8,256x256x1.
+21:09:59: Parsing script Examples.compositor
+21:09:59: Parsing script deferred.compositor
+21:09:59: Parsing script ssao.compositor
+21:09:59: Parsing script SSAO.compositor
+21:09:59: Parsing script SSAOPost.compositor
+21:09:59: Finished parsing scripts for resource group General
+21:09:59: Creating resources for group General
+21:09:59: All done
+21:09:59: Parsing scripts for resource group OgreAutodetect
+21:09:59: Finished parsing scripts for resource group OgreAutodetect
+21:09:59: Creating resources for group OgreAutodetect
+21:09:59: All done
+21:09:59: Parsing scripts for resource group OgreInternal
+21:09:59: Parsing script ShadowVolumeExtude.program
+21:09:59: Parsing script DualQuaternionSkinning_Shadow.material
+21:09:59: Ogre::FileNotFoundException::FileNotFoundException: Cannot locate resource DualQuaternionSkinning_Shadow.hlsl in resource group OgreInternal. in ResourceGroupManager::openResource at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreResourceGroupManager.cpp (line 705)
+21:09:59: High-level program 'Ogre/RTShader/shadow_caster_dq_ps_hlsl' is not supported: Cannot locate resource DualQuaternionSkinning_Shadow.hlsl in resource group OgreInternal.
+21:09:59: Ogre::FileNotFoundException::FileNotFoundException: Cannot locate resource DualQuaternionSkinning_Shadow.hlsl in resource group OgreInternal. in ResourceGroupManager::openResource at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreResourceGroupManager.cpp (line 705)
+21:09:59: High-level program 'Ogre/RTShader/shadow_caster_dq_skinning_2weight_twophase_vs_hlsl' is not supported: Cannot locate resource DualQuaternionSkinning_Shadow.hlsl in resource group OgreInternal.
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in DualQuaternionSkinning_Shadow.material(262): setting of constant failed
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in DualQuaternionSkinning_Shadow.material(263): setting of constant failed
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in DualQuaternionSkinning_Shadow.material(264): setting of constant failed
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in DualQuaternionSkinning_Shadow.material(265): setting of constant failed
+21:09:59: Parsing script HardwareSkinningShadow.material
+21:09:59: Ogre::FileNotFoundException::FileNotFoundException: Cannot locate resource HardwareSkinningShadow.hlsl in resource group OgreInternal. in ResourceGroupManager::openResource at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreResourceGroupManager.cpp (line 705)
+21:09:59: High-level program 'Ogre/RTShader/shadow_caster_ps_hlsl' is not supported: Cannot locate resource HardwareSkinningShadow.hlsl in resource group OgreInternal.
+21:09:59: Ogre::FileNotFoundException::FileNotFoundException: Cannot locate resource HardwareSkinningShadow.hlsl in resource group OgreInternal. in ResourceGroupManager::openResource at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreResourceGroupManager.cpp (line 705)
+21:09:59: High-level program 'Ogre/RTShader/shadow_caster_skinning_2weight_vs_hlsl' is not supported: Cannot locate resource HardwareSkinningShadow.hlsl in resource group OgreInternal.
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in HardwareSkinningShadow.material(106): setting of constant failed
+21:09:59: Ogre::InvalidParametersException::InvalidParametersException: Named constants have not been initialised, perhaps a compile error. in GpuProgramParameters::_findNamedConstantDefinition at C:\Hooman\GBC\GAME3121\Course Materials\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\src\OgreGpuProgramParams.cpp (line 1657)
+21:09:59: Error: ScriptCompiler - invalid parameters in HardwareSkinningShadow.material(107): setting of constant failed
+21:09:59: Parsing script RTShaderSystem.material
+21:09:59: Parsing script TriplanarTexturing.material
+21:09:59: Finished parsing scripts for resource group OgreInternal
+21:09:59: Creating resources for group OgreInternal
+21:09:59: All done
+21:09:59: Parsing scripts for resource group Tests
+21:09:59: Parsing script glow.material
+21:09:59: Finished parsing scripts for resource group Tests
+21:09:59: Creating resources for group Tests
+21:09:59: All done
+21:09:59: Mesh: Loading cube.mesh.
+21:09:59: Warnings while compiling D3D11 high-level shader 9e889995b2c18fbbeec7838b98491000_VS:
 (33,14-25): warning X3578: Output value 'oTexcoord3_0' is not completely initialized
 
-20:44:51: Warnings while compiling D3D11 high-level shader 458aa5034690dcb37eaa241d5647e9e0_VS:
+21:09:59: Warnings while compiling D3D11 high-level shader 458aa5034690dcb37eaa241d5647e9e0_VS:
 (31,14-25): warning X3578: Output value 'oTexcoord3_0' is not completely initialized
 
-20:44:52: Warnings while compiling D3D11 high-level shader 7c5c50380091f9af14bb32caa7f764c0_FS:
+21:10:00: Warnings while compiling D3D11 high-level shader 7c5c50380091f9af14bb32caa7f764c0_FS:
 SGXLib_LayeredBlending.cg(60,41): warning X4000: use of potentially uninitialized variable (hsl)
 
-20:44:52: Warnings while compiling D3D11 high-level shader c6787693b9b53732576b22a763133575_VS:
+21:10:00: Warnings while compiling D3D11 high-level shader c6787693b9b53732576b22a763133575_VS:
 (30,14-25): warning X3578: Output value 'oTexcoord3_0' is not completely initialized
 
-20:44:52: Font SdkTrays/Value using texture size 512x256
-20:44:52: Texture 'SdkTrays/ValueTexture': Loading 1 faces(PF_BYTE_LA,512x256x1) with 0 custom mipmaps from Image. Internal format is PF_A8B8G8R8,512x256x1.
-20:44:52: Font SdkTrays/Caption using texture size 256x256
-20:44:52: Texture 'SdkTrays/CaptionTexture': Loading 1 faces(PF_BYTE_LA,256x256x1) with 0 custom mipmaps from Image. Internal format is PF_A8B8G8R8,256x256x1.
-20:45:12: Unregistering ResourceManager for type Font
-20:45:12: DefaultWorkQueue('Root') shutting down on thread 22884.
-20:45:12: DefaultWorkQueue('Root')::WorkerFunc - thread 21576 stopped.
-20:45:12: DefaultWorkQueue('Root')::WorkerFunc - thread 13892 stopped.
-20:45:12: *-*-* OGRE Shutdown
-20:45:12: Unregistering ResourceManager for type Compositor
-20:45:12: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Codec_STBI
-20:45:12: Uninstalling plugin: Cg Program Manager
-20:45:12: Plugin successfully uninstalled
-20:45:12: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_CgProgramManager
-20:45:12: Uninstalling plugin: BSP Scene Manager
-20:45:12: Plugin successfully uninstalled
-20:45:12: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_BSPSceneManager
-20:45:12: Uninstalling plugin: ParticleFX
-20:45:12: Plugin successfully uninstalled
-20:45:12: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_ParticleFX
-20:45:12: Uninstalling plugin: GL 3+ RenderSystem
-20:45:12: *** Stopping Win32GL Subsystem ***
-20:45:12: Plugin successfully uninstalled
-20:45:12: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_GL3Plus
-20:45:12: Uninstalling plugin: GL RenderSystem
-20:45:12: *** Stopping Win32GL Subsystem ***
-20:45:12: Plugin successfully uninstalled
-20:45:12: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_GL
-20:45:12: Uninstalling plugin: D3D11 RenderSystem
-20:45:12: D3D11: Shutting down cleanly.
-20:45:12: Unregistering ResourceManager for type Texture
-20:45:12: Unregistering ResourceManager for type GpuProgram
-20:45:12: D3D11: Direct3D11 Rendering Subsystem destroyed.
-20:45:12: Plugin successfully uninstalled
-20:45:12: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_Direct3D11
-20:45:12: Unregistering ResourceManager for type Skeleton
-20:45:12: Unregistering ResourceManager for type Mesh
-20:45:12: Unregistering ResourceManager for type HighLevelGpuProgram
-20:45:12: Unregistering ResourceManager for type Material
+21:10:00: Font SdkTrays/Value using texture size 512x256
+21:10:00: Texture 'SdkTrays/ValueTexture': Loading 1 faces(PF_BYTE_LA,512x256x1) with 0 custom mipmaps from Image. Internal format is PF_A8B8G8R8,512x256x1.
+21:10:00: Font SdkTrays/Caption using texture size 256x256
+21:10:00: Texture 'SdkTrays/CaptionTexture': Loading 1 faces(PF_BYTE_LA,256x256x1) with 0 custom mipmaps from Image. Internal format is PF_A8B8G8R8,256x256x1.
+21:10:11: Unregistering ResourceManager for type Font
+21:10:11: DefaultWorkQueue('Root') shutting down on thread 23744.
+21:10:11: DefaultWorkQueue('Root')::WorkerFunc - thread 22300 stopped.
+21:10:11: DefaultWorkQueue('Root')::WorkerFunc - thread 1924 stopped.
+21:10:11: *-*-* OGRE Shutdown
+21:10:11: Unregistering ResourceManager for type Compositor
+21:10:11: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Codec_STBI
+21:10:11: Uninstalling plugin: Cg Program Manager
+21:10:11: Plugin successfully uninstalled
+21:10:11: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_CgProgramManager
+21:10:11: Uninstalling plugin: BSP Scene Manager
+21:10:11: Plugin successfully uninstalled
+21:10:11: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_BSPSceneManager
+21:10:11: Uninstalling plugin: ParticleFX
+21:10:11: Plugin successfully uninstalled
+21:10:11: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\Plugin_ParticleFX
+21:10:11: Uninstalling plugin: GL 3+ RenderSystem
+21:10:11: *** Stopping Win32GL Subsystem ***
+21:10:11: Plugin successfully uninstalled
+21:10:11: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_GL3Plus
+21:10:11: Uninstalling plugin: GL RenderSystem
+21:10:11: *** Stopping Win32GL Subsystem ***
+21:10:11: Plugin successfully uninstalled
+21:10:11: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_GL
+21:10:11: Uninstalling plugin: D3D11 RenderSystem
+21:10:11: D3D11: Shutting down cleanly.
+21:10:11: Unregistering ResourceManager for type Texture
+21:10:11: Unregistering ResourceManager for type GpuProgram
+21:10:11: D3D11: Direct3D11 Rendering Subsystem destroyed.
+21:10:11: Plugin successfully uninstalled
+21:10:11: Unloading library C:/Users/lucas/Desktop/GBC College/Semester 05/Game Engine DEV/Game-Engine-Development---Assignment-1/OrgreTemplateV2/OrgreTemplateV2/x64/Debug/.\RenderSystem_Direct3D11
+21:10:11: Unregistering ResourceManager for type Skeleton
+21:10:11: Unregistering ResourceManager for type Mesh
+21:10:11: Unregistering ResourceManager for type HighLevelGpuProgram
+21:10:11: Unregistering ResourceManager for type Material

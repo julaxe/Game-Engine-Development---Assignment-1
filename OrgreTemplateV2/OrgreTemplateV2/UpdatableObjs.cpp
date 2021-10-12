@@ -61,7 +61,7 @@ int Paddle::GetScore()
 
 //============ LABEL CLASS ====================
 
-UILabels::UILabels(Ogre::RenderWindow* rendererWindow)
+UILabels::UILabels(Ogre::RenderWindow* rendererWindow, Paddle* paddle)
 {
 	_mTrayManager = new OgreBites::TrayManager("Title", rendererWindow);
 
@@ -70,7 +70,8 @@ UILabels::UILabels(Ogre::RenderWindow* rendererWindow)
 	_mTrayManager->toggleAdvancedFrameStats();
 	//_mTrayManager->hideCursor();
 
-	
+	paddleTest = paddle;
+
 	timer = Ogre::Timer();
 	counter = 0;
 	_timerText = _mTrayManager->createLabel(OgreBites::TL_TOP, "timerText", "TIMER", 100);
@@ -92,6 +93,9 @@ bool UILabels::frameStarted(const Ogre::FrameEvent& evt)
 	{
 		_time->setCaption(Ogre::StringConverter().toString(timer.getMilliseconds()/1000));
 		counter = 0;
+
+		_panel->setParamValue(0, Ogre::StringConverter::toString(paddleTest->GetScore()));
+		_panel->setParamValue(1, Ogre::StringConverter::toString(paddleTest->GetLives()));
 	}
 
 	counter++;
@@ -106,6 +110,5 @@ OgreBites::TrayManager* UILabels::GetTrayManager()
 
 void UILabels::RefreshUI(int lives, int score)
 {
-	_panel->setParamValue(0, Ogre::StringConverter::toString(score));
-	_panel->setParamValue(1, Ogre::StringConverter::toString(lives));
+	
 }
