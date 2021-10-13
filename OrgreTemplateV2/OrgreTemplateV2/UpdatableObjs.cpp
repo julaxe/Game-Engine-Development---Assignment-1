@@ -56,6 +56,11 @@ int Paddle::GetScore()
 	return score;
 }
 
+void Paddle::SetScore(int score)
+{
+	this->score = score;
+}
+
 float Paddle::GetHeight()
 {
 	return height;
@@ -69,21 +74,27 @@ float Paddle::GetWidth()
 
 //============ BALL CLASS ====================
 
-
+enum CollisionPlanes
+{
+	Y_COLLISION = 0,
+	X_COLLISION = 1,
+	NO_COLLISION = 2
+};
 Ball::Ball(Ogre::SceneManager* sceneManager, Paddle* paddle)
 {
+	init_Pos = Ogre::Vector3(0.0f, 300.0f, 0.0f);
 	_entity = sceneManager->createEntity("sphere.mesh");
 	_node = sceneManager->createSceneNode("BallNode");
 	_paddle = paddle;
 	_node->attachObject(_entity);
-	_node->setPosition(Ogre::Vector3(0.0f, 300.0f, 0.0f));
+	_node->setPosition(init_Pos);
 	_node->setScale(0.3f, 0.3f, 0.3f);
 
 	//initial values
 	//go up first - diagonal
 	radius = _entity->getBoundingBox().getSize().x * _node->getScale().x * 0.5f;
 	moveDirection = Ogre::Vector3(1.0f, 1.0f, 0.0f);
-	moveSpeed = 200.0f;
+	moveSpeed = 400.0f;
 
 }
 
@@ -95,51 +106,65 @@ SceneNode* Ball::GetNode()
 bool Ball::frameStarted(const Ogre::FrameEvent& evt)
 {
 	_node->translate(moveDirection * moveSpeed * evt.timeSinceLastFrame);
-	if (checkCollision())
-	{
-		
-	}
+	checkCollision();
+
 	return true;
 }
 
-void Ball::bounce(bool isSideCollision)
+void Ball::bounce(enum CollisionPlanes collisionPlane)
 {
-	if (isSideCollision)
+	switch (collisionPlane)
 	{
+	case Y_COLLISION:
 		moveDirection.x = -moveDirection.x;
-	}
-	else
-	{
+		// Add to score 
+		_paddle->SetScore(_paddle->GetScore() + 10);
+		break;
+	case X_COLLISION:
 		moveDirection.y = -moveDirection.y;
+		// Add to score 
+		_paddle->SetScore(_paddle->GetScore() + 10);
+		break;
+	case NO_COLLISION:
+		break;
+	default:
+		break;
 	}
+
 }
 
-bool Ball::checkCollision()
+enum CollisionPlanes Ball::checkCollision()
 {
 	//collision with the borders
 	float const screenWidth = 630;
 	float const screenHeight = 470;
 	if (_node->getPosition().x > screenWidth || _node->getPosition().x < -screenWidth)
 	{
-		bounce(true);
-		return true;
+		bounce(Y_COLLISION);
+		return Y_COLLISION;
 	}
-	if (_node->getPosition().y > screenHeight || _node->getPosition().y < -screenHeight)
+	if (_node->getPosition().y > screenHeight)
 	{
-		bounce(false);
-		return true;
+		bounce(X_COLLISION);
+		return X_COLLISION;
+	}
+	else if (_node->getPosition().y < -screenHeight) 
+	{
+		bounce(X_COLLISION);
+		resetBallPos();
+		return X_COLLISION;
 	}
 	//collision with Paddle.
 	if (checkCollisionWithPaddle())
 	{
-		bounce(false);
-		return true;
+		bounce(checkCollisionWithPaddle());
+		return checkCollisionWithPaddle();
 	}
 
-	return false;
+	return NO_COLLISION;
 }
 
-bool Ball::checkCollisionWithPaddle()
+enum CollisionPlanes Ball::checkCollisionWithPaddle()
 {
 	//get center point circle first
 	Ogre::Vector3 center = _node->getPosition();
@@ -160,10 +185,24 @@ bool Ball::checkCollisionWithPaddle()
 
 	if (difference.length() < radius)
 	{
-		return true;
+		if (difference.x > difference.y)
+		{
+			return X_COLLISION;
+		}
+		else
+		{
+			return Y_COLLISION;
+		}
 	}
 
-	return false;
+	return NO_COLLISION;
+}
+
+void Ball::resetBallPos()
+{
+	_node->setPosition(init_Pos);
+	moveDirection = Ogre::Vector3(1.0f, 1.0f, 0.0f);
+	_paddle->SetLives(_paddle->GetLives() - 1);
 }
 
 //============ LABEL CLASS ====================
@@ -175,7 +214,7 @@ UILabels::UILabels(Ogre::RenderWindow* rendererWindow, Paddle* paddle)
 	//set up of UI preferences
 	_mTrayManager->showFrameStats(OgreBites::TL_BOTTOMRIGHT);
 	_mTrayManager->toggleAdvancedFrameStats();
-	//_mTrayManager->hideCursor();
+	
 
 	paddleTest = paddle;
 

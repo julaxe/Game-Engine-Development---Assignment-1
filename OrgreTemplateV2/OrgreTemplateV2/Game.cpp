@@ -41,9 +41,22 @@ bool Game::keyPressed(const KeyboardEvent& evt)
 	case 'f':
 		_paddle->SetLives(_paddle->GetLives() - 1);
 		break;
+	case 'h':
+		_sceneLabels->GetTrayManager()->hideCursor();
+		break;
+	case 'j':
+		_sceneLabels->GetTrayManager()->showCursor();
+		break;
 	default:
 		break;
 	}
+
+	if (_paddle->GetLives() < 1)
+	{
+		root->removeFrameListener(_ball);
+		root->removeFrameListener(_paddle);
+	}
+
 	return true;
 }
 
@@ -94,18 +107,11 @@ void Game::createMeshWithFrameListener()
 	scnMgr->getRootSceneNode()->addChild(_ball->GetNode());
 	mRoot->addFrameListener(_ball);
 
+
+	//Create Labels
 	scnMgr->addRenderQueueListener(mOverlaySystem);
 	_sceneLabels = new UILabels(getRenderWindow(), _paddle);
 	addInputListener(_sceneLabels->GetTrayManager());
 	mRoot->addFrameListener(_sceneLabels);
 
 }
-
-//bool Game::frameStarted(const Ogre::FrameEvent& evt)
-//{
-//	if(_paddle != nullptr)
-//		_sceneLabels->RefreshUI(_paddle->GetLives(), _paddle->GetScore());
-//	
-//
-//	return true;
-//}

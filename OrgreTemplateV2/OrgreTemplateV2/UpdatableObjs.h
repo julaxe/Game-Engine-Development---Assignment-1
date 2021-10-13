@@ -21,6 +21,7 @@ public:
 	int GetLives();
 	void SetLives(int lives);
 	int GetScore();
+	void SetScore(int score);
 
 	float GetHeight();
 	float GetWidth();
@@ -57,14 +58,15 @@ public:
 private:
 
 	bool frameStarted(const Ogre::FrameEvent& evt);
-	void bounce(bool isSideCollision);
-	bool checkCollision();
-	bool checkCollisionWithPaddle();
+	void bounce(enum CollisionPlanes collisionPlane);
+	enum CollisionPlanes checkCollision();
+	enum CollisionPlanes checkCollisionWithPaddle();
+	void resetBallPos();
 
 	SceneNode* _node;
 	Entity* _entity;
 	Paddle* _paddle;
-
+	Ogre::Vector3 init_Pos;
 
 	float radius;
 
