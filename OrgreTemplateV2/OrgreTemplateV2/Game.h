@@ -8,7 +8,7 @@
 using namespace Ogre;
 using namespace OgreBites;
 
-class Game : public ApplicationContext, public InputListener, public FrameListener
+class Game : public ApplicationContext, public InputListener
 {
 private:
 	Paddle* _paddle;
@@ -24,8 +24,7 @@ public:
 	bool keyPressed(const KeyboardEvent& evt);
 	void createScene();
 	void createCamera();
-	void createMeshWithFrameListener();
-	//bool frameStarted(const Ogre::FrameEvent& evt);
+	void createObjsWithFrameListener();
 };
 
 

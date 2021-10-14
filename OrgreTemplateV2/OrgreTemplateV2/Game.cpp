@@ -22,7 +22,7 @@ void Game::setup()
 
 	createScene();
 	createCamera();
-	createMeshWithFrameListener();
+	createObjsWithFrameListener();
 }
 
 bool Game::keyPressed(const KeyboardEvent& evt)
@@ -62,18 +62,16 @@ bool Game::keyPressed(const KeyboardEvent& evt)
 
 void Game::createScene()
 {
+	//! Create the scene manager and ambient light
 	Ogre::SceneNode* node = scnMgr->createSceneNode("Node1");
 	scnMgr->getRootSceneNode()->addChild(node);
-
-	//scnMgr->setShadowTechnique(ShadowTechnique::SHADOWTYPE_STENCIL_ADDITIVE);
-
-	//! [turnlights]
+	
 	scnMgr->setAmbientLight(ColourValue(1, 1, 1));
 }
 
 void Game::createCamera()
 {
-	//! [camera]
+	
 	SceneNode* camNode = scnMgr->getRootSceneNode()->createChildSceneNode();
 
 	// create the camera
@@ -88,14 +86,11 @@ void Game::createCamera()
 	// and tell it to render into the main window
 	getRenderWindow()->addViewport(cam);
 
-	//! [camera]
 	
 }
 
-void Game::createMeshWithFrameListener()
+void Game::createObjsWithFrameListener()
 {
-
-	//mRoot->addFrameListener(this);
 
 	//Create Paddle
 	_paddle = new Paddle(scnMgr);
