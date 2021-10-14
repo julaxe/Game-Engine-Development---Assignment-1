@@ -1,0 +1,30 @@
+\hypertarget{_u_i_labels_8h_source}{}\doxysection{UILabels.\+h}
+\mbox{\hyperlink{_u_i_labels_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_paddle_8h}{Paddle.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}OgreTrays.h"{}}}
+\DoxyCodeLine{4 \textcolor{comment}{//============ LABEL CLASS ====================}}
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_u_i_labels}{UILabels}} : \textcolor{keyword}{public} Ogre::FrameListener}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{public}:}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9     \mbox{\hyperlink{class_u_i_labels_a656157a4bdc6c0ca1218aad25c1597af}{UILabels}}(Ogre::RenderWindow* rendererWindow, \mbox{\hyperlink{class_paddle}{Paddle}}* paddle);}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     OgreBites::TrayManager* \mbox{\hyperlink{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}{GetTrayManager}}();}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{private}:}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_u_i_labels_ac174f95ad34db0dfa29b67a279e47e68}{frameStarted}}(\textcolor{keyword}{const} Ogre::FrameEvent\& evt) \textcolor{keyword}{override};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_paddle}{Paddle}}* \mbox{\hyperlink{class_u_i_labels_a5506affe2964bfc318f8626c05516428}{m\_pPaddle}};}
+\DoxyCodeLine{19     OgreBites::TrayManager* \mbox{\hyperlink{class_u_i_labels_abbac67aff752d37a02c32047649d3e13}{m\_pmTrayManager}};}
+\DoxyCodeLine{20     StringVector \mbox{\hyperlink{class_u_i_labels_af3920b0813376ddd6fee5343f75b4b51}{m\_svParamNames}};}
+\DoxyCodeLine{21     OgreBites::Label* \mbox{\hyperlink{class_u_i_labels_a9987321267ec8f56af9b397b2fc9a400}{m\_plTimerText}};}
+\DoxyCodeLine{22     OgreBites::Label* \mbox{\hyperlink{class_u_i_labels_a9a594c6b8fb74eb7f09b6a1254b34d4e}{m\_plTime}};}
+\DoxyCodeLine{23     Timer \mbox{\hyperlink{class_u_i_labels_abeefd3eb6773df936d951400542bade6}{m\_tTimer}};}
+\DoxyCodeLine{24     OgreBites::ParamsPanel* \mbox{\hyperlink{class_u_i_labels_abc1c03cda347d81829279200f836ff5f}{m\_pPanel}};}
+\DoxyCodeLine{25 \};}
+
+\end{DoxyCode}

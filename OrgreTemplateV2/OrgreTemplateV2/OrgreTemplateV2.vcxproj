@@ -19,13 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="UpdatableObjs.cpp" />
+    <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="UILabels.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ball.h" />
     <ClInclude Include="Game.h" />
-    <ClInclude Include="UpdatableObjs.h" />
+    <ClInclude Include="Paddle.h" />
+    <ClInclude Include="UILabels.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

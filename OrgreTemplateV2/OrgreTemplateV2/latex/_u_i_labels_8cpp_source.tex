@@ -1,0 +1,59 @@
+\hypertarget{_u_i_labels_8cpp_source}{}\doxysection{UILabels.\+cpp}
+\mbox{\hyperlink{_u_i_labels_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_u_i_labels_8h}{UILabels.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00002}00002 \textcolor{comment}{//============ LABEL CLASS ====================}}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00004}\mbox{\hyperlink{class_u_i_labels_a656157a4bdc6c0ca1218aad25c1597af}{00004}} \mbox{\hyperlink{class_u_i_labels_a656157a4bdc6c0ca1218aad25c1597af}{UILabels::UILabels}}(Ogre::RenderWindow* rendererWindow, \mbox{\hyperlink{class_paddle}{Paddle}}* paddle)}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00005}00005 \{}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00006}00006     \_mTrayManager = \textcolor{keyword}{new} OgreBites::TrayManager(\textcolor{stringliteral}{"{}Title"{}}, rendererWindow);}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00008}00008     \textcolor{comment}{//set up of UI preferences}}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00009}00009     \_mTrayManager-\/>showFrameStats(OgreBites::TL\_BOTTOMRIGHT);}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00010}00010     \_mTrayManager-\/>toggleAdvancedFrameStats();}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00013}00013     paddleTest = paddle;}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00015}00015     timer = Ogre::Timer();}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00016}00016     counter = 0;}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00017}00017     \_timerText = \_mTrayManager-\/>createLabel(OgreBites::TL\_TOP, \textcolor{stringliteral}{"{}timerText"{}}, \textcolor{stringliteral}{"{}TIMER"{}}, 100);}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00018}00018     \_time = \_mTrayManager-\/>createLabel(OgreBites::TL\_TOP, \textcolor{stringliteral}{"{}time"{}}, \textcolor{stringliteral}{"{} "{}}, 100);}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00021}00021     \textcolor{comment}{//Populating array of strings to display}}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00022}00022     \_paramNames.push\_back(\textcolor{stringliteral}{"{}Score"{}});}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00023}00023     \_paramNames.push\_back(\textcolor{stringliteral}{"{}Lives"{}});}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00025}00025     \_panel = \_mTrayManager-\/>createParamsPanel(OgreBites::TL\_TOPLEFT, \textcolor{stringliteral}{"{}ScoreBoard"{}}, 150, \_paramNames);}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00029}\mbox{\hyperlink{class_u_i_labels_ad2101ba2282b2ae749ae42c5b0899658}{00029}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_u_i_labels_ad2101ba2282b2ae749ae42c5b0899658}{UILabels::frameStarted}}(\textcolor{keyword}{const} Ogre::FrameEvent\& evt)}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00030}00030 \{}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00032}00032     \textcolor{keywordflow}{if} ((counter \% 60) == 0)}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00033}00033     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00034}00034         \_time-\/>setCaption(Ogre::StringConverter().toString(timer.getMilliseconds() / 1000));}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00035}00035         counter = 0;}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00037}00037     \_panel-\/>setParamValue(0, Ogre::StringConverter::toString(paddleTest-\/>\mbox{\hyperlink{class_paddle_a97ff159403c6a5e27576ebaccc8d1ce0}{GetScore}}()));}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00038}00038     \_panel-\/>setParamValue(1, Ogre::StringConverter::toString(paddleTest-\/>\mbox{\hyperlink{class_paddle_a7fd9a75756574cbe89af16b65e14676b}{GetLives}}()));}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00041}00041     counter++;}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00043}00043     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00044}00044 \}}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00046}\mbox{\hyperlink{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}{00046}} OgreBites::TrayManager* \mbox{\hyperlink{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}{UILabels::GetTrayManager}}()}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00047}00047 \{}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00048}00048     \textcolor{keywordflow}{return} \_mTrayManager;}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00049}00049 \}}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00051}\mbox{\hyperlink{class_u_i_labels_a9b698d7250abc7232bfd48b2500bcfe5}{00051}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_labels_a9b698d7250abc7232bfd48b2500bcfe5}{UILabels::RefreshUI}}(\textcolor{keywordtype}{int} lives, \textcolor{keywordtype}{int} score)}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00052}00052 \{}
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_u_i_labels_8cpp_source_l00054}00054 \}}
+
+\end{DoxyCode}

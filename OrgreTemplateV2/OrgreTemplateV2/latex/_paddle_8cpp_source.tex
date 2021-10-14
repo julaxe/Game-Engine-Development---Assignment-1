@@ -1,0 +1,79 @@
+\hypertarget{_paddle_8cpp_source}{}\doxysection{Paddle.\+cpp}
+\mbox{\hyperlink{_paddle_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_paddle_8h}{Paddle.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00004}\mbox{\hyperlink{class_paddle_a38d2e41164fa920e0bef1cf2c4fd225e}{00004}} \mbox{\hyperlink{class_paddle_a38d2e41164fa920e0bef1cf2c4fd225e}{Paddle::Paddle}}(Ogre::SceneManager* sceneManager)}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00005}00005 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00007}00007     \_entity = sceneManager-\/>createEntity(\textcolor{stringliteral}{"{}cube.mesh"{}});}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00008}00008     \_node = sceneManager-\/>createSceneNode(\textcolor{stringliteral}{"{}PaddleNode"{}});}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00009}00009     \_node-\/>attachObject(\_entity);}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00010}00010     \_node-\/>setPosition(Ogre::Vector3(0.0f, -\/300.0f, 0.0f));}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00011}00011     \_node-\/>setScale(2.f, 0.4f, 0.4f);}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00013}00013     width = \_entity-\/>getBoundingBox().getSize().x * \_node-\/>getScale().x;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00014}00014     height = \_entity-\/>getBoundingBox().getSize().y * \_node-\/>getScale().y;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00015}00015     std::cout << width << \textcolor{stringliteral}{"{},"{}} << height << std::endl;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00016}00016     moveSpeed = 500;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00017}00017     lives = 5;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00018}00018     score = 0;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00021}00021 \textcolor{keywordtype}{bool} Paddle::frameStarted(\textcolor{keyword}{const} Ogre::FrameEvent\& evt)}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00022}00022 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00023}00023     \textcolor{keywordtype}{float} \textcolor{keyword}{const} screenWidth = 560;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00024}00024     \_node-\/>translate(moveDirection * moveSpeed * evt.timeSinceLastFrame);}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00025}00025     \textcolor{keywordflow}{if} (\_node-\/>getPosition().x > screenWidth || \_node-\/>getPosition().x < -\/screenWidth)}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00026}00026     \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00027}00027         \_node-\/>translate(-\/moveDirection * moveSpeed * evt.timeSinceLastFrame);}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00028}00028     \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00029}00029     moveDirection = moveDirection * 0.98;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00030}00030     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00033}\mbox{\hyperlink{class_paddle_aedbf172a60f8aa6d1689ce99166094f5}{00033}} SceneNode* \mbox{\hyperlink{class_paddle_aedbf172a60f8aa6d1689ce99166094f5}{Paddle::GetNode}}() }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00034}00034 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00035}00035     \textcolor{keywordflow}{return} \_node;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00036}00036 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00038}\mbox{\hyperlink{class_paddle_ada69756563221e63593a98c6a4b02f15}{00038}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_paddle_ada69756563221e63593a98c6a4b02f15}{Paddle::SetMoveDirection}}(Ogre::Vector3 direction)}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00039}00039 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00040}00040     moveDirection = direction;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00043}\mbox{\hyperlink{class_paddle_a7fd9a75756574cbe89af16b65e14676b}{00043}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_paddle_a7fd9a75756574cbe89af16b65e14676b}{Paddle::GetLives}}()}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00044}00044 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00045}00045     \textcolor{keywordflow}{return} lives;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00046}00046 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00048}\mbox{\hyperlink{class_paddle_a6586a6bea932687daae0e5f77136990b}{00048}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_paddle_a6586a6bea932687daae0e5f77136990b}{Paddle::SetLives}}(\textcolor{keywordtype}{int} lives)}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00049}00049 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00050}00050     this-\/>lives = lives;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00051}00051 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00053}\mbox{\hyperlink{class_paddle_a97ff159403c6a5e27576ebaccc8d1ce0}{00053}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_paddle_a97ff159403c6a5e27576ebaccc8d1ce0}{Paddle::GetScore}}()}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00054}00054 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00055}00055     \textcolor{keywordflow}{return} score;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00056}00056 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00058}\mbox{\hyperlink{class_paddle_a639dda89dd4349f4947ca59770699103}{00058}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_paddle_a639dda89dd4349f4947ca59770699103}{Paddle::SetScore}}(\textcolor{keywordtype}{int} score)}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00059}00059 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00060}00060     this-\/>score = score;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00061}00061 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00063}\mbox{\hyperlink{class_paddle_a092672e8ee9c6f891af893a1074841df}{00063}} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_paddle_a092672e8ee9c6f891af893a1074841df}{Paddle::GetHeight}}()}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00064}00064 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00065}00065     \textcolor{keywordflow}{return} height;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00066}00066 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00068}\mbox{\hyperlink{class_paddle_a0c6a80b308461cf7080fa0c0db5ed993}{00068}} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_paddle_a0c6a80b308461cf7080fa0c0db5ed993}{Paddle::GetWidth}}()}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00069}00069 \{}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00070}00070     \textcolor{keywordflow}{return} width;}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00071}00071 \}}
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_paddle_8cpp_source_l00074}00074 }
+
+\end{DoxyCode}

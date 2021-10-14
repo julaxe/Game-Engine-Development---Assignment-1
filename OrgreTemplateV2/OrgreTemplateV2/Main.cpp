@@ -2,6 +2,7 @@
 
 /*!
  Main Game Class
+ It contains the main game loop.
 */
 int main(int argc, char** argv)
 {

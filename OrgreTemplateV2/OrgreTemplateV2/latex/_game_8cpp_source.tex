@@ -1,0 +1,111 @@
+\hypertarget{_game_8cpp_source}{}\doxysection{Game.\+cpp}
+\mbox{\hyperlink{_game_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_ball_8h}{Ball.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_paddle_8h}{Paddle.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_u_i_labels_8h}{UILabels.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00006}\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{00006}} \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game::Game}}() : ApplicationContext(\textcolor{stringliteral}{"{}Assigment 01 -\/ Julian Escobar / Lucas Krespi"{}})}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00008}00008 \}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00016}\mbox{\hyperlink{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}{00016}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}{Game::setup}}()}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00017}00017 \{}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00018}00018     }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00019}00019     ApplicationContext::setup();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00021}00021     addInputListener(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00024}00024     root = getRoot();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00025}00025     scnMgr = root-\/>createSceneManager();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00027}00027     RTShader::ShaderGenerator* shadergen = RTShader::ShaderGenerator::getSingletonPtr();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00028}00028     shadergen-\/>addSceneManager(scnMgr);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00030}00030     \mbox{\hyperlink{class_game_acc39660fc2452fc78ca45330d6032e5c}{createScene}}();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00031}00031     \mbox{\hyperlink{class_game_a73744fbffd68a0ebadfedcecbfff3236}{createCamera}}();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00032}00032     \mbox{\hyperlink{class_game_ae591643e1131af5f9e81ce3681e70b4b}{createObjsWithFrameListener}}();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00033}00033 \}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00039}\mbox{\hyperlink{class_game_a2ba00c3475d222573e5ad54b88b389b7}{00039}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_game_a2ba00c3475d222573e5ad54b88b389b7}{Game::keyPressed}}(\textcolor{keyword}{const} KeyboardEvent\& evt)}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00040}00040 \{}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00041}00041     \textcolor{keywordflow}{switch} (evt.keysym.sym)}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00042}00042     \{}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00043}00043     \textcolor{keywordflow}{case} SDLK\_ESCAPE:}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00044}00044         getRoot()-\/>queueEndRendering();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00045}00045         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00046}00046     \textcolor{keywordflow}{case} \textcolor{charliteral}{'a'}:}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00047}00047         \_paddle-\/>\mbox{\hyperlink{class_paddle_ada69756563221e63593a98c6a4b02f15}{SetMoveDirection}}(Ogre::Vector3(-\/1, 0, 0));}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00048}00048         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00049}00049     \textcolor{keywordflow}{case} \textcolor{charliteral}{'d'}:}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00050}00050         \_paddle-\/>\mbox{\hyperlink{class_paddle_ada69756563221e63593a98c6a4b02f15}{SetMoveDirection}}(Ogre::Vector3(1, 0, 0));}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00051}00051         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00052}00052     \textcolor{keywordflow}{case} \textcolor{charliteral}{'f'}:}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00053}00053         \_paddle-\/>\mbox{\hyperlink{class_paddle_a6586a6bea932687daae0e5f77136990b}{SetLives}}(\_paddle-\/>\mbox{\hyperlink{class_paddle_a7fd9a75756574cbe89af16b65e14676b}{GetLives}}() -\/ 1);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00054}00054         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00055}00055     \textcolor{keywordflow}{case} \textcolor{charliteral}{'h'}:}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00056}00056         \_sceneLabels-\/>\mbox{\hyperlink{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}{GetTrayManager}}()-\/>hideCursor();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00057}00057         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00058}00058     \textcolor{keywordflow}{case} \textcolor{charliteral}{'j'}:}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00059}00059         \_sceneLabels-\/>\mbox{\hyperlink{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}{GetTrayManager}}()-\/>showCursor();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00060}00060         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00061}00061     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00062}00062         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00063}00063     \}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00065}00065     \textcolor{keywordflow}{if} (\_paddle-\/>\mbox{\hyperlink{class_paddle_a7fd9a75756574cbe89af16b65e14676b}{GetLives}}() < 1)}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00066}00066     \{}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00067}00067         root-\/>removeFrameListener(\_ball);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00068}00068         root-\/>removeFrameListener(\_paddle);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00071}00071     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00072}00072 \}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00076}\mbox{\hyperlink{class_game_acc39660fc2452fc78ca45330d6032e5c}{00076}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_acc39660fc2452fc78ca45330d6032e5c}{Game::createScene}}()}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00077}00077 \{}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00078}00078     Ogre::SceneNode* node = scnMgr-\/>createSceneNode(\textcolor{stringliteral}{"{}Node1"{}});}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00079}00079     scnMgr-\/>getRootSceneNode()-\/>addChild(node);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00080}00080     }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00081}00081     scnMgr-\/>setAmbientLight(ColourValue(1, 1, 1));}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00082}00082 \}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00086}\mbox{\hyperlink{class_game_a73744fbffd68a0ebadfedcecbfff3236}{00086}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a73744fbffd68a0ebadfedcecbfff3236}{Game::createCamera}}()}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00087}00087 \{}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00088}00088     }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00089}00089     SceneNode* camNode = scnMgr-\/>getRootSceneNode()-\/>createChildSceneNode();}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00091}00091     Camera* cam = scnMgr-\/>createCamera(\textcolor{stringliteral}{"{}myCam"{}});}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00092}00092     cam-\/>setProjectionType(Ogre::PT\_ORTHOGRAPHIC);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00093}00093     cam-\/>setNearClipDistance(5);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00094}00094     cam-\/>setAutoAspectRatio(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00095}00095     camNode-\/>attachObject(cam);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00096}00096     camNode-\/>setPosition(0, 0, 50);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00097}00097     camNode-\/>lookAt(Ogre::Vector3(0, 0, 0), Node::TS\_WORLD);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00099}00099     getRenderWindow()-\/>addViewport(cam);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00101}00101     }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00102}00102 \}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00106}\mbox{\hyperlink{class_game_ae591643e1131af5f9e81ce3681e70b4b}{00106}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ae591643e1131af5f9e81ce3681e70b4b}{Game::createObjsWithFrameListener}}()}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00107}00107 \{}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00109}00109     \textcolor{comment}{//Create Paddle}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00110}00110     \_paddle = \textcolor{keyword}{new} \mbox{\hyperlink{class_paddle}{Paddle}}(scnMgr);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00111}00111     scnMgr-\/>getRootSceneNode()-\/>addChild(\_paddle-\/>\mbox{\hyperlink{class_paddle_aedbf172a60f8aa6d1689ce99166094f5}{GetNode}}());}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00112}00112     mRoot-\/>addFrameListener(\_paddle);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00114}00114     \textcolor{comment}{//Create Ball}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00115}00115     \_ball = \textcolor{keyword}{new} \mbox{\hyperlink{class_ball}{Ball}}(scnMgr, \_paddle);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00116}00116     scnMgr-\/>getRootSceneNode()-\/>addChild(\_ball-\/>\mbox{\hyperlink{class_ball_a2553df1a2665c3f76d6eba384a582ad7}{GetNode}}());}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00117}00117     mRoot-\/>addFrameListener(\_ball);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00120}00120     \textcolor{comment}{//Create Labels}}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00121}00121     scnMgr-\/>addRenderQueueListener(mOverlaySystem);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00122}00122     \_sceneLabels = \textcolor{keyword}{new} \mbox{\hyperlink{class_u_i_labels}{UILabels}}(getRenderWindow(), \_paddle);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00123}00123     addInputListener(\_sceneLabels-\/>\mbox{\hyperlink{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}{GetTrayManager}}());}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00124}00124     mRoot-\/>addFrameListener(\_sceneLabels);}
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_game_8cpp_source_l00126}00126 \}}
+
+\end{DoxyCode}

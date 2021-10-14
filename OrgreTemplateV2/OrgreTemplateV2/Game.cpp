@@ -1,30 +1,41 @@
 #include "Game.h"
+#include "Ball.h"
+#include "Paddle.h"
+#include "UILabels.h"
 
 Game::Game() : ApplicationContext("Assigment 01 - Julian Escobar / Lucas Krespi")
 {
 }
 
+/// <summary>
+/// Initialize our application
+/// Subscribe our application to the Input Listener.
+/// Create m_pRoot and SceneManager.
+/// Create all the objects that we are going to use in our game.
+/// </summary>
 void Game::setup()
 {
-	// do not forget to call the base first
+	
 	ApplicationContext::setup();
+
 	addInputListener(this);
 
-	// get a pointer to the already created root
-	root = getRoot();
-	scnMgr = root->createSceneManager();
-	//scnMgr->showBoundingBoxes(true);
 
-	// register our scene with the RTSS
+	m_pRoot = getRoot();
+	m_pScnMgr = m_pRoot->createSceneManager();
+
 	RTShader::ShaderGenerator* shadergen = RTShader::ShaderGenerator::getSingletonPtr();
-	shadergen->addSceneManager(scnMgr);
+	shadergen->addSceneManager(m_pScnMgr);
 
-
-	createScene();
-	createCamera();
-	createObjsWithFrameListener();
+	CreateScene();
+	CreateCamera();
+	CreateObjsWithFrameListener();
 }
-
+/// <summary>
+/// Handle all the input for our application
+/// </summary>
+/// <param name="evt">Input that we pressed</param>
+/// <returns>returns true when there is an input</returns>
 bool Game::keyPressed(const KeyboardEvent& evt)
 {
 	switch (evt.keysym.sym)
@@ -33,80 +44,83 @@ bool Game::keyPressed(const KeyboardEvent& evt)
 		getRoot()->queueEndRendering();
 		break;
 	case 'a':
-		_paddle->SetMoveDirection(Ogre::Vector3(-1, 0, 0));
+		m_pPaddle->SetMoveDirection(Ogre::Vector3(-1, 0, 0));
 		break;
 	case 'd':
-		_paddle->SetMoveDirection(Ogre::Vector3(1, 0, 0));
+		m_pPaddle->SetMoveDirection(Ogre::Vector3(1, 0, 0));
 		break;
 	case 'f':
-		_paddle->SetLives(_paddle->GetLives() - 1);
+		m_pPaddle->SetLives(m_pPaddle->GetLives() - 1);
 		break;
 	case 'h':
-		_sceneLabels->GetTrayManager()->hideCursor();
+		m_pSceneLabels->GetTrayManager()->hideCursor();
 		break;
 	case 'j':
-		_sceneLabels->GetTrayManager()->showCursor();
+		m_pSceneLabels->GetTrayManager()->showCursor();
 		break;
 	default:
 		break;
 	}
 
-	if (_paddle->GetLives() < 1)
+	if (m_pPaddle->GetLives() < 1)
 	{
-		root->removeFrameListener(_ball);
-		root->removeFrameListener(_paddle);
+		m_pRoot->removeFrameListener(m_pBall);
+		m_pRoot->removeFrameListener(m_pPaddle);
 	}
 
 	return true;
 }
-
-void Game::createScene()
+/// <summary>
+/// Create our Scene Node and the ambient light
+/// </summary>
+void Game::CreateScene()
 {
-	//! Create the scene manager and ambient light
-	Ogre::SceneNode* node = scnMgr->createSceneNode("Node1");
-	scnMgr->getRootSceneNode()->addChild(node);
+	Ogre::SceneNode* node = m_pScnMgr->createSceneNode("Node1");
+	m_pScnMgr->getRootSceneNode()->addChild(node);
 	
-	scnMgr->setAmbientLight(ColourValue(1, 1, 1));
+	m_pScnMgr->setAmbientLight(ColourValue(1, 1, 1));
 }
-
-void Game::createCamera()
+/// <summary>
+/// Creates the camera
+/// </summary>
+void Game::CreateCamera()
 {
 	
-	SceneNode* camNode = scnMgr->getRootSceneNode()->createChildSceneNode();
+	SceneNode* camNode = m_pScnMgr->getRootSceneNode()->createChildSceneNode();
 
-	// create the camera
-	Camera* cam = scnMgr->createCamera("myCam");
+	Camera* cam = m_pScnMgr->createCamera("myCam");
 	cam->setProjectionType(Ogre::PT_ORTHOGRAPHIC);
-	cam->setNearClipDistance(5); // specific to this sample
+	cam->setNearClipDistance(5);
 	cam->setAutoAspectRatio(true);
 	camNode->attachObject(cam);
 	camNode->setPosition(0, 0, 50);
 	camNode->lookAt(Ogre::Vector3(0, 0, 0), Node::TS_WORLD);
 
-	// and tell it to render into the main window
 	getRenderWindow()->addViewport(cam);
 
 	
 }
-
-void Game::createObjsWithFrameListener()
+/// <summary>
+/// Create all the objects that we are going to update in our game every frame
+/// </summary>
+void Game::CreateObjsWithFrameListener()
 {
 
 	//Create Paddle
-	_paddle = new Paddle(scnMgr);
-	scnMgr->getRootSceneNode()->addChild(_paddle->GetNode());
-	mRoot->addFrameListener(_paddle);
+	m_pPaddle = new Paddle(m_pScnMgr);
+	m_pScnMgr->getRootSceneNode()->addChild(m_pPaddle->GetNode());
+	m_pRoot->addFrameListener(m_pPaddle);
 
 	//Create Ball
-	_ball = new Ball(scnMgr, _paddle);
-	scnMgr->getRootSceneNode()->addChild(_ball->GetNode());
-	mRoot->addFrameListener(_ball);
+	m_pBall = new Ball(m_pScnMgr, m_pPaddle);
+	m_pScnMgr->getRootSceneNode()->addChild(m_pBall->GetNode());
+	m_pRoot->addFrameListener(m_pBall);
 
 
 	//Create Labels
-	scnMgr->addRenderQueueListener(mOverlaySystem);
-	_sceneLabels = new UILabels(getRenderWindow(), _paddle);
-	addInputListener(_sceneLabels->GetTrayManager());
-	mRoot->addFrameListener(_sceneLabels);
+	m_pScnMgr->addRenderQueueListener(mOverlaySystem);
+	m_pSceneLabels = new UILabels(getRenderWindow(), m_pPaddle);
+	addInputListener(m_pSceneLabels->GetTrayManager());
+	m_pRoot->addFrameListener(m_pSceneLabels);
 
 }

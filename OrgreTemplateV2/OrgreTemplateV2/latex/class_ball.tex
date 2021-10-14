@@ -1,0 +1,220 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+Inheritance diagram for Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ball}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_af36fe0031338b5387dc02e035e796221}{Ball}} (Ogre\+::\+Scene\+Manager $\ast$scene\+Manager, \mbox{\hyperlink{class_paddle}{Paddle}} $\ast$paddle)
+\begin{DoxyCompactList}\small\item\em Constructor of the \mbox{\hyperlink{class_ball}{Ball}}. Set the node and the mesh for the \mbox{\hyperlink{class_ball}{Ball}}. Set the initial values for the ball (speed and direction). \end{DoxyCompactList}\item 
+Scene\+Node $\ast$ \mbox{\hyperlink{class_ball_a2553df1a2665c3f76d6eba384a582ad7}{Get\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Returns the node of the ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_ball_aa17f0a90d2d19b3ff78a134163ca26d1}{frame\+Started}} (const Ogre\+::\+Frame\+Event \&evt) override
+\begin{DoxyCompactList}\small\item\em Function called at the start of every frame. Move the ball in a set direction with a set speed. It check for collision every frame and bounce if it\textquotesingle{}s true. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_ab33c04300bb58084d3d78dfaefeaae39}{Bounce}} (enum \mbox{\hyperlink{_ball_8cpp_ad8f5ffba11f52e8945774e3621425cc6}{Collision\+Planes}} collision\+Plane)
+\begin{DoxyCompactList}\small\item\em Function called every time the ball collides. Change the direction of the ball depending with which plane collides. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ball_a4c08d071486e55caa61a5efa7acee8df}{Check\+For\+Collision}} ()
+\begin{DoxyCompactList}\small\item\em Check for collision with the screen or the paddle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ball_a5d93d4bf04a0aa9856f8ebf3bcdbccd4}{Check\+Collision\+With\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Check for collsion with the borders of the screen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ball_a5915c4ed33527f0af8a60f58ac59fbef}{Check\+Collision\+With\+Paddle}} ()
+\begin{DoxyCompactList}\small\item\em Check for collision with the paddle, AABB with circle collision. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a52615ab834f08c68e824e5252bcbada9}{Reset\+Ball\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Reset the ball position to the initial position, also resets the direction. Takes off one live. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Scene\+Node $\ast$ \mbox{\hyperlink{class_ball_affd627e5e2db44e8158b4d731d7c34c7}{m\+\_\+p\+Node}}
+\item 
+Entity $\ast$ \mbox{\hyperlink{class_ball_a844d097d7f47680f8a64b702a3137441}{m\+\_\+p\+Entity}}
+\item 
+\mbox{\hyperlink{class_paddle}{Paddle}} $\ast$ \mbox{\hyperlink{class_ball_a08cce9fa6e290bbccc229e96bafe9eed}{m\+\_\+p\+Paddle}}
+\item 
+Ogre\+::\+Vector3 \mbox{\hyperlink{class_ball_aa6a467ac739df2d7b523469b5cd3f522}{m\+\_\+v\+Init\+\_\+\+Pos}}
+\item 
+Ogre\+::\+Vector3 \mbox{\hyperlink{class_ball_af2a3164fba4135077905b707b3b8920d}{m\+\_\+v\+Move\+Direction}}
+\item 
+float \mbox{\hyperlink{class_ball_a6e89d4f23a99dfe7645f8b4ee1fc7fa6}{m\+\_\+f\+Radius}}
+\item 
+float \mbox{\hyperlink{class_ball_a5853eda4e6adad7178fef29baa54ce4a}{m\+\_\+f\+Move\+Speed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_af36fe0031338b5387dc02e035e796221}\label{class_ball_af36fe0031338b5387dc02e035e796221}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{Ogre\+::\+Scene\+Manager $\ast$}]{scene\+Manager,  }\item[{\mbox{\hyperlink{class_paddle}{Paddle}} $\ast$}]{paddle }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \mbox{\hyperlink{class_ball}{Ball}}. Set the node and the mesh for the \mbox{\hyperlink{class_ball}{Ball}}. Set the initial values for the ball (speed and direction). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Manager} & \\
+\hline
+{\em paddle} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_ab33c04300bb58084d3d78dfaefeaae39}\label{class_ball_ab33c04300bb58084d3d78dfaefeaae39}} 
+\index{Ball@{Ball}!Bounce@{Bounce}}
+\index{Bounce@{Bounce}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Bounce()}{Bounce()}}
+{\footnotesize\ttfamily void Ball\+::\+Bounce (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_ball_8cpp_ad8f5ffba11f52e8945774e3621425cc6}{Collision\+Planes}}}]{collision\+Plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function called every time the ball collides. Change the direction of the ball depending with which plane collides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Plane} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_a5915c4ed33527f0af8a60f58ac59fbef}\label{class_ball_a5915c4ed33527f0af8a60f58ac59fbef}} 
+\index{Ball@{Ball}!CheckCollisionWithPaddle@{CheckCollisionWithPaddle}}
+\index{CheckCollisionWithPaddle@{CheckCollisionWithPaddle}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionWithPaddle()}{CheckCollisionWithPaddle()}}
+{\footnotesize\ttfamily bool Ball\+::\+Check\+Collision\+With\+Paddle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check for collision with the paddle, AABB with circle collision. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a5d93d4bf04a0aa9856f8ebf3bcdbccd4}\label{class_ball_a5d93d4bf04a0aa9856f8ebf3bcdbccd4}} 
+\index{Ball@{Ball}!CheckCollisionWithScreen@{CheckCollisionWithScreen}}
+\index{CheckCollisionWithScreen@{CheckCollisionWithScreen}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionWithScreen()}{CheckCollisionWithScreen()}}
+{\footnotesize\ttfamily bool Ball\+::\+Check\+Collision\+With\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check for collsion with the borders of the screen. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a4c08d071486e55caa61a5efa7acee8df}\label{class_ball_a4c08d071486e55caa61a5efa7acee8df}} 
+\index{Ball@{Ball}!CheckForCollision@{CheckForCollision}}
+\index{CheckForCollision@{CheckForCollision}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CheckForCollision()}{CheckForCollision()}}
+{\footnotesize\ttfamily bool Ball\+::\+Check\+For\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check for collision with the screen or the paddle. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_aa17f0a90d2d19b3ff78a134163ca26d1}\label{class_ball_aa17f0a90d2d19b3ff78a134163ca26d1}} 
+\index{Ball@{Ball}!frameStarted@{frameStarted}}
+\index{frameStarted@{frameStarted}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{frameStarted()}{frameStarted()}}
+{\footnotesize\ttfamily bool Ball\+::frame\+Started (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}}
+
+
+
+Function called at the start of every frame. Move the ball in a set direction with a set speed. It check for collision every frame and bounce if it\textquotesingle{}s true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a2553df1a2665c3f76d6eba384a582ad7}\label{class_ball_a2553df1a2665c3f76d6eba384a582ad7}} 
+\index{Ball@{Ball}!GetNode@{GetNode}}
+\index{GetNode@{GetNode}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{GetNode()}{GetNode()}}
+{\footnotesize\ttfamily Scene\+Node $\ast$ Ball\+::\+Get\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the node of the ball. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a52615ab834f08c68e824e5252bcbada9}\label{class_ball_a52615ab834f08c68e824e5252bcbada9}} 
+\index{Ball@{Ball}!ResetBallPos@{ResetBallPos}}
+\index{ResetBallPos@{ResetBallPos}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{ResetBallPos()}{ResetBallPos()}}
+{\footnotesize\ttfamily void Ball\+::\+Reset\+Ball\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reset the ball position to the initial position, also resets the direction. Takes off one live. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ball_a5853eda4e6adad7178fef29baa54ce4a}\label{class_ball_a5853eda4e6adad7178fef29baa54ce4a}} 
+\index{Ball@{Ball}!m\_fMoveSpeed@{m\_fMoveSpeed}}
+\index{m\_fMoveSpeed@{m\_fMoveSpeed}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{m\_fMoveSpeed}{m\_fMoveSpeed}}
+{\footnotesize\ttfamily float Ball\+::m\+\_\+f\+Move\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ball_a6e89d4f23a99dfe7645f8b4ee1fc7fa6}\label{class_ball_a6e89d4f23a99dfe7645f8b4ee1fc7fa6}} 
+\index{Ball@{Ball}!m\_fRadius@{m\_fRadius}}
+\index{m\_fRadius@{m\_fRadius}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{m\_fRadius}{m\_fRadius}}
+{\footnotesize\ttfamily float Ball\+::m\+\_\+f\+Radius\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ball_a844d097d7f47680f8a64b702a3137441}\label{class_ball_a844d097d7f47680f8a64b702a3137441}} 
+\index{Ball@{Ball}!m\_pEntity@{m\_pEntity}}
+\index{m\_pEntity@{m\_pEntity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{m\_pEntity}{m\_pEntity}}
+{\footnotesize\ttfamily Entity$\ast$ Ball\+::m\+\_\+p\+Entity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ball_affd627e5e2db44e8158b4d731d7c34c7}\label{class_ball_affd627e5e2db44e8158b4d731d7c34c7}} 
+\index{Ball@{Ball}!m\_pNode@{m\_pNode}}
+\index{m\_pNode@{m\_pNode}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{m\_pNode}{m\_pNode}}
+{\footnotesize\ttfamily Scene\+Node$\ast$ Ball\+::m\+\_\+p\+Node\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ball_a08cce9fa6e290bbccc229e96bafe9eed}\label{class_ball_a08cce9fa6e290bbccc229e96bafe9eed}} 
+\index{Ball@{Ball}!m\_pPaddle@{m\_pPaddle}}
+\index{m\_pPaddle@{m\_pPaddle}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{m\_pPaddle}{m\_pPaddle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_paddle}{Paddle}}$\ast$ Ball\+::m\+\_\+p\+Paddle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ball_aa6a467ac739df2d7b523469b5cd3f522}\label{class_ball_aa6a467ac739df2d7b523469b5cd3f522}} 
+\index{Ball@{Ball}!m\_vInit\_Pos@{m\_vInit\_Pos}}
+\index{m\_vInit\_Pos@{m\_vInit\_Pos}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{m\_vInit\_Pos}{m\_vInit\_Pos}}
+{\footnotesize\ttfamily Ogre\+::\+Vector3 Ball\+::m\+\_\+v\+Init\+\_\+\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ball_af2a3164fba4135077905b707b3b8920d}\label{class_ball_af2a3164fba4135077905b707b3b8920d}} 
+\index{Ball@{Ball}!m\_vMoveDirection@{m\_vMoveDirection}}
+\index{m\_vMoveDirection@{m\_vMoveDirection}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{m\_vMoveDirection}{m\_vMoveDirection}}
+{\footnotesize\ttfamily Ogre\+::\+Vector3 Ball\+::m\+\_\+v\+Move\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ball_8h}{Ball.\+h}}\item 
+\mbox{\hyperlink{_ball_8cpp}{Ball.\+cpp}}\end{DoxyCompactItemize}

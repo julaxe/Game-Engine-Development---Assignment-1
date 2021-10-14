@@ -1,0 +1,263 @@
+\hypertarget{class_paddle}{}\doxysection{Paddle Class Reference}
+\label{class_paddle}\index{Paddle@{Paddle}}
+
+
+{\ttfamily \#include $<$Paddle.\+h$>$}
+
+Inheritance diagram for Paddle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_paddle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paddle_a38d2e41164fa920e0bef1cf2c4fd225e}{Paddle}} (Ogre\+::\+Scene\+Manager $\ast$scene\+Manager)
+\begin{DoxyCompactList}\small\item\em Contructor for the paddle. Creates a mesh and a Node, then attach it to the Scene Manager. Set the initial values for our paddle. \end{DoxyCompactList}\item 
+Scene\+Node $\ast$ \mbox{\hyperlink{class_paddle_aedbf172a60f8aa6d1689ce99166094f5}{Get\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_paddle}{Paddle}} node \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_ada69756563221e63593a98c6a4b02f15}{Set\+Move\+Direction}} (Ogre\+::\+Vector3 direction)
+\begin{DoxyCompactList}\small\item\em Set the direction in which the paddle is going to move \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_paddle_a7fd9a75756574cbe89af16b65e14676b}{Get\+Lives}} ()
+\begin{DoxyCompactList}\small\item\em Return the current lives of the paddle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a6586a6bea932687daae0e5f77136990b}{Set\+Lives}} (int lives)
+\begin{DoxyCompactList}\small\item\em Set the amount of lives that the paddle has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_paddle_a97ff159403c6a5e27576ebaccc8d1ce0}{Get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current score of the paddle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a639dda89dd4349f4947ca59770699103}{Set\+Score}} (int score)
+\begin{DoxyCompactList}\small\item\em Set the score of the paddle \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_paddle_a092672e8ee9c6f891af893a1074841df}{Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Get the height of the paddle \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_paddle_a0c6a80b308461cf7080fa0c0db5ed993}{Get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Get the width of the paddle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_paddle_ab21547c823c2f1d8dbf878b341f95404}{frame\+Started}} (const Ogre\+::\+Frame\+Event \&evt) override
+\begin{DoxyCompactList}\small\item\em Function called at the start of every frame. Updates the position of the paddle based on the Move\+Direction vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Scene\+Node $\ast$ \mbox{\hyperlink{class_paddle_a0d002272a4e0634d85d5cf9eda0d5a72}{m\+\_\+p\+Node}}
+\item 
+Entity $\ast$ \mbox{\hyperlink{class_paddle_aa4c857086bdf033112c039d760e1e0fd}{m\+\_\+p\+Entity}}
+\item 
+float \mbox{\hyperlink{class_paddle_afc7a00c6b441904d60b4362b662d4fbc}{m\+\_\+f\+Width}}
+\item 
+float \mbox{\hyperlink{class_paddle_a936af52e7c7083e6d5889e5d9e50f206}{m\+\_\+f\+Height}}
+\item 
+float \mbox{\hyperlink{class_paddle_a288fa1d735524e3b5c3920f31b0d5bc2}{m\+\_\+f\+Move\+Speed}}
+\item 
+Ogre\+::\+Vector3 \mbox{\hyperlink{class_paddle_ad752145be9edb3c7fe43cbb64db0fe8b}{m\+\_\+v\+Move\+Direction}}
+\item 
+int \mbox{\hyperlink{class_paddle_abec2448eea646cbe25db20c44859e35b}{m\+\_\+i\+Lives}}
+\item 
+int \mbox{\hyperlink{class_paddle_a5de9b1df28645d94df1ba6b8e980c1e9}{m\+\_\+i\+Score}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paddle_a38d2e41164fa920e0bef1cf2c4fd225e}\label{class_paddle_a38d2e41164fa920e0bef1cf2c4fd225e}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}\item[{Ogre\+::\+Scene\+Manager $\ast$}]{scene\+Manager }\end{DoxyParamCaption})}
+
+
+
+Contructor for the paddle. Creates a mesh and a Node, then attach it to the Scene Manager. Set the initial values for our paddle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Manager} & Scene Manager of our game\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paddle_ab21547c823c2f1d8dbf878b341f95404}\label{class_paddle_ab21547c823c2f1d8dbf878b341f95404}} 
+\index{Paddle@{Paddle}!frameStarted@{frameStarted}}
+\index{frameStarted@{frameStarted}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{frameStarted()}{frameStarted()}}
+{\footnotesize\ttfamily bool Paddle\+::frame\+Started (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}}
+
+
+
+Function called at the start of every frame. Updates the position of the paddle based on the Move\+Direction vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_paddle_a092672e8ee9c6f891af893a1074841df}\label{class_paddle_a092672e8ee9c6f891af893a1074841df}} 
+\index{Paddle@{Paddle}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily float Paddle\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the height of the paddle 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_paddle_a7fd9a75756574cbe89af16b65e14676b}\label{class_paddle_a7fd9a75756574cbe89af16b65e14676b}} 
+\index{Paddle@{Paddle}!GetLives@{GetLives}}
+\index{GetLives@{GetLives}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{GetLives()}{GetLives()}}
+{\footnotesize\ttfamily int Paddle\+::\+Get\+Lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the current lives of the paddle 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_paddle_aedbf172a60f8aa6d1689ce99166094f5}\label{class_paddle_aedbf172a60f8aa6d1689ce99166094f5}} 
+\index{Paddle@{Paddle}!GetNode@{GetNode}}
+\index{GetNode@{GetNode}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{GetNode()}{GetNode()}}
+{\footnotesize\ttfamily Scene\+Node $\ast$ Paddle\+::\+Get\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{class_paddle}{Paddle}} node 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_paddle_a97ff159403c6a5e27576ebaccc8d1ce0}\label{class_paddle_a97ff159403c6a5e27576ebaccc8d1ce0}} 
+\index{Paddle@{Paddle}!GetScore@{GetScore}}
+\index{GetScore@{GetScore}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}}
+{\footnotesize\ttfamily int Paddle\+::\+Get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current score of the paddle 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_paddle_a0c6a80b308461cf7080fa0c0db5ed993}\label{class_paddle_a0c6a80b308461cf7080fa0c0db5ed993}} 
+\index{Paddle@{Paddle}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily float Paddle\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the width of the paddle 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_paddle_a6586a6bea932687daae0e5f77136990b}\label{class_paddle_a6586a6bea932687daae0e5f77136990b}} 
+\index{Paddle@{Paddle}!SetLives@{SetLives}}
+\index{SetLives@{SetLives}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{SetLives()}{SetLives()}}
+{\footnotesize\ttfamily void Paddle\+::\+Set\+Lives (\begin{DoxyParamCaption}\item[{int}]{lives }\end{DoxyParamCaption})}
+
+
+
+Set the amount of lives that the paddle has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lives} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_paddle_ada69756563221e63593a98c6a4b02f15}\label{class_paddle_ada69756563221e63593a98c6a4b02f15}} 
+\index{Paddle@{Paddle}!SetMoveDirection@{SetMoveDirection}}
+\index{SetMoveDirection@{SetMoveDirection}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{SetMoveDirection()}{SetMoveDirection()}}
+{\footnotesize\ttfamily void Paddle\+::\+Set\+Move\+Direction (\begin{DoxyParamCaption}\item[{Ogre\+::\+Vector3}]{direction }\end{DoxyParamCaption})}
+
+
+
+Set the direction in which the paddle is going to move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_paddle_a639dda89dd4349f4947ca59770699103}\label{class_paddle_a639dda89dd4349f4947ca59770699103}} 
+\index{Paddle@{Paddle}!SetScore@{SetScore}}
+\index{SetScore@{SetScore}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{SetScore()}{SetScore()}}
+{\footnotesize\ttfamily void Paddle\+::\+Set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+Set the score of the paddle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_paddle_a936af52e7c7083e6d5889e5d9e50f206}\label{class_paddle_a936af52e7c7083e6d5889e5d9e50f206}} 
+\index{Paddle@{Paddle}!m\_fHeight@{m\_fHeight}}
+\index{m\_fHeight@{m\_fHeight}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{m\_fHeight}{m\_fHeight}}
+{\footnotesize\ttfamily float Paddle\+::m\+\_\+f\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_paddle_a288fa1d735524e3b5c3920f31b0d5bc2}\label{class_paddle_a288fa1d735524e3b5c3920f31b0d5bc2}} 
+\index{Paddle@{Paddle}!m\_fMoveSpeed@{m\_fMoveSpeed}}
+\index{m\_fMoveSpeed@{m\_fMoveSpeed}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{m\_fMoveSpeed}{m\_fMoveSpeed}}
+{\footnotesize\ttfamily float Paddle\+::m\+\_\+f\+Move\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_paddle_afc7a00c6b441904d60b4362b662d4fbc}\label{class_paddle_afc7a00c6b441904d60b4362b662d4fbc}} 
+\index{Paddle@{Paddle}!m\_fWidth@{m\_fWidth}}
+\index{m\_fWidth@{m\_fWidth}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{m\_fWidth}{m\_fWidth}}
+{\footnotesize\ttfamily float Paddle\+::m\+\_\+f\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_paddle_abec2448eea646cbe25db20c44859e35b}\label{class_paddle_abec2448eea646cbe25db20c44859e35b}} 
+\index{Paddle@{Paddle}!m\_iLives@{m\_iLives}}
+\index{m\_iLives@{m\_iLives}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{m\_iLives}{m\_iLives}}
+{\footnotesize\ttfamily int Paddle\+::m\+\_\+i\+Lives\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_paddle_a5de9b1df28645d94df1ba6b8e980c1e9}\label{class_paddle_a5de9b1df28645d94df1ba6b8e980c1e9}} 
+\index{Paddle@{Paddle}!m\_iScore@{m\_iScore}}
+\index{m\_iScore@{m\_iScore}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{m\_iScore}{m\_iScore}}
+{\footnotesize\ttfamily int Paddle\+::m\+\_\+i\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_paddle_aa4c857086bdf033112c039d760e1e0fd}\label{class_paddle_aa4c857086bdf033112c039d760e1e0fd}} 
+\index{Paddle@{Paddle}!m\_pEntity@{m\_pEntity}}
+\index{m\_pEntity@{m\_pEntity}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{m\_pEntity}{m\_pEntity}}
+{\footnotesize\ttfamily Entity$\ast$ Paddle\+::m\+\_\+p\+Entity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_paddle_a0d002272a4e0634d85d5cf9eda0d5a72}\label{class_paddle_a0d002272a4e0634d85d5cf9eda0d5a72}} 
+\index{Paddle@{Paddle}!m\_pNode@{m\_pNode}}
+\index{m\_pNode@{m\_pNode}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{m\_pNode}{m\_pNode}}
+{\footnotesize\ttfamily Scene\+Node$\ast$ Paddle\+::m\+\_\+p\+Node\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_paddle_ad752145be9edb3c7fe43cbb64db0fe8b}\label{class_paddle_ad752145be9edb3c7fe43cbb64db0fe8b}} 
+\index{Paddle@{Paddle}!m\_vMoveDirection@{m\_vMoveDirection}}
+\index{m\_vMoveDirection@{m\_vMoveDirection}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{m\_vMoveDirection}{m\_vMoveDirection}}
+{\footnotesize\ttfamily Ogre\+::\+Vector3 Paddle\+::m\+\_\+v\+Move\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_paddle_8h}{Paddle.\+h}}\item 
+\mbox{\hyperlink{_paddle_8cpp}{Paddle.\+cpp}}\end{DoxyCompactItemize}
