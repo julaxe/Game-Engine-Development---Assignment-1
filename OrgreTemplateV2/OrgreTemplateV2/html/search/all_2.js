@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['framestarted_0',['frameStarted',['../class_ball.html#aa17f0a90d2d19b3ff78a134163ca26d1',1,'Ball::frameStarted()'],['../class_paddle.html#ab21547c823c2f1d8dbf878b341f95404',1,'Paddle::frameStarted()'],['../class_u_i_labels.html#ac174f95ad34db0dfa29b67a279e47e68',1,'UILabels::frameStarted()']]]
+  ['collisionplanes_0',['CollisionPlanes',['../_ball_8cpp.html#ad8f5ffba11f52e8945774e3621425cc6',1,'Ball.cpp']]],
+  ['createcamera_1',['CreateCamera',['../class_game.html#a07053ea748396f8a7af5ffa0ac86fc08',1,'Game']]],
+  ['createobjswithframelistener_2',['CreateObjsWithFrameListener',['../class_game.html#ab2be26a51dee35a72869cf6d728fd24a',1,'Game']]],
+  ['createscene_3',['CreateScene',['../class_game.html#a1df5b2aa5e4bb03bc39fafbf4aa1f943',1,'Game']]]
 ];

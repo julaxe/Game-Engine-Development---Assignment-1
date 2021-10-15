@@ -31,30 +31,6 @@ float \mbox{\hyperlink{class_paddle_a092672e8ee9c6f891af893a1074841df}{Get\+Heig
 \begin{DoxyCompactList}\small\item\em Get the height of the paddle \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_paddle_a0c6a80b308461cf7080fa0c0db5ed993}{Get\+Width}} ()
 \begin{DoxyCompactList}\small\item\em Get the width of the paddle \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-bool \mbox{\hyperlink{class_paddle_ab21547c823c2f1d8dbf878b341f95404}{frame\+Started}} (const Ogre\+::\+Frame\+Event \&evt) override
-\begin{DoxyCompactList}\small\item\em Function called at the start of every frame. Updates the position of the paddle based on the Move\+Direction vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-Scene\+Node $\ast$ \mbox{\hyperlink{class_paddle_a0d002272a4e0634d85d5cf9eda0d5a72}{m\+\_\+p\+Node}}
-\item 
-Entity $\ast$ \mbox{\hyperlink{class_paddle_aa4c857086bdf033112c039d760e1e0fd}{m\+\_\+p\+Entity}}
-\item 
-float \mbox{\hyperlink{class_paddle_afc7a00c6b441904d60b4362b662d4fbc}{m\+\_\+f\+Width}}
-\item 
-float \mbox{\hyperlink{class_paddle_a936af52e7c7083e6d5889e5d9e50f206}{m\+\_\+f\+Height}}
-\item 
-float \mbox{\hyperlink{class_paddle_a288fa1d735524e3b5c3920f31b0d5bc2}{m\+\_\+f\+Move\+Speed}}
-\item 
-Ogre\+::\+Vector3 \mbox{\hyperlink{class_paddle_ad752145be9edb3c7fe43cbb64db0fe8b}{m\+\_\+v\+Move\+Direction}}
-\item 
-int \mbox{\hyperlink{class_paddle_abec2448eea646cbe25db20c44859e35b}{m\+\_\+i\+Lives}}
-\item 
-int \mbox{\hyperlink{class_paddle_a5de9b1df28645d94df1ba6b8e980c1e9}{m\+\_\+i\+Score}}
-\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -76,24 +52,6 @@ Contructor for the paddle. Creates a mesh and a Node, then attach it to the Scen
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_paddle_ab21547c823c2f1d8dbf878b341f95404}\label{class_paddle_ab21547c823c2f1d8dbf878b341f95404}} 
-\index{Paddle@{Paddle}!frameStarted@{frameStarted}}
-\index{frameStarted@{frameStarted}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{frameStarted()}{frameStarted()}}
-{\footnotesize\ttfamily bool Paddle\+::frame\+Started (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}}
-
-
-
-Function called at the start of every frame. Updates the position of the paddle based on the Move\+Direction vector. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em evt} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
 \mbox{\Hypertarget{class_paddle_a092672e8ee9c6f891af893a1074841df}\label{class_paddle_a092672e8ee9c6f891af893a1074841df}} 
 \index{Paddle@{Paddle}!GetHeight@{GetHeight}}
 \index{GetHeight@{GetHeight}!Paddle@{Paddle}}
@@ -204,57 +162,6 @@ Set the score of the paddle
 {\em score} & \\
 \hline
 \end{DoxyParams}
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_paddle_a936af52e7c7083e6d5889e5d9e50f206}\label{class_paddle_a936af52e7c7083e6d5889e5d9e50f206}} 
-\index{Paddle@{Paddle}!m\_fHeight@{m\_fHeight}}
-\index{m\_fHeight@{m\_fHeight}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{m\_fHeight}{m\_fHeight}}
-{\footnotesize\ttfamily float Paddle\+::m\+\_\+f\+Height\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_paddle_a288fa1d735524e3b5c3920f31b0d5bc2}\label{class_paddle_a288fa1d735524e3b5c3920f31b0d5bc2}} 
-\index{Paddle@{Paddle}!m\_fMoveSpeed@{m\_fMoveSpeed}}
-\index{m\_fMoveSpeed@{m\_fMoveSpeed}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{m\_fMoveSpeed}{m\_fMoveSpeed}}
-{\footnotesize\ttfamily float Paddle\+::m\+\_\+f\+Move\+Speed\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_paddle_afc7a00c6b441904d60b4362b662d4fbc}\label{class_paddle_afc7a00c6b441904d60b4362b662d4fbc}} 
-\index{Paddle@{Paddle}!m\_fWidth@{m\_fWidth}}
-\index{m\_fWidth@{m\_fWidth}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{m\_fWidth}{m\_fWidth}}
-{\footnotesize\ttfamily float Paddle\+::m\+\_\+f\+Width\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_paddle_abec2448eea646cbe25db20c44859e35b}\label{class_paddle_abec2448eea646cbe25db20c44859e35b}} 
-\index{Paddle@{Paddle}!m\_iLives@{m\_iLives}}
-\index{m\_iLives@{m\_iLives}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{m\_iLives}{m\_iLives}}
-{\footnotesize\ttfamily int Paddle\+::m\+\_\+i\+Lives\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_paddle_a5de9b1df28645d94df1ba6b8e980c1e9}\label{class_paddle_a5de9b1df28645d94df1ba6b8e980c1e9}} 
-\index{Paddle@{Paddle}!m\_iScore@{m\_iScore}}
-\index{m\_iScore@{m\_iScore}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{m\_iScore}{m\_iScore}}
-{\footnotesize\ttfamily int Paddle\+::m\+\_\+i\+Score\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_paddle_aa4c857086bdf033112c039d760e1e0fd}\label{class_paddle_aa4c857086bdf033112c039d760e1e0fd}} 
-\index{Paddle@{Paddle}!m\_pEntity@{m\_pEntity}}
-\index{m\_pEntity@{m\_pEntity}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{m\_pEntity}{m\_pEntity}}
-{\footnotesize\ttfamily Entity$\ast$ Paddle\+::m\+\_\+p\+Entity\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_paddle_a0d002272a4e0634d85d5cf9eda0d5a72}\label{class_paddle_a0d002272a4e0634d85d5cf9eda0d5a72}} 
-\index{Paddle@{Paddle}!m\_pNode@{m\_pNode}}
-\index{m\_pNode@{m\_pNode}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{m\_pNode}{m\_pNode}}
-{\footnotesize\ttfamily Scene\+Node$\ast$ Paddle\+::m\+\_\+p\+Node\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_paddle_ad752145be9edb3c7fe43cbb64db0fe8b}\label{class_paddle_ad752145be9edb3c7fe43cbb64db0fe8b}} 
-\index{Paddle@{Paddle}!m\_vMoveDirection@{m\_vMoveDirection}}
-\index{m\_vMoveDirection@{m\_vMoveDirection}!Paddle@{Paddle}}
-\doxysubsubsection{\texorpdfstring{m\_vMoveDirection}{m\_vMoveDirection}}
-{\footnotesize\ttfamily Ogre\+::\+Vector3 Paddle\+::m\+\_\+v\+Move\+Direction\hspace{0.3cm}{\ttfamily [private]}}
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

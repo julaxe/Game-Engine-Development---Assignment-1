@@ -1,12 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "bcfgkmnprsuxy~",
+  0: "abcgkmnprsuxy~",
   1: "bgpu",
-  2: "bgmpu",
-  3: "bcfgkmprsu~",
-  4: "m",
-  5: "c",
-  6: "nxy"
+  2: "bgmpru",
+  3: "bcgkmpsu~",
+  4: "c",
+  5: "nxy",
+  6: "a"
 };
 
 var indexSectionNames =
@@ -15,9 +15,9 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "variables",
-  5: "enums",
-  6: "enumvalues"
+  4: "enums",
+  5: "enumvalues",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -26,8 +26,8 @@ var indexSectionLabels =
   1: "Classes",
   2: "Files",
   3: "Functions",
-  4: "Variables",
-  5: "Enumerations",
-  6: "Enumerator"
+  4: "Enumerations",
+  5: "Enumerator",
+  6: "Pages"
 };
 

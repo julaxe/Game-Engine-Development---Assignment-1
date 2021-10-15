@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 1 Ogre: Paddle.h Source File</title>
+<title>Assigment 01_GameEngineDev: Paddle.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Assignment 1 Ogre
+   <div id="projectname">Assigment 01_GameEngineDev
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -122,41 +122,32 @@ $(document).ready(function(){initNavTree('_paddle_8h_source.html',''); initResiz
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_paddle.html#ab21547c823c2f1d8dbf878b341f95404">frameStarted</a>(<span class="keyword">const</span> Ogre::FrameEvent&amp; evt) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> frameStarted(<span class="keyword">const</span> Ogre::FrameEvent&amp; evt) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_paddle.html#a0d002272a4e0634d85d5cf9eda0d5a72">   33</a></span>    SceneNode* <a class="code hl_variable" href="class_paddle.html#a0d002272a4e0634d85d5cf9eda0d5a72">m_pNode</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_paddle.html#aa4c857086bdf033112c039d760e1e0fd">   34</a></span>    Entity* <a class="code hl_variable" href="class_paddle.html#aa4c857086bdf033112c039d760e1e0fd">m_pEntity</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    SceneNode* m_pNode;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Entity* m_pEntity;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_paddle.html#afc7a00c6b441904d60b4362b662d4fbc">   36</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_paddle.html#afc7a00c6b441904d60b4362b662d4fbc">m_fWidth</a>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_paddle.html#a936af52e7c7083e6d5889e5d9e50f206">   37</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_paddle.html#a936af52e7c7083e6d5889e5d9e50f206">m_fHeight</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">float</span> m_fWidth;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">float</span> m_fHeight;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_paddle.html#a288fa1d735524e3b5c3920f31b0d5bc2">   39</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_paddle.html#a288fa1d735524e3b5c3920f31b0d5bc2">m_fMoveSpeed</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_paddle.html#ad752145be9edb3c7fe43cbb64db0fe8b">   40</a></span>    Ogre::Vector3 <a class="code hl_variable" href="class_paddle.html#ad752145be9edb3c7fe43cbb64db0fe8b">m_vMoveDirection</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">float</span> m_fMoveSpeed;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Ogre::Vector3 m_vMoveDirection;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_paddle.html#abec2448eea646cbe25db20c44859e35b">   42</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_paddle.html#abec2448eea646cbe25db20c44859e35b">m_iLives</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_paddle.html#a5de9b1df28645d94df1ba6b8e980c1e9">   43</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_paddle.html#a5de9b1df28645d94df1ba6b8e980c1e9">m_iScore</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> m_iLives;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> m_iScore;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 <div class="ttc" id="aclass_paddle_html"><div class="ttname"><a href="class_paddle.html">Paddle</a></div><div class="ttdef"><b>Definition:</b> Paddle.h:9</div></div>
 <div class="ttc" id="aclass_paddle_html_a092672e8ee9c6f891af893a1074841df"><div class="ttname"><a href="class_paddle.html#a092672e8ee9c6f891af893a1074841df">Paddle::GetHeight</a></div><div class="ttdeci">float GetHeight()</div><div class="ttdoc">Get the height of the paddle</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:94</div></div>
 <div class="ttc" id="aclass_paddle_html_a0c6a80b308461cf7080fa0c0db5ed993"><div class="ttname"><a href="class_paddle.html#a0c6a80b308461cf7080fa0c0db5ed993">Paddle::GetWidth</a></div><div class="ttdeci">float GetWidth()</div><div class="ttdoc">Get the width of the paddle</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:102</div></div>
-<div class="ttc" id="aclass_paddle_html_a0d002272a4e0634d85d5cf9eda0d5a72"><div class="ttname"><a href="class_paddle.html#a0d002272a4e0634d85d5cf9eda0d5a72">Paddle::m_pNode</a></div><div class="ttdeci">SceneNode * m_pNode</div><div class="ttdef"><b>Definition:</b> Paddle.h:33</div></div>
-<div class="ttc" id="aclass_paddle_html_a288fa1d735524e3b5c3920f31b0d5bc2"><div class="ttname"><a href="class_paddle.html#a288fa1d735524e3b5c3920f31b0d5bc2">Paddle::m_fMoveSpeed</a></div><div class="ttdeci">float m_fMoveSpeed</div><div class="ttdef"><b>Definition:</b> Paddle.h:39</div></div>
 <div class="ttc" id="aclass_paddle_html_a38d2e41164fa920e0bef1cf2c4fd225e"><div class="ttname"><a href="class_paddle.html#a38d2e41164fa920e0bef1cf2c4fd225e">Paddle::Paddle</a></div><div class="ttdeci">Paddle(Ogre::SceneManager *sceneManager)</div><div class="ttdoc">Contructor for the paddle. Creates a mesh and a Node, then attach it to the Scene Manager....</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:9</div></div>
-<div class="ttc" id="aclass_paddle_html_a5de9b1df28645d94df1ba6b8e980c1e9"><div class="ttname"><a href="class_paddle.html#a5de9b1df28645d94df1ba6b8e980c1e9">Paddle::m_iScore</a></div><div class="ttdeci">int m_iScore</div><div class="ttdef"><b>Definition:</b> Paddle.h:43</div></div>
 <div class="ttc" id="aclass_paddle_html_a639dda89dd4349f4947ca59770699103"><div class="ttname"><a href="class_paddle.html#a639dda89dd4349f4947ca59770699103">Paddle::SetScore</a></div><div class="ttdeci">void SetScore(int score)</div><div class="ttdoc">Set the score of the paddle</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:86</div></div>
 <div class="ttc" id="aclass_paddle_html_a6586a6bea932687daae0e5f77136990b"><div class="ttname"><a href="class_paddle.html#a6586a6bea932687daae0e5f77136990b">Paddle::SetLives</a></div><div class="ttdeci">void SetLives(int lives)</div><div class="ttdoc">Set the amount of lives that the paddle has.</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:70</div></div>
 <div class="ttc" id="aclass_paddle_html_a7fd9a75756574cbe89af16b65e14676b"><div class="ttname"><a href="class_paddle.html#a7fd9a75756574cbe89af16b65e14676b">Paddle::GetLives</a></div><div class="ttdeci">int GetLives()</div><div class="ttdoc">Return the current lives of the paddle</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:62</div></div>
-<div class="ttc" id="aclass_paddle_html_a936af52e7c7083e6d5889e5d9e50f206"><div class="ttname"><a href="class_paddle.html#a936af52e7c7083e6d5889e5d9e50f206">Paddle::m_fHeight</a></div><div class="ttdeci">float m_fHeight</div><div class="ttdef"><b>Definition:</b> Paddle.h:37</div></div>
 <div class="ttc" id="aclass_paddle_html_a97ff159403c6a5e27576ebaccc8d1ce0"><div class="ttname"><a href="class_paddle.html#a97ff159403c6a5e27576ebaccc8d1ce0">Paddle::GetScore</a></div><div class="ttdeci">int GetScore()</div><div class="ttdoc">Returns the current score of the paddle</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:78</div></div>
-<div class="ttc" id="aclass_paddle_html_aa4c857086bdf033112c039d760e1e0fd"><div class="ttname"><a href="class_paddle.html#aa4c857086bdf033112c039d760e1e0fd">Paddle::m_pEntity</a></div><div class="ttdeci">Entity * m_pEntity</div><div class="ttdef"><b>Definition:</b> Paddle.h:34</div></div>
-<div class="ttc" id="aclass_paddle_html_ab21547c823c2f1d8dbf878b341f95404"><div class="ttname"><a href="class_paddle.html#ab21547c823c2f1d8dbf878b341f95404">Paddle::frameStarted</a></div><div class="ttdeci">bool frameStarted(const Ogre::FrameEvent &amp;evt) override</div><div class="ttdoc">Function called at the start of every frame. Updates the position of the paddle based on the MoveDire...</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:31</div></div>
-<div class="ttc" id="aclass_paddle_html_abec2448eea646cbe25db20c44859e35b"><div class="ttname"><a href="class_paddle.html#abec2448eea646cbe25db20c44859e35b">Paddle::m_iLives</a></div><div class="ttdeci">int m_iLives</div><div class="ttdef"><b>Definition:</b> Paddle.h:42</div></div>
-<div class="ttc" id="aclass_paddle_html_ad752145be9edb3c7fe43cbb64db0fe8b"><div class="ttname"><a href="class_paddle.html#ad752145be9edb3c7fe43cbb64db0fe8b">Paddle::m_vMoveDirection</a></div><div class="ttdeci">Ogre::Vector3 m_vMoveDirection</div><div class="ttdef"><b>Definition:</b> Paddle.h:40</div></div>
 <div class="ttc" id="aclass_paddle_html_ada69756563221e63593a98c6a4b02f15"><div class="ttname"><a href="class_paddle.html#ada69756563221e63593a98c6a4b02f15">Paddle::SetMoveDirection</a></div><div class="ttdeci">void SetMoveDirection(Ogre::Vector3 direction)</div><div class="ttdoc">Set the direction in which the paddle is going to move</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:54</div></div>
 <div class="ttc" id="aclass_paddle_html_aedbf172a60f8aa6d1689ce99166094f5"><div class="ttname"><a href="class_paddle.html#aedbf172a60f8aa6d1689ce99166094f5">Paddle::GetNode</a></div><div class="ttdeci">SceneNode * GetNode()</div><div class="ttdoc">Returns the Paddle node</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:46</div></div>
-<div class="ttc" id="aclass_paddle_html_afc7a00c6b441904d60b4362b662d4fbc"><div class="ttname"><a href="class_paddle.html#afc7a00c6b441904d60b4362b662d4fbc">Paddle::m_fWidth</a></div><div class="ttdeci">float m_fWidth</div><div class="ttdef"><b>Definition:</b> Paddle.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

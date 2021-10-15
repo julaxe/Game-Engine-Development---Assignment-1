@@ -1,0 +1,18 @@
+/**
+@mainpage Assignment01
+
+@author Julian Escobar and Lucas Krespi
+
+<B>controller: </B>
+<DD>
+the game works the 'A' and 'D' key to move the paddle
+and 'SCAPE' to quit the game.
+</DD>
+
+<B>game: </B> 
+<DD>
+The game begins with the player having 5 lives, every time the ball is droped you lose a life.
+every collision you make 5 points.
+when you loose all five lives the game freezes.
+</DD>
+*/

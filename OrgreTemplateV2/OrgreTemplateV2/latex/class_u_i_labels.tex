@@ -17,28 +17,6 @@ Inheritance diagram for UILabels\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Constructor of the UIlabels. Initialize the tray manager. Set the UI elements that are going to be included in the game window. \end{DoxyCompactList}\item 
 Ogre\+Bites\+::\+Tray\+Manager $\ast$ \mbox{\hyperlink{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}{Get\+Tray\+Manager}} ()
 \begin{DoxyCompactList}\small\item\em Returns the tray manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-bool \mbox{\hyperlink{class_u_i_labels_ac174f95ad34db0dfa29b67a279e47e68}{frame\+Started}} (const Ogre\+::\+Frame\+Event \&evt) override
-\begin{DoxyCompactList}\small\item\em Function called at the start of every frame. Update the UI elements. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{class_paddle}{Paddle}} $\ast$ \mbox{\hyperlink{class_u_i_labels_a5506affe2964bfc318f8626c05516428}{m\+\_\+p\+Paddle}}
-\item 
-Ogre\+Bites\+::\+Tray\+Manager $\ast$ \mbox{\hyperlink{class_u_i_labels_abbac67aff752d37a02c32047649d3e13}{m\+\_\+pm\+Tray\+Manager}}
-\item 
-String\+Vector \mbox{\hyperlink{class_u_i_labels_af3920b0813376ddd6fee5343f75b4b51}{m\+\_\+sv\+Param\+Names}}
-\item 
-Ogre\+Bites\+::\+Label $\ast$ \mbox{\hyperlink{class_u_i_labels_a9987321267ec8f56af9b397b2fc9a400}{m\+\_\+pl\+Timer\+Text}}
-\item 
-Ogre\+Bites\+::\+Label $\ast$ \mbox{\hyperlink{class_u_i_labels_a9a594c6b8fb74eb7f09b6a1254b34d4e}{m\+\_\+pl\+Time}}
-\item 
-Timer \mbox{\hyperlink{class_u_i_labels_abeefd3eb6773df936d951400542bade6}{m\+\_\+t\+Timer}}
-\item 
-Ogre\+Bites\+::\+Params\+Panel $\ast$ \mbox{\hyperlink{class_u_i_labels_abc1c03cda347d81829279200f836ff5f}{m\+\_\+p\+Panel}}
-\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -55,24 +33,6 @@ Constructor of the UIlabels. Initialize the tray manager. Set the UI elements th
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_u_i_labels_ac174f95ad34db0dfa29b67a279e47e68}\label{class_u_i_labels_ac174f95ad34db0dfa29b67a279e47e68}} 
-\index{UILabels@{UILabels}!frameStarted@{frameStarted}}
-\index{frameStarted@{frameStarted}!UILabels@{UILabels}}
-\doxysubsubsection{\texorpdfstring{frameStarted()}{frameStarted()}}
-{\footnotesize\ttfamily bool UILabels\+::frame\+Started (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}}
-
-
-
-Function called at the start of every frame. Update the UI elements. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em evt} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
 \mbox{\Hypertarget{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}\label{class_u_i_labels_a0f74c69ecd38daa49c1988aa0179efbe}} 
 \index{UILabels@{UILabels}!GetTrayManager@{GetTrayManager}}
 \index{GetTrayManager@{GetTrayManager}!UILabels@{UILabels}}
@@ -86,51 +46,6 @@ Returns the tray manager.
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_u_i_labels_a9a594c6b8fb74eb7f09b6a1254b34d4e}\label{class_u_i_labels_a9a594c6b8fb74eb7f09b6a1254b34d4e}} 
-\index{UILabels@{UILabels}!m\_plTime@{m\_plTime}}
-\index{m\_plTime@{m\_plTime}!UILabels@{UILabels}}
-\doxysubsubsection{\texorpdfstring{m\_plTime}{m\_plTime}}
-{\footnotesize\ttfamily Ogre\+Bites\+::\+Label$\ast$ UILabels\+::m\+\_\+pl\+Time\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_u_i_labels_a9987321267ec8f56af9b397b2fc9a400}\label{class_u_i_labels_a9987321267ec8f56af9b397b2fc9a400}} 
-\index{UILabels@{UILabels}!m\_plTimerText@{m\_plTimerText}}
-\index{m\_plTimerText@{m\_plTimerText}!UILabels@{UILabels}}
-\doxysubsubsection{\texorpdfstring{m\_plTimerText}{m\_plTimerText}}
-{\footnotesize\ttfamily Ogre\+Bites\+::\+Label$\ast$ UILabels\+::m\+\_\+pl\+Timer\+Text\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_u_i_labels_abbac67aff752d37a02c32047649d3e13}\label{class_u_i_labels_abbac67aff752d37a02c32047649d3e13}} 
-\index{UILabels@{UILabels}!m\_pmTrayManager@{m\_pmTrayManager}}
-\index{m\_pmTrayManager@{m\_pmTrayManager}!UILabels@{UILabels}}
-\doxysubsubsection{\texorpdfstring{m\_pmTrayManager}{m\_pmTrayManager}}
-{\footnotesize\ttfamily Ogre\+Bites\+::\+Tray\+Manager$\ast$ UILabels\+::m\+\_\+pm\+Tray\+Manager\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_u_i_labels_a5506affe2964bfc318f8626c05516428}\label{class_u_i_labels_a5506affe2964bfc318f8626c05516428}} 
-\index{UILabels@{UILabels}!m\_pPaddle@{m\_pPaddle}}
-\index{m\_pPaddle@{m\_pPaddle}!UILabels@{UILabels}}
-\doxysubsubsection{\texorpdfstring{m\_pPaddle}{m\_pPaddle}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_paddle}{Paddle}}$\ast$ UILabels\+::m\+\_\+p\+Paddle\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_u_i_labels_abc1c03cda347d81829279200f836ff5f}\label{class_u_i_labels_abc1c03cda347d81829279200f836ff5f}} 
-\index{UILabels@{UILabels}!m\_pPanel@{m\_pPanel}}
-\index{m\_pPanel@{m\_pPanel}!UILabels@{UILabels}}
-\doxysubsubsection{\texorpdfstring{m\_pPanel}{m\_pPanel}}
-{\footnotesize\ttfamily Ogre\+Bites\+::\+Params\+Panel$\ast$ UILabels\+::m\+\_\+p\+Panel\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_u_i_labels_af3920b0813376ddd6fee5343f75b4b51}\label{class_u_i_labels_af3920b0813376ddd6fee5343f75b4b51}} 
-\index{UILabels@{UILabels}!m\_svParamNames@{m\_svParamNames}}
-\index{m\_svParamNames@{m\_svParamNames}!UILabels@{UILabels}}
-\doxysubsubsection{\texorpdfstring{m\_svParamNames}{m\_svParamNames}}
-{\footnotesize\ttfamily String\+Vector UILabels\+::m\+\_\+sv\+Param\+Names\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_u_i_labels_abeefd3eb6773df936d951400542bade6}\label{class_u_i_labels_abeefd3eb6773df936d951400542bade6}} 
-\index{UILabels@{UILabels}!m\_tTimer@{m\_tTimer}}
-\index{m\_tTimer@{m\_tTimer}!UILabels@{UILabels}}
-\doxysubsubsection{\texorpdfstring{m\_tTimer}{m\_tTimer}}
-{\footnotesize\ttfamily Timer UILabels\+::m\+\_\+t\+Timer\hspace{0.3cm}{\ttfamily [private]}}
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

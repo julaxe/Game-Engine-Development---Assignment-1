@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resetballpos_0',['ResetBallPos',['../class_ball.html#a52615ab834f08c68e824e5252bcbada9',1,'Ball']]]
+  ['uilabels_0',['UILabels',['../class_u_i_labels.html#a656157a4bdc6c0ca1218aad25c1597af',1,'UILabels']]]
 ];
