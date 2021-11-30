@@ -2,11 +2,13 @@
 #include "OgreApplicationContext.h"
 #include "OgreInput.h"
 #include "Ogre.h"
+#include "ObjectPoolingEngine.h"
 #include "OgreRTShaderSystem.h"
+#include "Update.h"
 #include <iostream>
 
 class Platform;
-class Ball;
+class Player;
 class UILabels;
 using namespace Ogre;
 using namespace OgreBites;
@@ -14,21 +16,31 @@ using namespace OgreBites;
 class Game : public ApplicationContext, public InputListener
 {
 private:
+	Update* m_pUpdate;
 	Platform* m_pPlatform;
-	Ball* m_pBall;
+	Player* m_pPlayer;
 	UILabels* m_pSceneLabels;
 	SceneManager* m_pScnMgr;
-	Root* m_pRoot;
+	ObjectPoolingEngine<Platform> m_PlatformPool;
 
+public:
+	static Root* g_pRoot;
+	
 public:
 	Game();
 	virtual ~Game() {}
+	
 
 	void setup() override;
 	bool keyPressed(const KeyboardEvent& evt) override;
 	void CreateScene();
 	void CreateCamera();
+	void CreateUpdate();
 	void CreateObjsWithFrameListener();
+
+private:
+	void initializePlatforms();
+	void updatePlatforms();
 };
 
 

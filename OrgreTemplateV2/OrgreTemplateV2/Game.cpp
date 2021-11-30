@@ -1,9 +1,10 @@
 #include "Game.h"
-#include "Ball.h"
+#include "Player.h"
 #include "Platform.h"
+#include "Player.h"
 #include "UILabels.h"
-#include "ObjectPoolingEngine.h"
 
+Root* Game::g_pRoot = nullptr;
 Game::Game() : ApplicationContext("Assigment 01 - Julian Escobar / Lucas Krespi")
 {
 }
@@ -22,23 +23,19 @@ void Game::setup()
 	addInputListener(this);
 
 
-	m_pRoot = getRoot();
-	m_pScnMgr = m_pRoot->createSceneManager();
+	g_pRoot = getRoot();
+	m_pScnMgr = g_pRoot->createSceneManager(DefaultSceneManagerFactory::FACTORY_TYPE_NAME,"SceneManager");
 
 	RTShader::ShaderGenerator* shadergen = RTShader::ShaderGenerator::getSingletonPtr();
 	shadergen->addSceneManager(m_pScnMgr);
 
-	ObjectPoolingEngine<int>* newPool = nullptr;
-	newPool = new ObjectPoolingEngine<int>(5);
-	for(int i = 0; i< 6; i++)
-	{
-		newPool->RetrieveObjectFromPool();
-	}
-	int* test = newPool->RetrieveObjectFromPool();
-	newPool->ThrowBackObjectToPool(test);
+	
 	
 	CreateScene();
 	CreateCamera();
+	CreateUpdate();
+	initializePlatforms();
+	
 	CreateObjsWithFrameListener();
 }
 /// <summary>
@@ -62,6 +59,8 @@ bool Game::keyPressed(const KeyboardEvent& evt)
 	default:
 		break;
 	}
+
+	m_pPlayer->HandleInput(evt);
 
 	/*if (m_pPaddle->GetLives() < 1)
 	{
@@ -102,27 +101,51 @@ void Game::CreateCamera()
 
 	
 }
+
+void Game::CreateUpdate()
+{
+	m_pUpdate = new Update();
+	m_pScnMgr->getRootSceneNode()->addChild(m_pUpdate->GetNode());
+	g_pRoot->addFrameListener(m_pUpdate);
+}
+
 /// <summary>
 /// Create all the objects that we are going to update in our game every frame
 /// </summary>
 void Game::CreateObjsWithFrameListener()
 {
-
-	//Create Paddle
-	m_pPlatform = new Platform(m_pScnMgr);
-	m_pScnMgr->getRootSceneNode()->addChild(m_pPlatform->GetNode());
-	m_pRoot->addFrameListener(m_pPlatform);
-
 	//Create Ball
-	m_pBall = new Ball(m_pScnMgr);
-	m_pScnMgr->getRootSceneNode()->addChild(m_pBall->GetNode());
-	m_pRoot->addFrameListener(m_pBall);
+	m_pPlayer = new Player();
+	m_pScnMgr->getRootSceneNode()->addChild(m_pPlayer->GetNode());
 
-
+	m_pUpdate->SetPlayerRef(m_pPlayer);
+	
+	
 	//Create Labels
 	m_pScnMgr->addRenderQueueListener(mOverlaySystem);
 	m_pSceneLabels = new UILabels(getRenderWindow(), m_pPlatform);
 	addInputListener(m_pSceneLabels->GetTrayManager());
-	m_pRoot->addFrameListener(m_pSceneLabels);
+	g_pRoot->addFrameListener(m_pSceneLabels);
 
+}
+
+void Game::initializePlatforms()
+{
+	//Create Platforms
+	m_pPlatform = new Platform();
+	m_pScnMgr->getRootSceneNode()->addChild(m_pPlatform->GetNode());
+	
+	m_PlatformPool =  ObjectPoolingEngine<Platform>(5);
+	for(int i = 0; i< m_PlatformPool.GetSize(); i++)
+	{
+		Platform* temp = m_PlatformPool.RetrieveObjectFromPool();
+		m_pScnMgr->getRootSceneNode()->addChild(temp->GetNode());
+		temp->SetPosition(Ogre::Vector3(i *100.0f, i*100.0f,0.0f));
+		m_pUpdate->addGameObject(temp);
+	}
+	
+}
+
+void Game::updatePlatforms()
+{
 }

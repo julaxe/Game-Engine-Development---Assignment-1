@@ -39,8 +39,8 @@ bool UILabels::frameStarted(const Ogre::FrameEvent& evt)
 
 
 	m_plTime->setCaption(Ogre::StringConverter().toString(m_tTimer.getMilliseconds() / 1000));
-	m_pPanel->setParamValue(0, Ogre::StringConverter::toString(m_pPaddle->GetScore()));
-	m_pPanel->setParamValue(1, Ogre::StringConverter::toString(m_pPaddle->GetLives()));
+	//m_pPanel->setParamValue(0, Ogre::StringConverter::toString(m_pPaddle->GetScore()));
+	//m_pPanel->setParamValue(1, Ogre::StringConverter::toString(m_pPaddle->GetLives()));
 
 	return true;
 }

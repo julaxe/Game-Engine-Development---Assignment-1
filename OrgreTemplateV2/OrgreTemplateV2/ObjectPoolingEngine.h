@@ -1,5 +1,6 @@
 #pragma once
 #include <map>
+
 template<class T>
 class ObjectPoolingEngine
 {
@@ -7,6 +8,7 @@ public:
 	ObjectPoolingEngine(unsigned int initSize = 0);
 	T* RetrieveObjectFromPool();
 	void ThrowBackObjectToPool(T* object);
+	int GetSize();
 private:
 	void InitializePool();
 	T* GrowPool();
@@ -15,6 +17,7 @@ private:
 	unsigned int m_iSize;
 };
 
+/////////////////////////////////////////////////// IMPLEMENTATION /////////////////////////////////////////////////////////
 template<class T>
 ObjectPoolingEngine<T>::ObjectPoolingEngine(unsigned int initSize)
 {
@@ -41,6 +44,12 @@ template<class T>
 void ObjectPoolingEngine<T>::ThrowBackObjectToPool(T* object)
 {
 	m_mPool[object] = false;
+}
+
+template <class T>
+int ObjectPoolingEngine<T>::GetSize()
+{
+	return m_iSize;
 }
 
 template<class T>
