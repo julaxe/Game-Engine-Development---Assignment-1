@@ -5,7 +5,7 @@
 #include "OgreRTShaderSystem.h"
 #include <iostream>
 
-class Paddle;
+class Platform;
 class Ball;
 class UILabels;
 using namespace Ogre;
@@ -14,11 +14,12 @@ using namespace OgreBites;
 class Game : public ApplicationContext, public InputListener
 {
 private:
-	Paddle* m_pPaddle;
+	Platform* m_pPlatform;
 	Ball* m_pBall;
 	UILabels* m_pSceneLabels;
 	SceneManager* m_pScnMgr;
 	Root* m_pRoot;
+
 public:
 	Game();
 	virtual ~Game() {}

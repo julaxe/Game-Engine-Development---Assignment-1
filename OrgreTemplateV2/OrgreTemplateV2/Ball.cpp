@@ -17,12 +17,12 @@ enum CollisionPlanes
 /// </summary>
 /// <param name="sceneManager"></param>
 /// <param name="paddle"></param>
-Ball::Ball(Ogre::SceneManager* sceneManager, Paddle* paddle)
+Ball::Ball(Ogre::SceneManager* sceneManager)
 {
 	m_vInit_Pos = Ogre::Vector3(0.0f, 300.0f, 0.0f);
 	m_pEntity = sceneManager->createEntity("sphere.mesh");
 	m_pNode = sceneManager->createSceneNode("BallNode");
-	m_pPaddle = paddle;
+
 	m_pNode->attachObject(m_pEntity);
 	m_pNode->setPosition(m_vInit_Pos);
 	m_pNode->setScale(0.3f, 0.3f, 0.3f);
@@ -73,12 +73,11 @@ void Ball::Bounce(CollisionPlanes collisionPlane)
 		m_vMoveDirection.x = -m_vMoveDirection.x;
 		//update the position
 		// Add to score 
-		m_pPaddle->SetScore(m_pPaddle->GetScore() + 10);
+		
 		break;
 	case X_COLLISION:
 		m_vMoveDirection.y = -m_vMoveDirection.y;
 		// Add to score 
-		m_pPaddle->SetScore(m_pPaddle->GetScore() + 10);
 		break;
 	case NO_COLLISION:
 		break;
@@ -103,7 +102,6 @@ void Ball::ResetBallPos()
 {
 	m_pNode->setPosition(m_vInit_Pos);
 	m_vMoveDirection = Ogre::Vector3(1.0f, 1.0f, 0.0f);
-	m_pPaddle->SetLives(m_pPaddle->GetLives() - 1);
 }
 
 /// <summary>
@@ -138,6 +136,7 @@ bool Ball::CheckCollisionWithScreen()
 /// <returns></returns>
 bool Ball::CheckCollisionWithPaddle()
 {
+#if DEBUG
 	//get center point circle first
 	Ogre::Vector3 center = m_pNode->getPosition();
 
@@ -186,6 +185,8 @@ bool Ball::CheckCollisionWithPaddle()
 		}
 		
 	}
+	return false;
+#endif
 	return false;
 }
 

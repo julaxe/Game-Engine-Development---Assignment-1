@@ -1,5 +1,7 @@
 #pragma once
-#include "Paddle.h"
+#include "Ogre.h"
+
+using namespace Ogre;
 
 //============ BALL CLASS ====================
 
@@ -7,7 +9,7 @@ enum CollisionPlanes;
 class Ball : public Ogre::FrameListener
 {
 public:
-	Ball(Ogre::SceneManager* sceneManager, Paddle* paddle);
+	Ball(Ogre::SceneManager* sceneManager);
 
 	SceneNode* GetNode();
 
@@ -25,7 +27,6 @@ private:
 	SceneNode* m_pNode;
 	Entity* m_pEntity;
 
-	Paddle* m_pPaddle;
 
 	Ogre::Vector3 m_vInit_Pos;
 	Ogre::Vector3 m_vMoveDirection;

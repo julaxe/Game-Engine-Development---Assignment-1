@@ -5,7 +5,7 @@
 /// Initialize the tray manager.
 /// Set the UI elements that are going to be included in the game window.
 /// </summary>
-UILabels::UILabels(Ogre::RenderWindow* rendererWindow, Paddle* paddle)
+UILabels::UILabels(Ogre::RenderWindow* rendererWindow, Platform* paddle)
 {
 	m_pmTrayManager = new OgreBites::TrayManager("Title", rendererWindow);
 
