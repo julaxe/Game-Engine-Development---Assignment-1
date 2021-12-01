@@ -25,6 +25,7 @@ Player::Player()
 	m_vInit_Pos = Ogre::Vector3(0.0f, 300.0f, 0.0f);
 	m_pEntity = Game::g_pRoot->getSceneManager("SceneManager")->createEntity("sphere.mesh");
 	m_pNode = Game::g_pRoot->getSceneManager("SceneManager")->createSceneNode("BallNode");
+	m_pEntity->setCastShadows(true);
 
 	m_pNode->attachObject(m_pEntity);
 	m_pNode->setPosition(m_vInit_Pos);
@@ -38,7 +39,7 @@ Player::Player()
 
 	//set all the physics variables.
 	SetPhysicsComponent(m_pNode);
-	c_gravity = 100.0f;
+	c_gravity = 400.0f;
 	c_airFriction = 0.01f;
 }
 
@@ -88,7 +89,7 @@ void Player::Bounce(CollisionPlanes collisionPlane)
 		break;
 	case X_COLLISION:
 		//m_vMoveDirection.y = -m_vMoveDirection.y;
-		SetYVelocity(100.0f);
+		SetYVelocity(600.0f);
 		// Add to score 
 		break;
 	case NO_COLLISION:
@@ -103,7 +104,7 @@ void Player::Bounce(CollisionPlanes collisionPlane)
 /// <returns></returns>
 void Player::CheckForCollision(GameObject* gameObject)
 {
-	if(CheckCollisionWithGameObject(gameObject) || CheckCollisionWithScreen())
+	if(CheckCollisionWithGameObject(gameObject))//|| CheckCollisionWithScreen())
 	{
 		m_pNode->setPosition(m_oldPosition);
 	}

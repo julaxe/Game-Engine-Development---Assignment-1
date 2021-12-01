@@ -3,9 +3,10 @@
 #include "Platform.h"
 #include "Player.h"
 #include "UILabels.h"
+#include "FollowCamera.h"
 
 Root* Game::g_pRoot = nullptr;
-Game::Game() : ApplicationContext("Assigment 01 - Julian Escobar / Lucas Krespi")
+Game::Game() : ApplicationContext("Assigment 02 - Julian Escobar / Lucas Krespi")
 {
 }
 
@@ -32,11 +33,10 @@ void Game::setup()
 	
 	
 	CreateScene();
-	CreateCamera();
 	CreateUpdate();
 	initializePlatforms();
-	
 	CreateObjsWithFrameListener();
+	CreateCamera();
 }
 /// <summary>
 /// Handle all the input for our application
@@ -86,20 +86,22 @@ void Game::CreateScene()
 void Game::CreateCamera()
 {
 	
-	SceneNode* camNode = m_pScnMgr->getRootSceneNode()->createChildSceneNode();
+	//SceneNode* camNode = m_pScnMgr->getRootSceneNode()->createChildSceneNode();
 
 
 	Camera* cam = m_pScnMgr->createCamera("myCam");
 	//cam->setProjectionType(Ogre::PT_ORTHOGRAPHIC);
 	cam->setNearClipDistance(5);
 	cam->setAutoAspectRatio(true);
-	camNode->attachObject(cam);
-	camNode->setPosition(0, 0, 1000);
-	camNode->lookAt(Ogre::Vector3(0, 0, 0), Node::TS_WORLD);
-
+	//camNode->attachObject(cam);
+	//camNode->setPosition(0, 0, 1000);
+	//camNode->lookAt(Ogre::Vector3(0, 0, 0), Node::TS_WORLD);
 	getRenderWindow()->addViewport(cam);
 
 	
+	FollowCamera* fCam = new FollowCamera(m_pScnMgr, cam);
+	fCam->SetFollowedObject(m_pPlayer);
+	m_pUpdate->addGameObject(fCam);
 }
 
 void Game::CreateUpdate()
