@@ -1,4 +1,6 @@
 #include "Game.h"
+
+#include "Boundaries.h"
 #include "Player.h"
 #include "Platform.h"
 #include "Player.h"
@@ -78,28 +80,31 @@ void Game::CreateScene()
 	Ogre::SceneNode* node = m_pScnMgr->createSceneNode("Node1");
 	m_pScnMgr->getRootSceneNode()->addChild(node);
 	
-	m_pScnMgr->setAmbientLight(ColourValue(1, 1, 1));
+	m_pScnMgr->setAmbientLight(ColourValue(0.1, .1, .1));
+	m_pScnMgr->setShadowTechnique(ShadowTechnique::SHADOWTYPE_STENCIL_ADDITIVE);
+
+	Light* directionalLight = m_pScnMgr->createLight("DirectionalLight");
+	directionalLight->setDiffuseColour(0,0,0.5);
+	directionalLight->setSpecularColour(0,0,0.5);
+	directionalLight->setType(Light::LT_DIRECTIONAL);
+
+	SceneNode* directionalLightNode = m_pScnMgr->getRootSceneNode()->createChildSceneNode();
+	directionalLightNode->attachObject(directionalLight);
+	directionalLightNode->setDirection(0,-1,0);
+	
 }
 /// <summary>
 /// Creates the camera
 /// </summary>
 void Game::CreateCamera()
 {
-	
-	//SceneNode* camNode = m_pScnMgr->getRootSceneNode()->createChildSceneNode();
-
-
 	Camera* cam = m_pScnMgr->createCamera("myCam");
-	//cam->setProjectionType(Ogre::PT_ORTHOGRAPHIC);
 	cam->setNearClipDistance(5);
 	cam->setAutoAspectRatio(true);
-	//camNode->attachObject(cam);
-	//camNode->setPosition(0, 0, 1000);
-	//camNode->lookAt(Ogre::Vector3(0, 0, 0), Node::TS_WORLD);
 	getRenderWindow()->addViewport(cam);
 
 	
-	FollowCamera* fCam = new FollowCamera(m_pScnMgr, cam);
+	FollowCamera* fCam = new FollowCamera(cam);
 	fCam->SetFollowedObject(m_pPlayer);
 	m_pUpdate->addGameObject(fCam);
 }
@@ -122,6 +127,11 @@ void Game::CreateObjsWithFrameListener()
 
 	m_pUpdate->SetPlayerRef(m_pPlayer);
 	
+	//Create Boundaries
+	Boundaries* boundaries = new Boundaries(m_pPlayer);
+	m_pScnMgr->getRootSceneNode()->addChild(boundaries->GetNode());
+	m_pUpdate->addGameObject(boundaries);
+
 	
 	//Create Labels
 	m_pScnMgr->addRenderQueueListener(mOverlaySystem);
@@ -142,7 +152,7 @@ void Game::initializePlatforms()
 	{
 		Platform* temp = m_PlatformPool.RetrieveObjectFromPool();
 		m_pScnMgr->getRootSceneNode()->addChild(temp->GetNode());
-		temp->SetPosition(Ogre::Vector3(i *100.0f, i*100.0f,0.0f));
+		temp->SetPosition(Ogre::Vector3(i *150.0f, i*200.0f,0.0f));
 		m_pUpdate->addGameObject(temp);
 	}
 	

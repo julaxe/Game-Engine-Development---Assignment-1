@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Boundaries.cpp" />
     <ClCompile Include="CollisionEngine.cpp" />
     <ClCompile Include="FollowCamera.cpp" />
     <ClCompile Include="PhysicsComponent.cpp" />
@@ -31,6 +32,7 @@
     <ClCompile Include="Update.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Boundaries.h" />
     <ClInclude Include="CollisionEngine.h" />
     <ClInclude Include="FollowCamera.h" />
     <ClInclude Include="PhysicsComponent.h" />

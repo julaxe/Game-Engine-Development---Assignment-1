@@ -30,3 +30,8 @@ void PhysicsComponent::SetYVelocity(float y)
 {
     velocity.y = y;
 }
+
+Ogre::Vector3 PhysicsComponent::GetVelocity()
+{
+    return velocity;
+}

@@ -25,16 +25,15 @@ Player::Player()
 	m_vInit_Pos = Ogre::Vector3(0.0f, 300.0f, 0.0f);
 	m_pEntity = Game::g_pRoot->getSceneManager("SceneManager")->createEntity("sphere.mesh");
 	m_pNode = Game::g_pRoot->getSceneManager("SceneManager")->createSceneNode("BallNode");
-	m_pEntity->setCastShadows(true);
 
 	m_pNode->attachObject(m_pEntity);
 	m_pNode->setPosition(m_vInit_Pos);
 	m_pNode->setScale(0.3f, 0.3f, 0.3f);
+
 	
 	//initial values
 	//go up first - diagonal
 	m_fRadius = m_pEntity->getBoundingBox().getSize().x * m_pNode->getScale().x * 0.5f;
-	m_vMoveDirection = Ogre::Vector3(1.0f, 1.0f, 0.0f);
 	m_fMoveSpeed = 400.0f;
 
 	//set all the physics variables.
@@ -48,10 +47,10 @@ void Player::HandleInput(const OgreBites::KeyboardEvent& evt)
 	switch (evt.keysym.sym)
 	{
 	case 'a':
-		SetXVelocity(-100.0f);
+		SetXVelocity(-m_fMoveSpeed);
 		break;
 	case 'd':
-		SetXVelocity(100.0f);
+		SetXVelocity(m_fMoveSpeed);
 		break;
 	default:
 		break;
@@ -69,8 +68,6 @@ void Player::Update(const FrameEvent& evt)
 {
 	GameObject::Update(evt);
 	UpdatePhysics(evt);
-	// m_oldPosition = m_pNode->getPosition();
-	// m_pNode->translate(m_vMoveDirection * m_fMoveSpeed * evt.timeSinceLastFrame);
 }
 /// <summary>
 /// Function called every time the ball collides.
@@ -104,10 +101,11 @@ void Player::Bounce(CollisionPlanes collisionPlane)
 /// <returns></returns>
 void Player::CheckForCollision(GameObject* gameObject)
 {
-	if(CheckCollisionWithGameObject(gameObject))//|| CheckCollisionWithScreen())
-	{
-		m_pNode->setPosition(m_oldPosition);
-	}
+	CheckCollisionWithGameObject(gameObject);
+	// if(CheckCollisionWithScreen())
+	// {
+	// 	m_pNode->setPosition(m_oldPosition);
+	// }
 }
 
 /// <summary>
@@ -152,7 +150,10 @@ bool Player::CheckCollisionWithScreen()
 /// <returns></returns>
 bool Player::CheckCollisionWithGameObject(GameObject* gameObject)
 {
-	
+	if(GetVelocity().y > 0)
+	{
+		return false;
+	}
 	//get center point circle first
 	Ogre::Vector3 center = m_pNode->getPosition();
 
@@ -172,7 +173,11 @@ bool Player::CheckCollisionWithGameObject(GameObject* gameObject)
 
 	if (difference.length() < m_fRadius)
 	{
-		std::cout << "y:" << difference.y << ", x:" << difference.x << std::endl;
+		if(GetNode()->getPosition().y < gameObject->GetNode()->getPosition().y)
+		{
+			return false;
+		}
+		
 		if (Math::Abs(difference.y) >= Math::Abs(difference.x))
 		{
 			

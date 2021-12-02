@@ -5,7 +5,7 @@
 class FollowCamera : public GameObject
 {
 public:
-	FollowCamera(Ogre::SceneManager* sceneManager, Camera* cam);
+	FollowCamera(Camera* cam);
 
 	void SetFollowedObject(GameObject* Object);
 	void Update(const FrameEvent& evt) override;

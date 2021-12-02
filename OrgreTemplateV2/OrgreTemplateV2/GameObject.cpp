@@ -5,6 +5,11 @@ GameObject::GameObject()
     m_tag = GameObjectTag::Default;
 }
 
+GameObject::GameObject(SceneNode* parentNode)
+{
+    m_pNode =  parentNode->createChildSceneNode();
+}
+
 void GameObject::Update(const FrameEvent& evt)
 {
 }

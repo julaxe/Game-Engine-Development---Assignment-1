@@ -11,11 +11,23 @@ bool Update::frameStarted(const FrameEvent& evt)
     m_pPlayerRef->Update(evt);
     for(auto gameObject : m_gameObjectsList)
     {
-        gameObject->Update(evt);
+        
+        if(gameObject->GetTag() == GameObjectTag::Boundary || gameObject->GetTag() == GameObjectTag::Camera)
+        {
+            if(m_pPlayerRef->GetVelocity().y > 0)
+            {
+                gameObject->Update(evt);
+            }
+        }
+        else
+        {
+            gameObject->Update(evt);
+        }
         if(gameObject->GetTag() == GameObjectTag::Platform)
         {
             m_pPlayerRef->CheckForCollision(gameObject);
         }
+        
     }
     
 

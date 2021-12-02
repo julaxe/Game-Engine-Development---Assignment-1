@@ -6,12 +6,15 @@ enum class GameObjectTag
 {
     Default,
     Platform,
-    Player
+    Player,
+    Boundary,
+    Camera
 };
 class GameObject
 {
 public:
     GameObject();
+    GameObject(SceneNode* parentNode);
     virtual void Update(const FrameEvent& evt);
     void SetTag(GameObjectTag newTag);
     GameObjectTag GetTag();
