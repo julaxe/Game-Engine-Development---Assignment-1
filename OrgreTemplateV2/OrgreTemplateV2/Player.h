@@ -16,10 +16,11 @@ public:
 
 	void HandleInput(const OgreBites::KeyboardEvent& evt);
 	void Update(const FrameEvent& evt) override;
-	void CheckForCollision(GameObject* gameObject);
+	bool CheckForCollision(GameObject* gameObject);
+	float GetRadius();
+	void Bounce(enum CollisionPlanes collisionPlane);
 
 private:
-	void Bounce(enum CollisionPlanes collisionPlane);
 	bool CheckCollisionWithScreen();
 	bool CheckCollisionWithGameObject(GameObject* object);
 	void ResetBallPos();

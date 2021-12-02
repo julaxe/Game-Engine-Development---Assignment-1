@@ -9,6 +9,7 @@ public:
     void SetVelocity(Ogre::Vector3 velocity);
     void SetXVelocity(float x);
     void SetYVelocity(float y);
+    void SetZVelocity(float z);
     Ogre::Vector3 GetVelocity();
 
 protected:

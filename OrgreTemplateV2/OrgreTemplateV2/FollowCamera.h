@@ -1,20 +1,19 @@
 #pragma once
 #include "Ogre.h"
-#include "GameObject.h"
+#include "Player.h"
 
 class FollowCamera : public GameObject
 {
 public:
 	FollowCamera(Camera* cam);
 
-	void SetFollowedObject(GameObject* Object);
+	void SetFollowedObject(Player* playerRef);
 	void Update(const FrameEvent& evt) override;
 	
 
 private:
 	
-	GameObject* m_pFollowedObject;
-	Ogre::Vector3 m_vFollowPosition;
+	Player* m_PlayerRef;
 	Ogre::Vector3 m_vCameraArm;
 
 	SceneNode* camNode;	

@@ -21,26 +21,39 @@ private:
 	Player* m_pPlayer;
 	UILabels* m_pSceneLabels;
 	SceneManager* m_pScnMgr;
-	ObjectPoolingEngine<Platform> m_PlatformPool;
+	ObjectPoolingEngine<Platform>* m_PlatformPool;
+
+	int m_PlatformCounter;
+
+	static Game* instance;
 
 public:
 	static Root* g_pRoot;
 	
 public:
-	Game();
 	virtual ~Game() {}
 	
-
+	static Game* Instance()
+	{
+		if(instance == nullptr)
+		{
+			instance = new Game();
+		}
+		return instance;
+	}
 	void setup() override;
 	bool keyPressed(const KeyboardEvent& evt) override;
 	void CreateScene();
 	void CreateCamera();
 	void CreateUpdate();
+	ObjectPoolingEngine<Platform>* GetPlatformsPool();
+	Player* GetPlayer();
 	void CreateObjsWithFrameListener();
+	void GenerateNewPlatform();
 
 private:
+	Game();
 	void initializePlatforms();
-	void updatePlatforms();
 };
 
 

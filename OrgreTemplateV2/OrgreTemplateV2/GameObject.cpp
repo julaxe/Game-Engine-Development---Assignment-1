@@ -19,6 +19,13 @@ void GameObject::SetTag(GameObjectTag newTag)
     m_tag = newTag;
 }
 
+void GameObject::UpdateDimensions()
+{
+    m_fWidth = m_pNode->getAttachedObject(0)->getBoundingBox().getSize().x * m_pNode->getScale().x;
+    m_fHeight = m_pNode->getAttachedObject(0)->getBoundingBox().getSize().y * m_pNode->getScale().y;
+    m_fLength = m_pNode->getAttachedObject(0)->getBoundingBox().getSize().z * m_pNode->getScale().z;
+}
+
 GameObjectTag GameObject::GetTag()
 {
     return m_tag;
@@ -32,6 +39,11 @@ float GameObject::GetHeight()
 float GameObject::GetWidth()
 {
     return m_fWidth;
+}
+
+float GameObject::GetLength()
+{
+    return m_fLength;
 }
 
 Ogre::Vector3 GameObject::GetPosition()

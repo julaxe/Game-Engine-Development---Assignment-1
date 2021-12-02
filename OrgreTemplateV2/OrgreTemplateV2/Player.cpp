@@ -25,7 +25,8 @@ Player::Player()
 	m_vInit_Pos = Ogre::Vector3(0.0f, 300.0f, 0.0f);
 	m_pEntity = Game::g_pRoot->getSceneManager("SceneManager")->createEntity("sphere.mesh");
 	m_pNode = Game::g_pRoot->getSceneManager("SceneManager")->createSceneNode("BallNode");
-
+	
+	m_pEntity->setMaterial(Ogre::MaterialManager::getSingleton().getByName("MyMaterial5"));
 	m_pNode->attachObject(m_pEntity);
 	m_pNode->setPosition(m_vInit_Pos);
 	m_pNode->setScale(0.3f, 0.3f, 0.3f);
@@ -51,6 +52,12 @@ void Player::HandleInput(const OgreBites::KeyboardEvent& evt)
 		break;
 	case 'd':
 		SetXVelocity(m_fMoveSpeed);
+		break;
+	case 'w':
+		SetZVelocity(-m_fMoveSpeed);
+		break;
+	case 's':
+		SetZVelocity(m_fMoveSpeed);
 		break;
 	default:
 		break;
@@ -99,13 +106,15 @@ void Player::Bounce(CollisionPlanes collisionPlane)
 /// Check for collision with the screen or the paddle.
 /// </summary>
 /// <returns></returns>
-void Player::CheckForCollision(GameObject* gameObject)
+bool Player::CheckForCollision(GameObject* gameObject)
 {
-	CheckCollisionWithGameObject(gameObject);
-	// if(CheckCollisionWithScreen())
-	// {
-	// 	m_pNode->setPosition(m_oldPosition);
-	// }
+	return CheckCollisionWithGameObject(gameObject);
+
+}
+
+float Player::GetRadius()
+{
+	return m_fRadius;
 }
 
 /// <summary>
@@ -150,21 +159,17 @@ bool Player::CheckCollisionWithScreen()
 /// <returns></returns>
 bool Player::CheckCollisionWithGameObject(GameObject* gameObject)
 {
-	if(GetVelocity().y > 0)
-	{
-		return false;
-	}
 	//get center point circle first
 	Ogre::Vector3 center = m_pNode->getPosition();
 
 	//calculate AABB info (center, half-extents);
-	Ogre::Vector3 aabb_half_entents = Ogre::Vector3(gameObject->GetWidth(), gameObject->GetHeight(), 0.0f) * 0.5;
+	Ogre::Vector3 aabb_half_entents = Ogre::Vector3(gameObject->GetWidth(), gameObject->GetHeight(), gameObject->GetLength()) * 0.5;
 	Ogre::Vector3 aabb_center = gameObject->GetNode()->getPosition();
 
 	//get difference vectro beween both centers;
 	Ogre::Vector3 difference = center - aabb_center;
 	Ogre::Vector3 clamped = Ogre::Vector3(Ogre::Math::Clamp<Real>(difference.x, -aabb_half_entents.x, aabb_half_entents.x),
-		Ogre::Math::Clamp<Real>(difference.y, -aabb_half_entents.y, aabb_half_entents.y), 0.0f);
+		Ogre::Math::Clamp<Real>(difference.y, -aabb_half_entents.y, aabb_half_entents.y), Ogre::Math::Clamp<Real>(difference.z, -aabb_half_entents.z, aabb_half_entents.z));
 
 	//add value to aabb center and we get the value of box closest to circle
 	Ogre::Vector3 closest = aabb_center + clamped;
@@ -173,37 +178,9 @@ bool Player::CheckCollisionWithGameObject(GameObject* gameObject)
 
 	if (difference.length() < m_fRadius)
 	{
-		if(GetNode()->getPosition().y < gameObject->GetNode()->getPosition().y)
-		{
-			return false;
-		}
 		
-		if (Math::Abs(difference.y) >= Math::Abs(difference.x))
-		{
-			
-			//top collision
-			//update the position of the ball
-			Ogre::Vector3 newPosition = Ogre::Vector3(m_pNode->getPosition().x, gameObject->GetNode()->getPosition().y + gameObject->GetHeight() * 0.5f + m_fRadius + 1, 0.0f);
-			m_pNode->setPosition(newPosition);
-			Bounce(X_COLLISION);
-			//no bottom collision
-		}
-		else
-		{
-			if (difference.x >= 0)
-			{
-				//left side
-				Ogre::Vector3 newPosition = Ogre::Vector3(gameObject->GetNode()->getPosition().x - gameObject->GetWidth() * 0.5f - m_fRadius - 1, m_pNode->getPosition().y, 0.0f);
-				m_pNode->setPosition(newPosition);
-			}
-			else
-			{
-				//right side
-				Ogre::Vector3 newPosition = Ogre::Vector3(gameObject->GetNode()->getPosition().x + gameObject->GetWidth() * 0.5f + m_fRadius + 1, m_pNode->getPosition().y, 0.0f);
-				m_pNode->setPosition(newPosition);
-			}
-			Bounce(Y_COLLISION);
-		}
+		return true;
+		//no bottom collision
 		
 	}
 	return false;

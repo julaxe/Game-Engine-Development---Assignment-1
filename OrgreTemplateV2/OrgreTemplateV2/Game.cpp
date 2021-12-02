@@ -6,8 +6,8 @@
 #include "Player.h"
 #include "UILabels.h"
 #include "FollowCamera.h"
-
 Root* Game::g_pRoot = nullptr;
+Game* Game::instance = nullptr;
 Game::Game() : ApplicationContext("Assigment 02 - Julian Escobar / Lucas Krespi")
 {
 }
@@ -82,15 +82,6 @@ void Game::CreateScene()
 	
 	m_pScnMgr->setAmbientLight(ColourValue(0.1, .1, .1));
 	m_pScnMgr->setShadowTechnique(ShadowTechnique::SHADOWTYPE_STENCIL_ADDITIVE);
-
-	Light* directionalLight = m_pScnMgr->createLight("DirectionalLight");
-	directionalLight->setDiffuseColour(0,0,0.5);
-	directionalLight->setSpecularColour(0,0,0.5);
-	directionalLight->setType(Light::LT_DIRECTIONAL);
-
-	SceneNode* directionalLightNode = m_pScnMgr->getRootSceneNode()->createChildSceneNode();
-	directionalLightNode->attachObject(directionalLight);
-	directionalLightNode->setDirection(0,-1,0);
 	
 }
 /// <summary>
@@ -114,6 +105,16 @@ void Game::CreateUpdate()
 	m_pUpdate = new Update();
 	m_pScnMgr->getRootSceneNode()->addChild(m_pUpdate->GetNode());
 	g_pRoot->addFrameListener(m_pUpdate);
+}
+
+ObjectPoolingEngine<Platform>* Game::GetPlatformsPool()
+{
+	return m_PlatformPool;
+}
+
+Player* Game::GetPlayer()
+{
+	return m_pPlayer;
 }
 
 /// <summary>
@@ -141,23 +142,42 @@ void Game::CreateObjsWithFrameListener()
 
 }
 
+void Game::GenerateNewPlatform()
+{
+	Platform* temp = m_PlatformPool->RetrieveObjectFromPool();
+	if(m_PlatformCounter < m_PlatformPool->GetSize())
+	{
+		m_pScnMgr->getRootSceneNode()->addChild(temp->GetNode());
+		m_pUpdate->addGameObject(temp);
+	}
+		
+	float squareSideSize = 300.0f;
+	float xPosition = Ogre::Math::RangeRandom(-squareSideSize, squareSideSize);
+	float zPosition = Ogre::Math::RangeRandom(-squareSideSize, squareSideSize);
+	float yPosition = Ogre::Math::RangeRandom(100.f, 150.f);
+	if(m_PlatformCounter == 0) // first platform
+	{
+		temp->SetPosition(Ogre::Vector3(0, 0,0));
+	}
+	else
+	{
+		temp->SetPosition(Ogre::Vector3(xPosition, m_PlatformCounter*yPosition, zPosition));
+	}
+	
+	m_PlatformCounter += 1;
+}
+
 void Game::initializePlatforms()
 {
 	//Create Platforms
 	m_pPlatform = new Platform();
 	m_pScnMgr->getRootSceneNode()->addChild(m_pPlatform->GetNode());
 	
-	m_PlatformPool =  ObjectPoolingEngine<Platform>(5);
-	for(int i = 0; i< m_PlatformPool.GetSize(); i++)
+	m_PlatformPool = new ObjectPoolingEngine<Platform>(8);
+	while(m_PlatformCounter< m_PlatformPool->GetSize())
 	{
-		Platform* temp = m_PlatformPool.RetrieveObjectFromPool();
-		m_pScnMgr->getRootSceneNode()->addChild(temp->GetNode());
-		temp->SetPosition(Ogre::Vector3(i *150.0f, i*200.0f,0.0f));
-		m_pUpdate->addGameObject(temp);
+		GenerateNewPlatform();
 	}
 	
 }
 
-void Game::updatePlatforms()
-{
-}

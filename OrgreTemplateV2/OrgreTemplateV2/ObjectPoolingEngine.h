@@ -22,7 +22,6 @@ template<class T>
 ObjectPoolingEngine<T>::ObjectPoolingEngine(unsigned int initSize)
 {
 	m_iSize = initSize;
-
 	InitializePool();
 }
 

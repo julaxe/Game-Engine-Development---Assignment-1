@@ -31,6 +31,11 @@ void PhysicsComponent::SetYVelocity(float y)
     velocity.y = y;
 }
 
+void PhysicsComponent::SetZVelocity(float z)
+{
+    velocity.z = z;
+}
+
 Ogre::Vector3 PhysicsComponent::GetVelocity()
 {
     return velocity;

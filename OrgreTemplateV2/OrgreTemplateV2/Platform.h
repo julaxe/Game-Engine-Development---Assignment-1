@@ -10,6 +10,7 @@ class Platform : public GameObject
 {
 public:
 	Platform();
+	void Update(const FrameEvent& evt) override;
 private:
 	static int s_iId;
 };
