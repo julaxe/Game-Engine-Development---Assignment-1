@@ -14,6 +14,7 @@ class GameObject
 {
 public:
     GameObject();
+    GameObject(bool withNode);
     GameObject(SceneNode* parentNode);
     virtual void Update(const FrameEvent& evt);
     void SetTag(GameObjectTag newTag);

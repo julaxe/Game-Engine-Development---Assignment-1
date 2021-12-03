@@ -17,6 +17,7 @@ void Boundaries::Update(const FrameEvent& evt)
 {
     GameObject::Update(evt);
     GetNode()->setPosition(Vector3(0.0f,m_playerRef->GetNode()->getPosition().y, 0.0f));
+    //m_pLeftWall->GetNode()->setPosition(Vector3(m_pLeftWall->GetNode()->getPosition().x, GetNode()->getPosition().y, m_pLeftWall->GetNode()->getPosition().z));
 }
 
 GameObject* Boundaries::GetLeftWall()
@@ -93,8 +94,6 @@ void Boundaries::CreateBoundaries()
     m_pRightWall->GetNode()->showBoundingBox(true);
     m_pBackWall->GetNode()->showBoundingBox(true);
     m_pLavaWall->GetNode()->showBoundingBox(true);
-
-    
     
     //set positions
     float lavaPosition = 10.f;

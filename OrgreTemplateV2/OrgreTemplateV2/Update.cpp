@@ -26,22 +26,24 @@ bool Update::frameStarted(const FrameEvent& evt)
             if(m_pPlayerRef->CheckForCollision(boundaries->GetLeftWall()))
             {
                 //player on the right wall
-                Vector3 rightwallPosition = boundaries->GetRightWall()->GetNode()->getPosition();
-                Vector3 leftSideOfRightWall = Vector3(rightwallPosition.x - 100.0f, rightwallPosition.y, rightwallPosition.z);
+                Vector3 rightwallPosition = boundaries->GetRightWall()->GetNode()->_getDerivedPosition();
+                Vector3 leftSideOfRightWall = Vector3(rightwallPosition.x - 100.0f, m_pPlayerRef->GetNode()->getPosition().y, m_pPlayerRef->GetNode()->getPosition().z);
                 m_pPlayerRef->GetNode()->setPosition(leftSideOfRightWall);
             }
-            if(m_pPlayerRef->CheckForCollision(boundaries->GetRightWall()))
+            else if(m_pPlayerRef->CheckForCollision(boundaries->GetRightWall()))
             {
-                std::cout<< "Right wall collision" << std::endl;
-                Vector3 leftWallPosition = boundaries->GetLeftWall()->GetNode()->getPosition();
-                Vector3 rightSideOfLeftWall = Vector3(leftWallPosition.x + 100.0f, leftWallPosition.y, leftWallPosition.z);
+                Vector3 leftWallPosition = boundaries->GetLeftWall()->GetNode()->_getDerivedPosition();
+                Vector3 rightSideOfLeftWall = Vector3(leftWallPosition.x + 100.0f, m_pPlayerRef->GetNode()->getPosition().y, m_pPlayerRef->GetNode()->getPosition().z);
                 m_pPlayerRef->GetNode()->setPosition(rightSideOfLeftWall);
             }
-            if(m_pPlayerRef->CheckForCollision(boundaries->GetBackWall()))
+            else if(m_pPlayerRef->CheckForCollision(boundaries->GetBackWall()))
             {
-                std::cout<< "Back wall collision" << std::endl;
+                Vector3 backWallPosition = boundaries->GetBackWall()->GetNode()->_getDerivedPosition();
+                Vector3 frontSideOfBackWall = Vector3(m_pPlayerRef->GetNode()->getPosition().x, m_pPlayerRef->GetNode()->getPosition().y, backWallPosition.z+1000);
+                m_pPlayerRef->GetNode()->setPosition(frontSideOfBackWall);
+
             }
-            if(m_pPlayerRef->CheckForCollision(boundaries->GetLavaWall()))
+            else if(m_pPlayerRef->CheckForCollision(boundaries->GetLavaWall()))
             {
                 m_pPlayerRef->ResetPositionToBottomPlatform();
             }

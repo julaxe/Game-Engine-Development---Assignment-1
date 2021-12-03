@@ -1,8 +1,16 @@
 #include "GameObject.h"
+#include "Game.h"
 
 GameObject::GameObject()
 {
     m_tag = GameObjectTag::Default;
+}
+
+GameObject::GameObject(bool withNode)
+{
+    if (withNode) {
+        m_pNode = Game::g_pRoot->getSceneManager("SceneManager")->createSceneNode();
+    }
 }
 
 GameObject::GameObject(SceneNode* parentNode)

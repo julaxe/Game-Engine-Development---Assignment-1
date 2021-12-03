@@ -199,7 +199,7 @@ bool Player::CheckCollisionWithGameObject(GameObject* gameObject)
 
 	//calculate AABB info (center, half-extents);
 	Ogre::Vector3 aabb_half_entents = Ogre::Vector3(gameObject->GetWidth(), gameObject->GetHeight(), gameObject->GetLength()) * 0.5;
-	Ogre::Vector3 aabb_center = gameObject->GetNode()->getPosition();
+	Ogre::Vector3 aabb_center = gameObject->GetNode()->_getDerivedPosition();
 
 	//get difference vectro beween both centers;
 	Ogre::Vector3 difference = center - aabb_center;
