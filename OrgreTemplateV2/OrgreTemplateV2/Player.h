@@ -24,6 +24,7 @@ public:
 	int GetScore();
 	void SetLifes(int lifes);
 	int GetLifes();
+	Ogre::Vector3 GetInitialPosition();
 
 	void ResetPositionToBottomPlatform();
 
@@ -37,5 +38,6 @@ private:
 	int m_iScore;
 	float m_fRadius;
 	float m_fMoveSpeed;
+	Ogre::Vector3 m_vInitalPosition;
 
 };

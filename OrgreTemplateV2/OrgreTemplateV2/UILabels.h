@@ -18,9 +18,15 @@ private:
 private:
 	Player* m_playerRef;
 	OgreBites::TrayManager* m_pmTrayManager;
+
 	StringVector m_svParamNames;
 	OgreBites::Label* m_plTimerText;
 	OgreBites::Label* m_plTime;
 	Timer m_tTimer;
 	OgreBites::ParamsPanel* m_pPanel;
+
+public:
+
+	OgreBites::Label* m_plResete;
+	bool hasLost;
 };

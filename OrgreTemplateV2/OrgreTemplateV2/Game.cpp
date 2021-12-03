@@ -58,6 +58,17 @@ bool Game::keyPressed(const KeyboardEvent& evt)
 	case 'j':
 		m_pSceneLabels->GetTrayManager()->showCursor();
 		break;
+	case 'r':
+		if (m_pSceneLabels->hasLost) 
+		{
+			m_pSceneLabels->GetTrayManager()->getTrayContainer(TL_CENTER)->hide();
+			m_pSceneLabels->hasLost = false;
+			m_pPlayer->GetNode()->setPosition(Ogre::Vector3(0,0,0)); 
+			m_pPlayer->SetLifes(3);
+
+			m_pUpdate->SetIsPaused(false);
+		}
+		break;
 	default:
 		break;
 	}

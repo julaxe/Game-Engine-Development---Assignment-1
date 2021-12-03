@@ -14,7 +14,7 @@ Platform::Platform()
 	m_pEntity->setMaterial(Ogre::MaterialManager::getSingleton().getByName("MyMaterial2"));
 	m_pNode = Game::g_pRoot->getSceneManager("SceneManager")->createSceneNode("Platform " + s_iId);
 	m_pNode->attachObject(m_pEntity);
-	m_pNode->showBoundingBox(true);
+	//m_pNode->showBoundingBox(true);
 	m_pNode->setPosition(Ogre::Vector3(0.0f, 0.0f, 0.0f));
 	m_pNode->setScale(2.f, 0.4f, 2.0f);
 
@@ -31,7 +31,7 @@ void Platform::Update(const FrameEvent& evt)
 	GameObject::Update(evt);
 	float distanceToPlayer = Game::Instance()->GetPlayer()->GetNode()->getPosition().y - GetNode()->getPosition().y;
 
-	if(distanceToPlayer > 1000)
+	if(distanceToPlayer > 500)
 	{
 		Game::Instance()->GetPlatformsPool()->ThrowBackObjectToPool(this);
 		Game::Instance()->GenerateNewPlatform();

@@ -30,14 +30,14 @@ Player::Player()
 	m_pNode->attachObject(m_pEntity);
 	m_pNode->setPosition(Ogre::Vector3(0.0f, 300.0f, 0.0f));
 	m_pNode->setScale(0.3f, 0.3f, 0.3f);
-	m_pNode->showBoundingBox(true);
+	//m_pNode->showBoundingBox(true);
 	
 	//initial values
-	//go up first - diagonal
 	m_fRadius = m_pEntity->getBoundingBox().getSize().x * m_pNode->getScale().x * 0.5f;
 	m_fMoveSpeed = 400.0f;
 	m_iScore = 0;
 	m_iLifes = 3;
+	m_vInitalPosition = m_pNode->_getDerivedPosition();
 
 	//set all the physics variables.
 	SetPhysicsComponent(m_pNode);
@@ -131,6 +131,11 @@ void Player::SetLifes(int lifes)
 int Player::GetLifes()
 {
 	return m_iLifes;
+}
+
+Ogre::Vector3 Player::GetInitialPosition()
+{
+	return m_vInitalPosition;
 }
 
 void Player::ResetPositionToBottomPlatform()
