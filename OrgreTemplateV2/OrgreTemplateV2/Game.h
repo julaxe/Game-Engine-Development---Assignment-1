@@ -46,7 +46,10 @@ public:
 	void CreateScene();
 	void CreateCamera();
 	void CreateUpdate();
+	
 	ObjectPoolingEngine<Platform>* GetPlatformsPool();
+	Platform* GetBottomPlatform();
+	Platform* GetTopPlatform();
 	Player* GetPlayer();
 	void CreateObjsWithFrameListener();
 	void GenerateNewPlatform();

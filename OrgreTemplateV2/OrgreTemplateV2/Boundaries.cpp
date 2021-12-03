@@ -88,6 +88,12 @@ void Boundaries::CreateBoundaries()
     m_pBackWall->UpdateDimensions();
     //frontWall->UpdateDimensions();
     m_pLavaWall->UpdateDimensions();
+
+    m_pLeftWall->GetNode()->showBoundingBox(true);
+    m_pRightWall->GetNode()->showBoundingBox(true);
+    m_pBackWall->GetNode()->showBoundingBox(true);
+    m_pLavaWall->GetNode()->showBoundingBox(true);
+
     
     
     //set positions

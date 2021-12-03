@@ -112,6 +112,32 @@ ObjectPoolingEngine<Platform>* Game::GetPlatformsPool()
 	return m_PlatformPool;
 }
 
+Platform* Game::GetBottomPlatform()
+{
+	Platform* bottomPlatform = Instance()->GetPlatformsPool()->GetPool().begin()->first;
+	for(auto poolObject : Instance()->GetPlatformsPool()->GetPool())
+	{
+		if(poolObject.first->GetNode()->getPosition().y < bottomPlatform->GetNode()->getPosition().y)
+		{
+			bottomPlatform = poolObject.first;
+		}
+	}
+	return bottomPlatform;
+}
+
+Platform* Game::GetTopPlatform()
+{
+	Platform* topPlatform = Instance()->GetPlatformsPool()->GetPool().begin()->first;
+	for(auto poolObject : Instance()->GetPlatformsPool()->GetPool())
+	{
+		if(poolObject.first->GetNode()->getPosition().y > topPlatform->GetNode()->getPosition().y)
+		{
+			topPlatform = poolObject.first;
+		}
+	}
+	return topPlatform;
+}
+
 Player* Game::GetPlayer()
 {
 	return m_pPlayer;
@@ -136,7 +162,7 @@ void Game::CreateObjsWithFrameListener()
 	
 	//Create Labels
 	m_pScnMgr->addRenderQueueListener(mOverlaySystem);
-	m_pSceneLabels = new UILabels(getRenderWindow(), m_pPlatform);
+	m_pSceneLabels = new UILabels(getRenderWindow(), m_pPlayer);
 	addInputListener(m_pSceneLabels->GetTrayManager());
 	g_pRoot->addFrameListener(m_pSceneLabels);
 

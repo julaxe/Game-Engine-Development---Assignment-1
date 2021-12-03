@@ -9,6 +9,7 @@ public:
 	T* RetrieveObjectFromPool();
 	void ThrowBackObjectToPool(T* object);
 	int GetSize();
+	std::map<T*,bool> GetPool();
 private:
 	void InitializePool();
 	T* GrowPool();
@@ -49,6 +50,12 @@ template <class T>
 int ObjectPoolingEngine<T>::GetSize()
 {
 	return m_iSize;
+}
+
+template <class T>
+std::map<T*, bool> ObjectPoolingEngine<T>::GetPool()
+{
+	return m_mPool;
 }
 
 template<class T>

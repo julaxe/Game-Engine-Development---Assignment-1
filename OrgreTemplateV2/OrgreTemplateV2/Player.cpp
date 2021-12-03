@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "Game.h"
+#include "Platform.h"
 //============ BALL CLASS ====================
 /// <summary>
 /// Planes where the elements in the game can collide with.
@@ -22,20 +23,21 @@ enum CollisionPlanes
 Player::Player()
 {
 	
-	m_vInit_Pos = Ogre::Vector3(0.0f, 300.0f, 0.0f);
 	m_pEntity = Game::g_pRoot->getSceneManager("SceneManager")->createEntity("sphere.mesh");
 	m_pNode = Game::g_pRoot->getSceneManager("SceneManager")->createSceneNode("BallNode");
 	
 	m_pEntity->setMaterial(Ogre::MaterialManager::getSingleton().getByName("MyMaterial5"));
 	m_pNode->attachObject(m_pEntity);
-	m_pNode->setPosition(m_vInit_Pos);
+	m_pNode->setPosition(Ogre::Vector3(0.0f, 300.0f, 0.0f));
 	m_pNode->setScale(0.3f, 0.3f, 0.3f);
-
+	m_pNode->showBoundingBox(true);
 	
 	//initial values
 	//go up first - diagonal
 	m_fRadius = m_pEntity->getBoundingBox().getSize().x * m_pNode->getScale().x * 0.5f;
 	m_fMoveSpeed = 400.0f;
+	m_iScore = 0;
+	m_iLifes = 3;
 
 	//set all the physics variables.
 	SetPhysicsComponent(m_pNode);
@@ -75,6 +77,15 @@ void Player::Update(const FrameEvent& evt)
 {
 	GameObject::Update(evt);
 	UpdatePhysics(evt);
+	
+	if(GetNode()->getPosition().y > m_iScore)
+	{
+		m_iScore = GetNode()->getPosition().y;
+	}
+	if(GetNode()->getPosition().y < Game::Instance()->GetBottomPlatform()->GetNode()->getPosition().y - 500.0f)
+	{
+		ResetPositionToBottomPlatform();
+	}
 }
 /// <summary>
 /// Function called every time the ball collides.
@@ -86,7 +97,6 @@ void Player::Bounce(CollisionPlanes collisionPlane)
 	switch (collisionPlane)
 	{
 	case Y_COLLISION:
-		m_vMoveDirection.x = -m_vMoveDirection.x;
 		//update the position
 		// Add to score 
 		
@@ -102,6 +112,41 @@ void Player::Bounce(CollisionPlanes collisionPlane)
 		break;
 	}
 }
+
+void Player::SetScore(int score)
+{
+	m_iScore = score;
+}
+
+int Player::GetScore()
+{
+	return m_iScore;
+}
+
+void Player::SetLifes(int lifes)
+{
+	m_iLifes = lifes;
+}
+
+int Player::GetLifes()
+{
+	return m_iLifes;
+}
+
+void Player::ResetPositionToBottomPlatform()
+{
+	//get bottom platform
+	Platform* topPlatform = Game::Instance()->GetTopPlatform();
+	//reset the object to the bottom platform
+	const Vector3 OnTopBottomPlatform = Vector3(topPlatform->GetNode()->getPosition().x, topPlatform->GetNode()->getPosition().y + 50.0f, topPlatform->GetNode()->getPosition().z);
+	GetNode()->setPosition(OnTopBottomPlatform);
+	SetVelocity(Vector3(0.0f, 0.0f, 0.0f));
+
+	
+	SetLifes(GetLifes() - 1);
+	
+}
+
 /// <summary>
 /// Check for collision with the screen or the paddle.
 /// </summary>
@@ -115,16 +160,6 @@ bool Player::CheckForCollision(GameObject* gameObject)
 float Player::GetRadius()
 {
 	return m_fRadius;
-}
-
-/// <summary>
-/// Reset the ball position to the initial position, also resets the direction.
-/// Takes off one live.
-/// </summary>
-void Player::ResetBallPos()
-{
-	m_pNode->setPosition(m_vInit_Pos);
-	m_vMoveDirection = Ogre::Vector3(1.0f, 1.0f, 0.0f);
 }
 
 /// <summary>

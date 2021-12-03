@@ -25,19 +25,25 @@ bool Update::frameStarted(const FrameEvent& evt)
             Boundaries * boundaries = static_cast<Boundaries*>(gameObject);
             if(m_pPlayerRef->CheckForCollision(boundaries->GetLeftWall()))
             {
-                std::cout<< "Left wall collision" << std::endl;
+                //player on the right wall
+                Vector3 rightwallPosition = boundaries->GetRightWall()->GetNode()->getPosition();
+                Vector3 leftSideOfRightWall = Vector3(rightwallPosition.x - 100.0f, rightwallPosition.y, rightwallPosition.z);
+                m_pPlayerRef->GetNode()->setPosition(leftSideOfRightWall);
             }
-            else if(m_pPlayerRef->CheckForCollision(boundaries->GetRightWall()))
+            if(m_pPlayerRef->CheckForCollision(boundaries->GetRightWall()))
             {
                 std::cout<< "Right wall collision" << std::endl;
+                Vector3 leftWallPosition = boundaries->GetLeftWall()->GetNode()->getPosition();
+                Vector3 rightSideOfLeftWall = Vector3(leftWallPosition.x + 100.0f, leftWallPosition.y, leftWallPosition.z);
+                m_pPlayerRef->GetNode()->setPosition(rightSideOfLeftWall);
             }
-            else if(m_pPlayerRef->CheckForCollision(boundaries->GetBackWall()))
+            if(m_pPlayerRef->CheckForCollision(boundaries->GetBackWall()))
             {
                 std::cout<< "Back wall collision" << std::endl;
             }
-            else if(m_pPlayerRef->CheckForCollision(boundaries->GetLavaWall()))
+            if(m_pPlayerRef->CheckForCollision(boundaries->GetLavaWall()))
             {
-                //reset life
+                m_pPlayerRef->ResetPositionToBottomPlatform();
             }
             
             //update the boundaries position when player is moving up

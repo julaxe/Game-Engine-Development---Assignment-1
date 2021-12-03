@@ -20,19 +20,21 @@ public:
 	float GetRadius();
 	void Bounce(enum CollisionPlanes collisionPlane);
 
+	void SetScore(int score);
+	int GetScore();
+	void SetLifes(int lifes);
+	int GetLifes();
+
+	void ResetPositionToBottomPlatform();
+
 private:
 	bool CheckCollisionWithScreen();
 	bool CheckCollisionWithGameObject(GameObject* object);
-	void ResetBallPos();
 
 private:
 
-	
-	Ogre::Vector3 m_oldPosition;
-
-	Ogre::Vector3 m_vInit_Pos;
-	Ogre::Vector3 m_vMoveDirection;
-
+	int m_iLifes;
+	int m_iScore;
 	float m_fRadius;
 	float m_fMoveSpeed;
 
